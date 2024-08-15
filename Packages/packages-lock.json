@@ -1,5 +1,28 @@
 {
   "dependencies": {
+    "com.arongranberg.astar": {
+      "version": "file:com.arongranberg.astar",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.burst": "1.8.3",
+        "com.unity.collections": "1.5.1",
+        "com.unity.mathematics": "1.2.6",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.assetbundle": "1.0.0",
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.particlesystem": "1.0.0",
+        "com.unity.modules.physics": "1.0.0",
+        "com.unity.modules.physics2d": "1.0.0",
+        "com.unity.modules.terrain": "1.0.0",
+        "com.unity.modules.terrainphysics": "1.0.0",
+        "com.unity.modules.tilemap": "1.0.0",
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.uielements": "1.0.0",
+        "com.unity.ugui": "1.0.0"
+      }
+    },
     "com.cysharp.unitask": {
       "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
       "depth": 0,
@@ -34,8 +57,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
-      "version": "1.4.0",
-      "depth": 3,
+      "version": "1.5.1",
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.burst": "1.6.6",
@@ -116,7 +139,7 @@
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",
-      "depth": 4,
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -264,6 +287,67 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
+    },
+    "com.z3.audio.fmod-integration": {
+      "version": "https://github.com/Z3-Studio/UTK-Audio-FMOD-Integration.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2c5b3ced551c18d55289daa4ac6d87ba2bcd6702"
+    },
+    "com.z3.node-graph": {
+      "version": "https://github.com/Z3-Studio/UTK-Node-Graph.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.z3.ui-builder": "0.1.4-beta",
+        "com.z3.utils": "1.0.4"
+      },
+      "hash": "8f4ab5ec3f330b78fcfd12d2f328023d62c48a55"
+    },
+    "com.z3.node-graph.astar-pathfinding": {
+      "version": "https://github.com/Z3-Studio/UTK-NGTP-Astar-Pathfinding.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.z3.node-graph": "0.1.0-beta",
+        "com.arongranberg.astar": ""
+      },
+      "hash": "fae0ff38aa1cc9070caed16559d5d1938570a25a"
+    },
+    "com.z3.node-graph.final-ik": {
+      "version": "https://github.com/Z3-Studio/UTK-NGTP-Final-IK.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.z3.node-graph": "0.1.0-beta"
+      },
+      "hash": "4a46cc39487c19e3af11106a7c126f5d2201968e"
+    },
+    "com.z3.object-pooling": {
+      "version": "https://github.com/Z3-Studio/UTK-Object-Pooling.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "7f8ce37532da82e9bb8e084eb5781eca641c41e6"
+    },
+    "com.z3.ui-builder": {
+      "version": "https://github.com/Z3-Studio/UTK-UI-Builder.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.z3.utils": "1.0.4"
+      },
+      "hash": "bf5d7f9be57859cb3023f2e6868410dd91e5a694"
+    },
+    "com.z3.utils": {
+      "version": "https://github.com/Z3-Studio/UTK-Utils.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "hash": "8f76bc54debbe9073ee137c9ede1eae17bd10844"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
