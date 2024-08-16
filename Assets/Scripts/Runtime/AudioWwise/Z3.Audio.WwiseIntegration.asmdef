@@ -1,7 +1,10 @@
 {
     "name": "Z3.Audio.WwiseIntegration",
     "rootNamespace": "Z3.Audio.WwiseIntegration",
-    "references": [],
+    "references": [
+        "GUID:a6e6af531f6cb486aa8e0113c44ec510",
+        "GUID:11a27de5845644049abab6ce0aa89b9c"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
