@@ -74,7 +74,7 @@ namespace Z3.GMTK2024
 
         public void SetIgnoreUpdate(bool isIgnored)
         {
-            this.isUpdateIgnored = isIgnored;
+            isUpdateIgnored = isIgnored;
         }
         
         #region Private Methods

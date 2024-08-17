@@ -8,6 +8,12 @@ namespace Z3.GMTK2024
     public class PawnController
     {
         public event Action<Vector2> OnMoveCamera;
+
+        public event Action OnPrimarySkillPressed { add => primarySkill.OnInputDown += value; remove => primarySkill.OnInputDown -= value; }
+        public event Action OnPrimarySkillReleased { add => primarySkill.OnInputUp += value; remove => primarySkill.OnInputUp -= value; }
+        public event Action OnSecondarySkillPressed { add => secondarySkill.OnInputDown += value; remove => secondarySkill.OnInputDown -= value; }
+        public event Action OnSecondarySkillReleased { add => secondarySkill.OnInputUp += value; remove => secondarySkill.OnInputUp -= value; }
+
         public event Action OnJumpPressed { add => jump.OnInputDown += value; remove => jump.OnInputDown -= value; }
         public event Action OnJumpReleased { add => jump.OnInputUp += value; remove => jump.OnInputUp -= value; }
         public event Action OnSprintPressed { add => sprint.OnInputDown += value; remove => sprint.OnInputDown -= value; }

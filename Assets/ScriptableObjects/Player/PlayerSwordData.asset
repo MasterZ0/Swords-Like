@@ -18,20 +18,74 @@ MonoBehaviour:
   runMoveSpeed: 6
   acceleration: 20
   deceleration: 15
-  dashDuration: 0.7
-  dashSpeed: 3
+  dashDuration: 0.2
+  dashSpeed: 10
   dashSpeedVariation:
-    m_Mode: 0
-    m_CurveMultiplier: 0
+    m_Mode: 1
+    m_CurveMultiplier: 1
     m_CurveMin:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_CurveMax:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.5
+        inSlope: 5
+        outSlope: 5
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.1
+        value: 1
+        inSlope: 0.33186132
+        outSlope: Infinity
+        tangentMode: 97
+        weightedMode: 3
+        inWeight: 0.33333334
+        outWeight: 0.25879946
+      - serializedVersion: 3
+        time: 0.85
+        value: 1
+        inSlope: Infinity
+        outSlope: -0.41490796
+        tangentMode: 7
+        weightedMode: 3
+        inWeight: 0.12856427
+        outWeight: 0.24345164
+      - serializedVersion: 3
+        time: 1
+        value: 0.5
+        inSlope: -10.380352
+        outSlope: -10.380352
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.1586068
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
