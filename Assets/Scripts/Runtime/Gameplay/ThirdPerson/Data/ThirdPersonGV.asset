@@ -32,7 +32,7 @@ MonoBehaviour:
     type: Z3.NodeGraph.Sample.ThirdPerson.Character.CharacterPawn, Z3.NodeGraph.Sample.ThirdPerson,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     serializedObject: {fileID: 0}
-    serializedValue: null
+    serializedValue: 
   - name: CharacterController
     guid: a4ce5883aa2fec945a7ae253d6968cf5
     type: UnityEngine.CharacterController, UnityEngine.PhysicsModule, Version=0.0.0.0,

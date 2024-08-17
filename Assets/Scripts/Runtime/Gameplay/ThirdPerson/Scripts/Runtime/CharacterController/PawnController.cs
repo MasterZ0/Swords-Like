@@ -12,6 +12,8 @@ namespace Z3.NodeGraph.Sample.ThirdPerson.Character
         public event Action OnJumpReleased { add => jump.OnInputUp += value; remove => jump.OnInputUp -= value; }
         public event Action OnSprintPressed { add => sprint.OnInputDown += value; remove => sprint.OnInputDown -= value; }
         public event Action OnSprintReleased { add => sprint.OnInputUp += value; remove => sprint.OnInputUp -= value; }
+        public event Action OnDashPressed { add => dash.OnInputDown += value; remove => dash.OnInputDown -= value; }
+        public event Action OnDashReleased { add => dash.OnInputUp += value; remove => dash.OnInputUp -= value; }
 
         public bool IsMovePressed => Move != Vector2.zero;
         public Vector2 Move => controls.Player.Move.ReadValue<Vector2>();
@@ -22,6 +24,7 @@ namespace Z3.NodeGraph.Sample.ThirdPerson.Character
 
         private readonly InputButtonRegister jump;
         private readonly InputButtonRegister sprint;
+        private readonly InputButtonRegister dash;
         private readonly InputButtonRegister primarySkill;
         private readonly InputButtonRegister secondarySkill;
 
@@ -34,6 +37,7 @@ namespace Z3.NodeGraph.Sample.ThirdPerson.Character
 
             jump = new InputButtonRegister(controls.Player.Jump);
             sprint = new InputButtonRegister(controls.Player.Sprint);
+            dash = new InputButtonRegister(controls.Player.Dash);
             primarySkill = new InputButtonRegister(controls.Player.PrimarySkill);
             secondarySkill = new InputButtonRegister(controls.Player.SecondarySkill);
 

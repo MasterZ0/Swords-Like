@@ -66,6 +66,25 @@ MonoBehaviour:
   controllerEvent:
     guid: 
     value: 0
+--- !u!114 &-8012411975204308938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'AnyState [540ed84f570133748bc5efcdcba4f183]/Transition [1ea2c3a60e81c2944b4a62d21ca915d9]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 1ea2c3a60e81c2944b4a62d21ca915d9
+  connection: {fileID: 8767747243371382591}
+  conditions:
+    taskList:
+    - {fileID: -2707862125597492561}
+    - {fileID: 7975909049273754497}
 --- !u!114 &-7480514897293818871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Jump
   guid: b4cf5f6822f703a4c95d14ffc6426a36
-  position: {x: -502, y: 570.99994}
+  position: {x: -502.40002, y: 569.6}
   transitionCheck: 1
   repeat: 0
   transitions:
@@ -243,6 +262,7 @@ MonoBehaviour:
   transitions:
     transitions:
     - {fileID: -8120619884390033580}
+    - {fileID: -8012411975204308938}
 --- !u!114 &-4974066682815953546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,6 +325,28 @@ MonoBehaviour:
   connection: {fileID: -6371369065015306964}
   conditions:
     taskList: []
+--- !u!114 &-2707862125597492561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa979d3b33dbee44af4148bed11ea18, type: 3}
+  m_Name: 'AnyState [540ed84f570133748bc5efcdcba4f183]/Transition [1ea2c3a60e81c2944b4a62d21ca915d9]/CheckControllerEventPS
+    [3af19e0eef0233349a614fb46a4e7286]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 3af19e0eef0233349a614fb46a4e7286
+  invertCondition: 0
+  data:
+    guid: a004efb247f35d04caed76aff76f82ea
+    value: {fileID: 0}
+  controllerEvent:
+    guid: 
+    value: 2
 --- !u!114 &-2089260753344611935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +470,10 @@ MonoBehaviour:
   - {fileID: 7320778530518440336}
   - {fileID: 6202566424091015285}
   - {fileID: -8060590066593607240}
+  - {fileID: 8767747243371382591}
+  - {fileID: -8012411975204308938}
+  - {fileID: -2707862125597492561}
+  - {fileID: 7975909049273754497}
 --- !u!114 &62194074160222164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +635,28 @@ MonoBehaviour:
   newCamera:
     guid: 95b73ca6b392fe04fa88c98e8a6d94b7
     value: {fileID: 0}
+--- !u!114 &7975909049273754497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e203a2db42bc64a9306f19bf2c56ea, type: 3}
+  m_Name: 'AnyState [540ed84f570133748bc5efcdcba4f183]/Transition [1ea2c3a60e81c2944b4a62d21ca915d9]/CheckControllerEventPS
+    [684b199cee0cf0549bb0ec3e578c8606]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 684b199cee0cf0549bb0ec3e578c8606
+  invertCondition: 0
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  controllerEvent:
+    guid: 
+    value: 1
 --- !u!114 &8128031592992953649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,3 +701,25 @@ MonoBehaviour:
     taskList:
     - {fileID: -840401369776846354}
     - {fileID: 62194074160222164}
+--- !u!114 &8767747243371382591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
+  m_Name: 'ActionState [96e62f392801c08448c8c563e6d75bad]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 96e62f392801c08448c8c563e6d75bad
+  position: {x: -899.4687, y: 570.39996}
+  transitionCheck: 2
+  repeat: 0
+  transitions:
+    transitions: []
+  executionPolicy: 0
+  taskList:
+    taskList: []

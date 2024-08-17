@@ -1,0 +1,17 @@
+{
+    "name": "GameJam.Components",
+    "rootNamespace": "Z3.GMTK2024",
+    "references": [
+        "GUID:e0ef022ec809f304da3c751faba5199b",
+        "GUID:65cb82271f3f0dd4eaad6e68e59b42a4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

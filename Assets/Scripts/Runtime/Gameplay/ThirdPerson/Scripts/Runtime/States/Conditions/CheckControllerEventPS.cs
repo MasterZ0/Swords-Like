@@ -4,13 +4,15 @@ using UnityEngine;
 
 namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
 {
-    [NodeDescription("It becomes true when the selected input changes to the desired state, disregarding the current state")]
+    [NodeDescription(
+        "It becomes true when the selected input changes to the desired state, disregarding the current state")]
     public class CheckControllerEventPS : CharacterCondition
     {
         public enum ControllerEvent
         {
             JumpPressed,
-            SprintPressed
+            SprintPressed,
+            DashPressed,
         }
 
         [SerializeField] private Parameter<ControllerEvent> controllerEvent;
@@ -30,6 +32,9 @@ namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
                 case ControllerEvent.SprintPressed:
                     Controller.OnSprintPressed += OnCallAction;
                     break;
+                case ControllerEvent.DashPressed:
+                    Controller.OnDashPressed += OnCallAction;
+                    break;
                 default:
                     throw new NotImplementedException(ToString());
             }
@@ -44,6 +49,9 @@ namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
                     break;
                 case ControllerEvent.SprintPressed:
                     Controller.OnSprintPressed -= OnCallAction;
+                    break;
+                case ControllerEvent.DashPressed:
+                    Controller.OnDashPressed -= OnCallAction;
                     break;
                 default:
                     throw new NotImplementedException(ToString());
