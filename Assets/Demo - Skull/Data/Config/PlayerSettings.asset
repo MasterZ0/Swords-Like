@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 590a174a0295fad4cac3e004efbb89d7, type: 3}
+  m_Name: PlayerSettings
+  m_EditorClassIdentifier: 
+  characterName: 
+  status:
+    baseHP: 25
+    baseMP: 25
+    baseSP: 25
+    style: 0
+    damage: 0
+    agility: 0
+    support: 0
+    resistence: 0
+    lowStaminaRegeneration: 1
+    defaultStaminaRegeneration: 0.25
+    defaultManaRegeneration: 0.25
+  physics:
+    aimMoveSpeed: 2
+    walkSpeed: 7
+    sprintSpeed: 12
+    acceleration: 6
+    deceleration: 3
+    maxAimDistance: 15
+    aimTransitionDuration: 1
+    fullLockAngle: 15
+    defaultSensitivityMultiplier: 20
+    aimSensitivityMultiplier: 5
+    aimBodyCorrectionSpeed: 15
+    rotationSmoothTime: 0.12
+    cameraRangeRotation: {x: -30, y: 30}
+    mass: 1
+    maxFallingVelocity: 11
+    groundedGravity: 3
+    fallingGravity: 2.5
+    jumpGravity: 1
+    jumpRangeDuration: {x: 0.8, y: 2}
+    jumpVelocity: 5.4
+    groundCheckRadius: 0.2
+    airDashVelocity: 8
+    airDashDuration: 0.3
+    groundDashVelocity: 8
+    groundDashDuration: 0.4
+    raycastBoxLength: 1
+    dodgeYVelocity: 4
+    dodgeZVelocity: 8
+    minimumDodgeXVelocity: 3
+    dodgeDamp: 9
+    minDodgeDuration: 0.2
+    invincibilityTimeAfterInjury: 1
+    injuryVelocity: {x: 5, y: 5}
+    injuryTime: 0.2
+    dyingMinTime: 0.2
+    deathVelocity: {x: 6, y: 6}
+  visual:
+    hardFallingVelocity: 10
+    runningStopTime: 0.5
+    bloodColor:
+      serializedVersion: 2
+      key0: {r: 1, g: 0, b: 0, a: 1}
+      key1: {r: 1, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: -1
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    injuryRedColorDuration: 0.7
+    visibleInjuredTime: 0.1
+    invisibleInjuredTime: 0.1
+    alphaInvisible: 0.35
+    lowHealthPercentage: 20
+    timeToHideStamina: 2.5
+    timeToShowGameOver: 2
+    downViewDistance: -2
+    downViewCameraSpeed: 8
+  defaultInventory:
+    weapon: {fileID: 0}
+    arrows: {fileID: 0}
+    arrowsCount: 0

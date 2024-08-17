@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efcb7a079b93114dbe88dbea96d7096, type: 3}
+  m_Name: GeneralSettings
+  m_EditorClassIdentifier: 
+  profiler: 1
+  hideUI: 0
+  godMode: 0
+  hitMaterialSeconds: 0.1
+  hitMaterial: {fileID: 0}
+  heathBarLifetime: 1
+  heathBarReductionDamageDealt: 1
+  dropItemYVelocityRange: {x: 0, y: 5}
+  dropItemZXMaxVelocity: 2
+  dropRestoreHP: 10
+  strongKnockback: 0.4
+  mediumKnockback: 0.15
+  weakKnockback: 0.05

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f8f72ae95b48a4eb101a40b9d8c12b, type: 3}
+  m_Name: MageSettings
+  m_EditorClassIdentifier: 
+  enemyName: 
+  maxHealth: 1
+  hitParticleGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 0, b: 0, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  dropValueData:
+    goldRange: {x: 0, y: 0}
+    loot: []
+  bodyDamage:
+    value: {x: 0, y: 0}
+    damageType: 0
+    canBlock: 0
+    showHitParticle: 1
+    hitEffects: []
+  idleTime: 2
+  patrolRadius: 5
+  delayToReturnToPatrol: 2
+  ikWeightTransition: 0.8
+  rotationSpeed: 2
+  patrolParameters:
+    maxSpeed: 10
+    rotationSpeed: 360
+    slowdownDistance: 3
+    endReachedDistance: 2
+  fleeParameters:
+    maxSpeed: 10
+    rotationSpeed: 360
+    slowdownDistance: 3
+    endReachedDistance: 2
+  chaseParameters:
+    maxSpeed: 10
+    rotationSpeed: 360
+    slowdownDistance: 3
+    endReachedDistance: 2
+  chaseDistance: 15
+  escapeDistance: 10
+  offensiveDistanceRange: {x: 11.1627865, y: 27.774084}
+  angleDifferenceToAttack: 5
+  fireballVelocity: 5
+  delayAfterAttack: 1
+  fireballDamage:
+    value: {x: 0, y: 0}
+    damageType: 0
+    canBlock: 0
+    showHitParticle: 1
+    hitEffects: []
+  references:
+    version: 2
+    RefIds: []

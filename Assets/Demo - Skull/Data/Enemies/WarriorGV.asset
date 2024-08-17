@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93fc43bbb82ae6b4c89b625ef1b4ec40, type: 3}
+  m_Name: WarriorGV
+  m_EditorClassIdentifier: 
+  inheritedVariables: []
+  overrideVariables: []
+  declaredVariables:
+  - name: Config
+    guid: 5edd666d42eda8f48969636a6807a562
+    type: Z3.DemoSkull.Data.WarriorEnemyData, Z3.DemoSkull, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 11400000, guid: 7b8498f0946059140aa4fdeb5a521947, type: 2}
+    serializedValue: 
+  - name: '- Dependencies'
+    guid: 43b21974fb00e5147a452f793e2e3a77
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: Animator
+    guid: df33ab6be446f454fba64d2cad85c972
+    type: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: Enemy
+    guid: c63d17b52279d3c4c98764a8aa49caab
+    type: Z3.DemoSkull.AI.Enemy, Z3.DemoSkull, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: AiPath
+    guid: 8b15bf3ce6fdabe4f87d1ab893a35a11
+    type: Pathfinding.AIPath, AstarPathfindingProject, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: TargetDetection
+    guid: 131383408e34ca6468a73dc375af3027
+    type: Z3.DemoSkull.AI.TargetDetection, Z3.DemoSkull, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: WeaponHitBox
+    guid: 2c8d01c57c787e0498064f5a16c56f34
+    type: Z3.DemoSkull.BattleSystem.HitBox, Z3.DemoSkull, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: Eyes
+    guid: c05f3e94a233620449e1779098c80b45
+    type: UnityEngine.SkinnedMeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: IkLookAt
+    guid: 169d9b863d738a24c817beb44af88072
+    type: RootMotion.FinalIK.LookAtIK, RootMotion, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: '- Settings'
+    guid: 90e1d2e18d168b445b28d4dea4be2132
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: IdleTime
+    guid: 8327d645ed1cb0840877b86ba6f14e82
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: PatrolRadius
+    guid: 5706971bd50f8ae49ace65783a3d71d5
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: DelayToReturnToPatrol
+    guid: 2eece6dabfeef634dbab9c1aea1a7b21
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: Movement
+    guid: 33f94b0c2c375a04d84fd9055f400121
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: IkWeightTransition
+    guid: 2b0e423614111224a88ed850d7202733
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: RotationSpeed
+    guid: 6f47a8ee755d1b54c9ba06a296f600d2
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: PatrolMaxSpeed
+    guid: a9a0100d353887d459dffcae7f71fbf9
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: PatrolParameters
+    guid: 5ddca65d6202b8440930a2d01cdfda3e
+    type: Z3.NodeGraph.TaskPack.AstarPathfinding.AIPathParameters, Z3.NodeGraph.TaskPack.AstarPathfinding,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: '{"$type":"Z3.NodeGraph.TaskPack.AstarPathfinding.AIPathParameters,
+      Z3.NodeGraph.TaskPack.AstarPathfinding","maxSpeed":10.0,"rotationSpeed":360.0,"slowdownDistance":3.0,"endReachedDistance":2.0}'
+  - name: BattleMaxSpeed
+    guid: 8e04865f252742144bde1fd188a232d4
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: BattleParameters
+    guid: 9b10a5089ae33d54798d091d663873b7
+    type: Z3.NodeGraph.TaskPack.AstarPathfinding.AIPathParameters, Z3.NodeGraph.TaskPack.AstarPathfinding,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: '{"$type":"Z3.NodeGraph.TaskPack.AstarPathfinding.AIPathParameters,
+      Z3.NodeGraph.TaskPack.AstarPathfinding","maxSpeed":10.0,"rotationSpeed":360.0,"slowdownDistance":3.0,"endReachedDistance":2.0}'
+  - name: Battle
+    guid: 0686d1234d14e5048a1662caa000652a
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: ChaseDistance
+    guid: 08e10a7f5b3cd5949a5bce1e11e121aa
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: DistanceToAttack
+    guid: 63618da95ff894f44a7bc1a92e4e95bd
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: AngleDifferenceToAttack
+    guid: 93116ab40fd23614da5357dc7aa1f6b5
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: CenterAttackAngle
+    guid: 7e706d2420678fa4abeb25bae6d579b4
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: DelayAfterAttack
+    guid: 75a777bf158aabd47942a4ffb205f22f
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: '- Variables'
+    guid: 487737c57039a6849a708790b92c70f7
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: StartPosition
+    guid: a2de406c3a43420429131db82b718ef2
+    type: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: "{\r\n  \"$type\": \"UnityEngine.Vector3, UnityEngine.CoreModule\",\r\n 
+      \"x\": 0.0,\r\n  \"y\": 0.0,\r\n  \"z\": 0.0\r\n}"
+  - name: MaxVelocityScale
+    guid: e81b27aa3e7546243876b40406a7c829
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: Target
+    guid: ca3a54804c3f2d14e9342841becf68a8
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: TargetPivot
+    guid: e6cd8027596ecdb46923dcb7b73e579f
+    type: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: TargetCenter
+    guid: 7115b5809325cc8478bb24a6ccb48f72
+    type: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: TargetHead
+    guid: 967147d7f30a887408c815012b7d9a78
+    type: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null

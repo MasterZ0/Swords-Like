@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/UI%20Toolkit/Pause.uss?fileID=7433441132597879392&amp;guid=61dbffed21871af47bfab9be23dcadd4&amp;type=3#Pause" />
+    <ui:VisualElement name="Root" style="width: 100%; height: 100%; justify-content: space-around; align-items: stretch;">
+        <ui:VisualElement name="Pause" style="justify-content: center; background-color: rgba(0, 0, 0, 0.69); align-items: center; width: 100%; height: 100%;">
+            <ui:Label text="Pause" display-tooltip-when-elided="true" class="title" />
+            <ui:Button text="Resume" display-tooltip-when-elided="true" class="button-standard" />
+            <ui:Button text="Reload" display-tooltip-when-elided="true" class="button-standard" />
+            <ui:Button text="Exit" display-tooltip-when-elided="true" class="button-standard" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

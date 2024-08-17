@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UI%20Toolkit/StyleSheet/DevelopmentToolsStyle.uss?fileID=7433441132597879392&amp;guid=cd05d9efd4eade34e8cc4a8e5157b2dc&amp;type=3#DevelopmentToolsStyle" />
+    <Style src="project://database/Assets/UI%20Toolkit/StyleSheet/NodeGraphStyle.uss?fileID=7433441132597879392&amp;guid=0ce6a25c0bef52642bfb84c18768bad4&amp;type=3#NodeGraphStyle" />
+    <ui:Label text="Development Tools" display-tooltip-when-elided="true" name="mainTitle" class="title" style="-unity-text-align: upper-center; margin-bottom: 4px; margin-top: 6px;" />
+</ui:UXML>

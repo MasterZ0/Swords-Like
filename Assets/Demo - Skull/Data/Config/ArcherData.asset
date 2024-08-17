@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324a5e4f490bfaa46970313f3858daf7, type: 3}
+  m_Name: ArcherData
+  m_EditorClassIdentifier: 
+  groundCheckRadius: 0.2
+  interactCheckRadius: 0.3
+  aimMoveSpeed: 1
+  walkMoveSpeed: 2
+  runMoveSpeed: 6
+  acceleration: 20
+  deceleration: 15
+  mouseSensitivity: 0.2
+  rotationSmoothTime: 0.12
+  cameraRangeRotation: {x: -35, y: 75}
+  aimBodyCorrectionSpeed: 15
+  fullLockAngle: 15
+  jumpVelocity: 1.2
+  jumpStopVelocity: 0.15
+  jumpRangeDuration: {x: 0.055, y: 0.25}
+  groundGravity: 3
+  fallingGravity: 3
+  jumpGravity: 1
+  mass: 1
+  maxFallingVelocity: 11
+  animationBlendDamp: 0.13
+  dashDuration: 0.1
+  dashSpeed: 0.1
+  dashSpeedVariation:
+    m_Mode: 0
+    m_CurveMultiplier: 0
+    m_CurveMin:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_CurveMax:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ConstantMin: 0
+    m_ConstantMax: 0
+  climbMaxDownRaycast: 0.5
+  climbCooldown: 0.5
+  climbUpSpeed: 2
+  climbHorizontalSpeed: 2.5
+  climbGrabRotationSpeed: 20
+  climbHorizontalDistanceCheck: 0.25
+  horizontalWallRunMaxDuration: 2.5
+  horizontalWallRunRaycastDistance: 0.4
+  horizontalWallMinHeight: 0.1
+  horizontalWallRunCooldown: 1
+  verticalWallRunRaycastDistance: 1
+  verticalWallRunMaxDuration: 1
+  minDotToVerticalWallRun: 0.85

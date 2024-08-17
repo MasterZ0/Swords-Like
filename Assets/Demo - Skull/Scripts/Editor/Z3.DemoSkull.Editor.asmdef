@@ -1,0 +1,20 @@
+{
+    "name": "Z3.DemoSkull.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0d23aca60b335b84db18b2e213b18747",
+        "GUID:9db0baad62b458342923bdaf951c3d5e",
+        "GUID:35334e9fce2041042a58f9101a81d24c",
+        "GUID:3f813859bdfe29f46bfe1afe0e598cf9",
+        "GUID:9c94cf3ae2c3f0f40bd86a2d1066d5f9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

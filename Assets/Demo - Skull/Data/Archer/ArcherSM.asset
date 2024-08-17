@@ -1,0 +1,363 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7345629616268018649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2985adac49a2564b88f64ecdefcbd9f, type: 3}
+  m_Name: 'AnyState [2146c005b43dac34492cd54431f45928]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 2146c005b43dac34492cd54431f45928
+  position: {x: 881.5002, y: 161.00003}
+  priority: -1
+  canTransitionToSelf: 0
+  transitions:
+    transitions:
+    - {fileID: 3022612016772002662}
+--- !u!114 &-7130489628193690122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56c3b386876fdb4b9c4e072cdae3feb, type: 3}
+  m_Name: 'ActionListSM [f1415b01a7385e74b829ea09b8e30dd9]/PlayAnimationAllLayers
+    [d6902eb07391e5a45a081e7aebbec130]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: d6902eb07391e5a45a081e7aebbec130
+  data:
+    guid: 48477c8fd0aefa145aa065fc1c6d9f4f
+    value: {fileID: 0}
+  stateName:
+    guid: 
+    value: Injury
+  transition:
+    guid: 
+    value: 0.25
+  waitUntilFinish:
+    guid: 
+    value: 0
+  waitLayer:
+    guid: 
+    value: 0
+--- !u!114 &-3050752484807935310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ebd6633e2f5e643874a62012c86ce8, type: 3}
+  m_Name: 'UpdateState [05da732f76d03a647a3072aa55d93be1]'
+  m_EditorClassIdentifier: 
+  title: Animation Parameters
+  guid: 05da732f76d03a647a3072aa55d93be1
+  position: {x: 158.00002, y: 386.99997}
+  priority: 0
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: 2563154382056121234}
+    - {fileID: 5328234408388705630}
+  updateMode: 0
+--- !u!114 &-2832687896490732355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
+  m_Name: 'ActionListSM [8d0c11a326cebef45a93c1d6faebbe6c]'
+  m_EditorClassIdentifier: 
+  title: Death
+  guid: 8d0c11a326cebef45a93c1d6faebbe6c
+  position: {x: 882, y: 387.0001}
+  transitionCheck: 1
+  repeat: 0
+  transitions:
+    transitions: []
+  executionPolicy: 1
+  taskList:
+    taskList:
+    - {fileID: 4373029806911910464}
+--- !u!114 &-2757616108399904621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3155cbd0a7fc7db4992bde0222067f89, type: 3}
+  m_Name: 'SubGraphDataSM [8f1c37a0e5056f74285b56f6a7902b82]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 8f1c37a0e5056f74285b56f6a7902b82
+  position: {x: 512, y: 161}
+  transitionCheck: 1
+  repeat: 0
+  transitions:
+    transitions:
+    - {fileID: 8054031523266929371}
+  subGraph: {fileID: 11400000, guid: 6b8428fa8c60ca94da414b58816e1bb3, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679e7903e013c2144af81ecd0b8c19e4, type: 3}
+  m_Name: ArcherSM
+  m_EditorClassIdentifier: 
+  referenceVariables: {fileID: 11400000, guid: 45733f89146f6c748a14ba90718a3af6, type: 2}
+  localVariables:
+  - name: Velocity
+    guid: a5dd1d104cb83ac49b9492a5f228e876
+    type: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: "{\r\n  \"$type\": \"UnityEngine.Vector3, UnityEngine.CoreModule\",\r\n 
+      \"x\": 0.0,\r\n  \"y\": 0.0,\r\n  \"z\": 0.0\r\n}"
+  - name: LocalVelocity
+    guid: 7d9ac6c313431584b95bd689c0ebb2c6
+    type: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: "{\r\n  \"$type\": \"UnityEngine.Vector3, UnityEngine.CoreModule\",\r\n 
+      \"x\": 0.0,\r\n  \"y\": 0.0,\r\n  \"z\": 0.0\r\n}"
+  startNode: {fileID: -2757616108399904621}
+  subAssets:
+  - {fileID: 8231773207741192971}
+  - {fileID: -2757616108399904621}
+  - {fileID: -2832687896490732355}
+  - {fileID: -3050752484807935310}
+  - {fileID: -7345629616268018649}
+  - {fileID: 8779071265317239064}
+  - {fileID: 2186041935161354655}
+  - {fileID: 2563154382056121234}
+  - {fileID: 5328234408388705630}
+  - {fileID: 3022612016772002662}
+  - {fileID: 8054031523266929371}
+  - {fileID: 3023435465209362861}
+  - {fileID: -7130489628193690122}
+  - {fileID: 4373029806911910464}
+--- !u!114 &2186041935161354655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7f1e1af9dc25d4d8a58df57873486e, type: 3}
+  m_Name: 'EnterState [8c076e96513ddf744b516bc0c6b0bb26]/MapParameters [eb553f09157421e4c9bbef5ee3529a3d]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: eb553f09157421e4c9bbef5ee3529a3d
+  data:
+    guid: 0dc52745079b5a8459b4b7874ef15f0f
+    value: {fileID: 11400000, guid: 93b8cb97e3f1e4043b7a22b5bf5d4438, type: 2}
+--- !u!114 &2563154382056121234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df24ac588af9c34e8bbb11f6d82ee90, type: 3}
+  m_Name: 'UpdateState [05da732f76d03a647a3072aa55d93be1]/GetRigidbodyVelocity [0c74e5007acecee4dbac9b432aa9bec9]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 0c74e5007acecee4dbac9b432aa9bec9
+  data:
+    guid: a4ce5883aa2fec945a7ae253d6968cf5
+    value: {fileID: 0}
+  velocity:
+    guid: 7d9ac6c313431584b95bd689c0ebb2c6
+    value: {x: 0, y: 0, z: 0}
+--- !u!114 &3022612016772002662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'AnyState [2146c005b43dac34492cd54431f45928]/Transition [ac40f9d17f32dee4ab42599fb0da2063]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: ac40f9d17f32dee4ab42599fb0da2063
+  connection: {fileID: -2832687896490732355}
+  conditions:
+    taskList: []
+--- !u!114 &3023435465209362861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'ActionListSM [f1415b01a7385e74b829ea09b8e30dd9]/Transition [846ebf9e33efda046be36646b8930c1f]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 846ebf9e33efda046be36646b8930c1f
+  connection: {fileID: -2757616108399904621}
+  conditions:
+    taskList: []
+--- !u!114 &4373029806911910464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56c3b386876fdb4b9c4e072cdae3feb, type: 3}
+  m_Name: 'ActionListSM [8d0c11a326cebef45a93c1d6faebbe6c]/PlayAnimationAllLayers
+    [95334af8cabff3d4585880de37680bd0]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 95334af8cabff3d4585880de37680bd0
+  data:
+    guid: 48477c8fd0aefa145aa065fc1c6d9f4f
+    value: {fileID: 0}
+  stateName:
+    guid: 
+    value: Death
+  transition:
+    guid: 
+    value: 0.25
+  waitUntilFinish:
+    guid: 
+    value: 0
+  waitLayer:
+    guid: 
+    value: 0
+--- !u!114 &5328234408388705630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0651f057cc1e584688cae2cde19b7c5, type: 3}
+  m_Name: 'UpdateState [05da732f76d03a647a3072aa55d93be1]/UpdateAnimationMotionParameter
+    [d5b8dfc7a7c4ec9469dc44643cde98c7]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: d5b8dfc7a7c4ec9469dc44643cde98c7
+  data:
+    guid: 48477c8fd0aefa145aa065fc1c6d9f4f
+    value: {fileID: 0}
+  currentVelocity:
+    guid: 7d9ac6c313431584b95bd689c0ebb2c6
+    value: {x: 0, y: 0, z: 0}
+  maxVelocityScale:
+    guid: bea7e72610dff774fbaedd527b9bf422
+    value: 0
+  animationBlendDamp:
+    guid: 
+    value: 10
+  horizontalMagnitude:
+    guid: 
+    value: HorizontalVelocity
+  velocityX:
+    guid: 
+    value: VelocityX
+  velocityY:
+    guid: 
+    value: VelocityY
+  velocityZ:
+    guid: 
+    value: VelocityZ
+--- !u!114 &8054031523266929371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'SubGraphDataSM [8f1c37a0e5056f74285b56f6a7902b82]/Transition [ceec62f8785a6bb479027b8372c0a1a7]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: ceec62f8785a6bb479027b8372c0a1a7
+  connection: {fileID: 8231773207741192971}
+  conditions:
+    taskList: []
+--- !u!114 &8231773207741192971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
+  m_Name: 'ActionListSM [f1415b01a7385e74b829ea09b8e30dd9]'
+  m_EditorClassIdentifier: 
+  title: Injury
+  guid: f1415b01a7385e74b829ea09b8e30dd9
+  position: {x: 512, y: 387.00006}
+  transitionCheck: 1
+  repeat: 0
+  transitions:
+    transitions:
+    - {fileID: 3023435465209362861}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: -7130489628193690122}
+--- !u!114 &8779071265317239064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca49c6187360964ab466feb270675bf, type: 3}
+  m_Name: 'EnterState [8c076e96513ddf744b516bc0c6b0bb26]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 8c076e96513ddf744b516bc0c6b0bb26
+  position: {x: 157.83302, y: 161}
+  priority: 0
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: 2186041935161354655}
