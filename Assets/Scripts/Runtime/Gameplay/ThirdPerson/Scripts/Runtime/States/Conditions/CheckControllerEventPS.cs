@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
+namespace Z3.GMTK2024.States
 {
     [NodeDescription(
         "It becomes true when the selected input changes to the desired state, disregarding the current state")]

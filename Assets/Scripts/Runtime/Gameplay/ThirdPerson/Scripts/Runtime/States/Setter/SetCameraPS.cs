@@ -1,7 +1,7 @@
 ﻿using Z3.NodeGraph.Core;
 using UnityEngine;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
+namespace Z3.GMTK2024.States
 {
     public class SetCameraPS : CharacterAction
     {

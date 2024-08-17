@@ -1,6 +1,6 @@
 ﻿using Z3.NodeGraph.Sample.ThirdPerson.Data;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character
+namespace Z3.GMTK2024
 {
     public abstract class CharacterControllerComponent
     { 

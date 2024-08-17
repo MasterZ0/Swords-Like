@@ -3,7 +3,7 @@ using System;
 using Z3.NodeGraph.Sample.ThirdPerson.Inputs;
 using static UnityEngine.InputSystem.InputAction;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character
+namespace Z3.GMTK2024
 {
     public class PawnController
     {

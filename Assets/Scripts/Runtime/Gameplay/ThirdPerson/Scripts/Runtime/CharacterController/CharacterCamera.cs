@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character
+namespace Z3.GMTK2024
 {
     [Serializable]
     public class CharacterCamera : CharacterControllerComponent

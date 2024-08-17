@@ -3,7 +3,7 @@ using System;
 using Z3.NodeGraph.Sample.ThirdPerson.Data;
 using Z3.NodeGraph.Core;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character
+namespace Z3.GMTK2024
 {
     public enum CharacterEvent
     {

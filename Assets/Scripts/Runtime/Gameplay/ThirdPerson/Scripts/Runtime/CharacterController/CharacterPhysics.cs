@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character
+namespace Z3.GMTK2024
 {
     /// <summary>
     /// Handles Character physics

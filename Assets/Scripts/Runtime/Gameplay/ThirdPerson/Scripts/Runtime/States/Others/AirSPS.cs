@@ -2,7 +2,7 @@ using UnityEngine;
 using Z3.NodeGraph.Core;
 using Z3.Utils.ExtensionMethods;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
+namespace Z3.GMTK2024.States
 {
     public class AirSPS : CharacterAction
     {

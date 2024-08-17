@@ -2,7 +2,7 @@
 using UnityEngine;
 using Z3.NodeGraph.Core;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
+namespace Z3.GMTK2024.States
 {
     [NodeDescription("Check the current state of the input")]
     public class CheckControllerMovePS : CharacterCondition

@@ -3,7 +3,7 @@ using Z3.NodeGraph.Sample.ThirdPerson.Data;
 using Z3.NodeGraph.Core;
 using Z3.NodeGraph.Tasks;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
+namespace Z3.GMTK2024.States
 {
     [NodeCategory(Categories.Samples + "/Third Person")]
     public abstract class CharacterCondition : ConditionTask

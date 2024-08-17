@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using Z3.NodeGraph.Sample.ThirdPerson.Character.States;
+using Z3.GMTK2024.States;
 
 namespace Z3.GMTK2024
 {

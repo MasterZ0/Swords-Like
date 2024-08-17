@@ -1,4 +1,4 @@
-﻿namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
+﻿namespace Z3.GMTK2024.States
 {
     public class CheckGroundPS : CharacterCondition
     {

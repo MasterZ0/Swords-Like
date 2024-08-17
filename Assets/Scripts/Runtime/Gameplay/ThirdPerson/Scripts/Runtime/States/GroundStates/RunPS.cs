@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Z3.NodeGraph.Core;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Character.States
+namespace Z3.GMTK2024.States
 {
     /// <summary>
     /// Similar than <see cref="MovePS"/>
