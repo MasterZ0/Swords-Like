@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Inputs
+namespace Z3.GMTK2024.Inputs
 {
     public partial class @Controls: IInputActionCollection2, IDisposable
     {

@@ -3,7 +3,7 @@ using UnityEngine;
 using Z3.NodeGraph.Core;
 using Z3.NodeGraph.Tasks;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Shared
+namespace Z3.GMTK2024.Shared
 {
     [NodeCategory(Categories.Events)]
     [NodeDescription("Waits for a graph event")]

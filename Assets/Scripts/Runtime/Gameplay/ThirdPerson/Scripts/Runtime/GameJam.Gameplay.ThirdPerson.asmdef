@@ -1,6 +1,6 @@
 {
     "name": "GameJam.ThirdPerson",
-    "rootNamespace": "Z3.NodeGraph.Sample.ThirdPerson",
+    "rootNamespace": "Z3.GMTK2024",
     "references": [
         "GUID:75469ad4d38634e559750d17036d5f7c",
         "GUID:65cb82271f3f0dd4eaad6e68e59b42a4",

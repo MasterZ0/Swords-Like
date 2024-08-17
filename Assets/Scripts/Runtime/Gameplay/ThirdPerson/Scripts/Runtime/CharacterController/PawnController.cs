@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System;
-using Z3.NodeGraph.Sample.ThirdPerson.Inputs;
+using Z3.GMTK2024.Inputs;
 using static UnityEngine.InputSystem.InputAction;
 
 namespace Z3.GMTK2024

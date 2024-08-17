@@ -2,7 +2,7 @@
 using UnityEngine.InputSystem;
 using CallbackContext = UnityEngine.InputSystem.InputAction.CallbackContext;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Inputs
+namespace Z3.GMTK2024.Inputs
 {
     public class InputButtonRegister
     {

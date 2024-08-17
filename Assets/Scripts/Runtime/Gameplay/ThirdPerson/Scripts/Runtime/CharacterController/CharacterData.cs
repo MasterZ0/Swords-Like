@@ -2,7 +2,7 @@
 using UnityEngine.Serialization;
 using Z3.NodeGraph.Core;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Data
+namespace Z3.GMTK2024.Data
 {
     [CreateAssetMenu(menuName = GraphPath.Graph + "Samples/" + nameof(CharacterData),
         fileName = "New" + nameof(CharacterData))]

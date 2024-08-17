@@ -1,4 +1,4 @@
-﻿using Z3.NodeGraph.Sample.ThirdPerson.Gameplay;
+﻿using Z3.GMTK2024.Gameplay;
 using System;
 using UnityEngine;
 

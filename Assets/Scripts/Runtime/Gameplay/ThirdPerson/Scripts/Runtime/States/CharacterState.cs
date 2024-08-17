@@ -1,5 +1,5 @@
 using UnityEngine;
-using Z3.NodeGraph.Sample.ThirdPerson.Data;
+using Z3.GMTK2024.Data;
 using Z3.NodeGraph.Core;
 using Z3.NodeGraph.Tasks;
 

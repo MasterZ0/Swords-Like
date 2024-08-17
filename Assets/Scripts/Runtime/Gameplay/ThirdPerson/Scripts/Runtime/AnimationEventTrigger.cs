@@ -3,7 +3,7 @@ using System;
 using UnityEngine.Events;
 using UnityEngine;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Shared
+namespace Z3.GMTK2024.Shared
 {
     public class AnimationEventTrigger : MonoBehaviour
     {

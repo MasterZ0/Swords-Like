@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Z3.NodeGraph.Sample.ThirdPerson.Gameplay
+namespace Z3.GMTK2024.Gameplay
 {
     public class MainCamera : MonoBehaviour 
     {
