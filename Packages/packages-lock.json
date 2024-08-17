@@ -303,7 +303,7 @@
         "com.z3.ui-builder": "0.1.4-beta",
         "com.z3.utils": "1.0.4"
       },
-      "hash": "8f4ab5ec3f330b78fcfd12d2f328023d62c48a55"
+      "hash": "be18e969e0d6fedbf34d6f344fe657292f74f7e9"
     },
     "com.z3.node-graph.astar-pathfinding": {
       "version": "https://github.com/Z3-Studio/UTK-NGTP-Astar-Pathfinding.git",

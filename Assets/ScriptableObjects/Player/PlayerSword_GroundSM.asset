@@ -1,0 +1,613 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9078522779981182110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12bd5c165f18db6499cdb8b6197fa9d3, type: 3}
+  m_Name: 'ActionListSM [1738b7800bd6f494595fb7a9fa009eab]/Transition [1bbbd3ff1f602104094bb0ae56a39f3a]/CheckControllerPS
+    [bc4cf9ca5d9e39546a4f8e6a16ae26ee]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: bc4cf9ca5d9e39546a4f8e6a16ae26ee
+  invertCondition: 0
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  controllerAction:
+    guid: 
+    value: 0
+--- !u!114 &-8120619884390033580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'AnyState [f680902e78081d84b8ffcba15d25797e]/Transition [6c0d2891c2d6e2344ac9c70637c6a659]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 6c0d2891c2d6e2344ac9c70637c6a659
+  connection: {fileID: -7480514897293818871}
+  conditions:
+    taskList:
+    - {fileID: 5482948941290964461}
+--- !u!114 &-7480514897293818871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
+  m_Name: 'ActionState [ad544c026c7f032469a7e7a7ad99db9a]'
+  m_EditorClassIdentifier: 
+  title: Jump
+  guid: ad544c026c7f032469a7e7a7ad99db9a
+  position: {x: -502, y: 570.99994}
+  transitionCheck: 1
+  repeat: 0
+  transitions:
+    transitions: []
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: -5890203336406701909}
+--- !u!114 &-6371369065015306964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
+  m_Name: 'ActionState [f67866608c9023646a34b7aa2a937127]'
+  m_EditorClassIdentifier: 
+  title: Run
+  guid: f67866608c9023646a34b7aa2a937127
+  position: {x: 649.5208, y: 590}
+  transitionCheck: 0
+  repeat: 0
+  transitions:
+    transitions:
+    - {fileID: 4818164095595234619}
+    - {fileID: 3214325499158104557}
+  executionPolicy: 1
+  taskList:
+    taskList:
+    - {fileID: 2781943589228599882}
+    - {fileID: 8410159707579019199}
+--- !u!114 &-5890203336406701909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a583efc17bc3d2544806f2d045566e49, type: 3}
+  m_Name: 'ActionListSM [ad544c026c7f032469a7e7a7ad99db9a]/SetBoolean [e9169e0bb35c55b4683db903bc1b9b9b]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: e9169e0bb35c55b4683db903bc1b9b9b
+  value:
+    guid: 01fde3c1f037ce043b24918caf3b564e
+    value: 0
+  operation: 0
+--- !u!114 &-5254077798057883529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
+  m_Name: 'ActionState [82f7ee7c5a5e55247926651536b30760]'
+  m_EditorClassIdentifier: 
+  title: Idle
+  guid: 82f7ee7c5a5e55247926651536b30760
+  position: {x: 306.00003, y: 75.98864}
+  transitionCheck: 1
+  repeat: 0
+  transitions:
+    transitions:
+    - {fileID: -2089260753344611935}
+    - {fileID: 7320778530518440336}
+    - {fileID: -3015679316404802628}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: -2090579857630405939}
+--- !u!114 &-5018968625525223829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2985adac49a2564b88f64ecdefcbd9f, type: 3}
+  m_Name: 'AnyState [f680902e78081d84b8ffcba15d25797e]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: f680902e78081d84b8ffcba15d25797e
+  position: {x: -502, y: 327.99997}
+  priority: -1
+  canTransitionToSelf: 0
+  transitions:
+    transitions:
+    - {fileID: -8120619884390033580}
+--- !u!114 &-4974066682815953546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
+  m_Name: 'ActionState [1738b7800bd6f494595fb7a9fa009eab]'
+  m_EditorClassIdentifier: 
+  title: Walk
+  guid: 1738b7800bd6f494595fb7a9fa009eab
+  position: {x: -59.507965, y: 590}
+  transitionCheck: 1
+  repeat: 0
+  transitions:
+    transitions:
+    - {fileID: -2024032871382546727}
+  executionPolicy: 1
+  taskList:
+    taskList:
+    - {fileID: -4786902152601628460}
+    - {fileID: 5778894703924070035}
+--- !u!114 &-4786902152601628460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 012a84069119917438219ded9d42632d, type: 3}
+  m_Name: 'ActionState [1738b7800bd6f494595fb7a9fa009eab]/MovePS [cf04547dd952fa148bc9ec344f795d29]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: cf04547dd952fa148bc9ec344f795d29
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  moveSpeed:
+    guid: a9d28719f9284da4eb05628bb3690c94
+    value: 0
+--- !u!114 &-3855220328460012159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12bd5c165f18db6499cdb8b6197fa9d3, type: 3}
+  m_Name: 'ActionListSM [82f7ee7c5a5e55247926651536b30760]/Transition [ab0f7736c3202274b80054ebc6d66e9c]/CheckControllerPS
+    [6508f823d7e762b449e05c238d80af05]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 6508f823d7e762b449e05c238d80af05
+  invertCondition: 1
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  controllerAction:
+    guid: 
+    value: 2
+--- !u!114 &-3015679316404802628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'ActionListSM [82f7ee7c5a5e55247926651536b30760]/Transition [840005ff4e925a4428b58f0b48082846]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 840005ff4e925a4428b58f0b48082846
+  connection: {fileID: -6371369065015306964}
+  conditions:
+    taskList: []
+--- !u!114 &-2547524945927568284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12bd5c165f18db6499cdb8b6197fa9d3, type: 3}
+  m_Name: 'ActionListSM [f67866608c9023646a34b7aa2a937127]/Transition [e07e13c191cb40d4c89ae7bdb831646c]/CheckControllerPS
+    [edf4d5f7a1cf66f4cba0e140b8f42303]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: edf4d5f7a1cf66f4cba0e140b8f42303
+  invertCondition: 1
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  controllerAction:
+    guid: 
+    value: 2
+--- !u!114 &-2090579857630405939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a514223c2341c047909648d5941f42b, type: 3}
+  m_Name: 'ActionState [82f7ee7c5a5e55247926651536b30760]/IdlePS [036c756047f26e64bb05e2ba0cf295b7]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 036c756047f26e64bb05e2ba0cf295b7
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  idleState:
+    guid: 
+    value: 
+  overrideIdleState:
+    guid: fe76f3e49e5b71141b270475e68eb040
+    value: 
+--- !u!114 &-2089260753344611935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'ActionListSM [82f7ee7c5a5e55247926651536b30760]/Transition [ab0f7736c3202274b80054ebc6d66e9c]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: ab0f7736c3202274b80054ebc6d66e9c
+  connection: {fileID: -4974066682815953546}
+  conditions:
+    taskList:
+    - {fileID: -3855220328460012159}
+--- !u!114 &-2024032871382546727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'ActionListSM [1738b7800bd6f494595fb7a9fa009eab]/Transition [1bbbd3ff1f602104094bb0ae56a39f3a]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 1bbbd3ff1f602104094bb0ae56a39f3a
+  connection: {fileID: -6371369065015306964}
+  conditions:
+    taskList:
+    - {fileID: -9078522779981182110}
+    - {fileID: 6945894427680132420}
+--- !u!114 &-1872521272678302205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12bd5c165f18db6499cdb8b6197fa9d3, type: 3}
+  m_Name: 'ActionListSM [f67866608c9023646a34b7aa2a937127]/Transition [44f0e65e9c693b54da5db2dde3de2cdb]/CheckControllerPS
+    [c8ea82caad4c14a4883ff5cd01af3545]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: c8ea82caad4c14a4883ff5cd01af3545
+  invertCondition: 1
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  controllerAction:
+    guid: 
+    value: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679e7903e013c2144af81ecd0b8c19e4, type: 3}
+  m_Name: PlayerSword_GroundSM
+  m_EditorClassIdentifier: 
+  referenceVariables: {fileID: 11400000, guid: 6a685e8ae60dc6d4280c294b4360439c, type: 2}
+  localVariables: []
+  startNode: {fileID: -5254077798057883529}
+  subAssets:
+  - {fileID: -6371369065015306964}
+  - {fileID: 4818164095595234619}
+  - {fileID: -7480514897293818871}
+  - {fileID: -5890203336406701909}
+  - {fileID: -5254077798057883529}
+  - {fileID: -3015679316404802628}
+  - {fileID: -2089260753344611935}
+  - {fileID: -4974066682815953546}
+  - {fileID: -2024032871382546727}
+  - {fileID: -5018968625525223829}
+  - {fileID: -8120619884390033580}
+  - {fileID: 8412451526456542635}
+  - {fileID: 62194074160222164}
+  - {fileID: 3214325499158104557}
+  - {fileID: 7320778530518440336}
+  - {fileID: -2090579857630405939}
+  - {fileID: -4786902152601628460}
+  - {fileID: 2781943589228599882}
+  - {fileID: 5482948941290964461}
+  - {fileID: -3855220328460012159}
+  - {fileID: 885709594223680726}
+  - {fileID: -2547524945927568284}
+  - {fileID: -1872521272678302205}
+  - {fileID: -9078522779981182110}
+  - {fileID: 6945894427680132420}
+  - {fileID: 5778894703924070035}
+  - {fileID: 8410159707579019199}
+--- !u!114 &62194074160222164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb955ce539e74284e9c0f1aa3a1ae32b, type: 3}
+  m_Name: 'EnterState [9d6ec4ac4e3af404484a84b8ffe0e09a]/SetFloat [7b09736c299cc09459d7921ad4e6b4eb]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 7b09736c299cc09459d7921ad4e6b4eb
+  operation: 0
+  valueA:
+    guid: bea7e72610dff774fbaedd527b9bf422
+    value: 0
+  valueB:
+    guid: a9d28719f9284da4eb05628bb3690c94
+    value: 1
+--- !u!114 &885709594223680726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12bd5c165f18db6499cdb8b6197fa9d3, type: 3}
+  m_Name: 'ActionListSM [82f7ee7c5a5e55247926651536b30760]/Transition [2767056085701f040ae09985a1db0b70]/CheckControllerPS
+    [bdd48333976510f46ab9c9a1695ccae2]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: bdd48333976510f46ab9c9a1695ccae2
+  invertCondition: 1
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  controllerAction:
+    guid: 
+    value: 0
+--- !u!114 &2781943589228599882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c31a46eb2a189b41929ad3a5ef71835, type: 3}
+  m_Name: 'ActionState [f67866608c9023646a34b7aa2a937127]/RunPS [172cf5a035783f6428def7d591ebf0f1]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 172cf5a035783f6428def7d591ebf0f1
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  moveSpeed:
+    guid: a9d28719f9284da4eb05628bb3690c94
+    value: 0
+  timeToFullRunning:
+    guid: 
+    value: 0.5
+  fullRunning:
+    guid: 
+    value: 0
+--- !u!114 &3214325499158104557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'ActionListSM [f67866608c9023646a34b7aa2a937127]/Transition [44f0e65e9c693b54da5db2dde3de2cdb]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 44f0e65e9c693b54da5db2dde3de2cdb
+  connection: {fileID: -4974066682815953546}
+  conditions:
+    taskList:
+    - {fileID: -1872521272678302205}
+--- !u!114 &4818164095595234619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'ActionListSM [f67866608c9023646a34b7aa2a937127]/Transition [e07e13c191cb40d4c89ae7bdb831646c]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: e07e13c191cb40d4c89ae7bdb831646c
+  connection: {fileID: -4974066682815953546}
+  conditions:
+    taskList:
+    - {fileID: -2547524945927568284}
+--- !u!114 &5482948941290964461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa979d3b33dbee44af4148bed11ea18, type: 3}
+  m_Name: 'AnyState [f680902e78081d84b8ffcba15d25797e]/Transition [6c0d2891c2d6e2344ac9c70637c6a659]/CheckControllerEventPS
+    [0bae701ad0c7eb541b94659b2c84e095]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 0bae701ad0c7eb541b94659b2c84e095
+  invertCondition: 0
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  controllerEvent:
+    guid: 
+    value: 0
+--- !u!114 &5778894703924070035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7534b258f0693cf4295b22e6cb224920, type: 3}
+  m_Name: 'ActionState [1738b7800bd6f494595fb7a9fa009eab]/SetCameraPS [00fa82d113a513343b8b3546602b9b2e]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 00fa82d113a513343b8b3546602b9b2e
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  newCamera:
+    guid: 10b68164748659f4d9ae0ccff8ac88e7
+    value: {fileID: 0}
+--- !u!114 &6945894427680132420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12bd5c165f18db6499cdb8b6197fa9d3, type: 3}
+  m_Name: 'ActionListSM [1738b7800bd6f494595fb7a9fa009eab]/Transition [1bbbd3ff1f602104094bb0ae56a39f3a]/CheckControllerPS
+    [52d09840a2b10e24086c6ebc83fe5218]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 52d09840a2b10e24086c6ebc83fe5218
+  invertCondition: 0
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  controllerAction:
+    guid: 
+    value: 2
+--- !u!114 &7320778530518440336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'ActionListSM [82f7ee7c5a5e55247926651536b30760]/Transition [2767056085701f040ae09985a1db0b70]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 2767056085701f040ae09985a1db0b70
+  connection: {fileID: -4974066682815953546}
+  conditions:
+    taskList:
+    - {fileID: 885709594223680726}
+--- !u!114 &8410159707579019199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7534b258f0693cf4295b22e6cb224920, type: 3}
+  m_Name: 'ActionState [f67866608c9023646a34b7aa2a937127]/SetCameraPS [3500aa8aa18f202449ce414265cc9b6b]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 3500aa8aa18f202449ce414265cc9b6b
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  newCamera:
+    guid: 95b73ca6b392fe04fa88c98e8a6d94b7
+    value: {fileID: 0}
+--- !u!114 &8412451526456542635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca49c6187360964ab466feb270675bf, type: 3}
+  m_Name: 'EnterState [9d6ec4ac4e3af404484a84b8ffe0e09a]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 9d6ec4ac4e3af404484a84b8ffe0e09a
+  position: {x: -501.99994, y: 105}
+  priority: 0
+  executionPolicy: 1
+  taskList:
+    taskList:
+    - {fileID: 62194074160222164}
