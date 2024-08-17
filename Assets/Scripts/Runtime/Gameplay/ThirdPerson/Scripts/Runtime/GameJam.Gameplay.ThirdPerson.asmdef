@@ -1,0 +1,18 @@
+{
+    "name": "GameJam.ThirdPerson",
+    "rootNamespace": "Z3.NodeGraph.Sample.ThirdPerson",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:65cb82271f3f0dd4eaad6e68e59b42a4",
+        "GUID:9c94cf3ae2c3f0f40bd86a2d1066d5f9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
