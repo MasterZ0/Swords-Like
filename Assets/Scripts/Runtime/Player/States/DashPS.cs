@@ -10,19 +10,12 @@ namespace Z3.GMTK2024
 
         protected override void StartAction()
         {
-            Debug.LogError("Getting in");
             time = 0f;
-            dodgeDirection = GetDashDirection();
             Physics.SetIgnoreUpdate(true);
-        }
 
-        internal Vector3 GetDashDirection()
-        {
-            // TODO: Camera Lock will be different
             Transform transform = Physics.Transform;
-
             Vector2 directional = Controller.Move;
-            return directional != Vector2.zero ? transform.forward : -transform.forward;
+            dodgeDirection =  directional != Vector2.zero ? transform.forward : -transform.forward;
         }
 
         protected override void UpdateAction()
@@ -33,9 +26,8 @@ namespace Z3.GMTK2024
             float speedMultiplier = Data.DashSpeedVariation.Evaluate(percentage, Random.Range(0f, 1f));
 
             Vector3 targetVelocity = dodgeDirection * Data.DashSpeed * speedMultiplier;
-            Vector3 velocityChange = targetVelocity - Physics.Velocity;
 
-            Physics.CharacterController.Move(velocityChange);
+            Physics.CharacterController.Move(targetVelocity * DeltaTime);
 
             if (percentage >= 1f)
             {
@@ -45,7 +37,6 @@ namespace Z3.GMTK2024
 
         protected override void StopAction()
         {
-            base.StopAction();
             Physics.SetIgnoreUpdate(false);
         }
     }

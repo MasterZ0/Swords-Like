@@ -196,7 +196,7 @@ MonoBehaviour:
     guid: d6d86bc21e2b5ec45ad078f0b4243495
     value: {fileID: 0}
   moveSpeed:
-    guid: a9d28719f9284da4eb05628bb3690c94
+    guid: 04a189e38f331d8438d428b6e604d391
     value: 0
 --- !u!114 &-3855220328460012159
 MonoBehaviour:
@@ -278,7 +278,7 @@ MonoBehaviour:
     value: {fileID: 0}
   idleState:
     guid: 
-    value: 
+    value: Idle_Run
   overrideIdleState:
     guid: fe76f3e49e5b71141b270475e68eb040
     value: 

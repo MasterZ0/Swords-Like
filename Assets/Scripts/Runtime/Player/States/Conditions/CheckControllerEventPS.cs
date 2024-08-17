@@ -13,6 +13,8 @@ namespace Z3.GMTK2024.States
             JumpPressed,
             SprintPressed,
             DashPressed,
+            PrimarySkillPressed,
+            SecondarySkyllPressed,
         }
 
         [SerializeField] private Parameter<ControllerEvent> controllerEvent;
@@ -35,6 +37,12 @@ namespace Z3.GMTK2024.States
                 case ControllerEvent.DashPressed:
                     Controller.OnDashPressed += OnCallAction;
                     break;
+                case ControllerEvent.PrimarySkillPressed:
+                    Controller.OnPrimarySkillPressed += OnCallAction;
+                    break;
+                case ControllerEvent.SecondarySkyllPressed:
+                    Controller.OnSecondarySkillPressed += OnCallAction;
+                    break;
                 default:
                     throw new NotImplementedException(ToString());
             }
@@ -52,6 +60,12 @@ namespace Z3.GMTK2024.States
                     break;
                 case ControllerEvent.DashPressed:
                     Controller.OnDashPressed -= OnCallAction;
+                    break;
+                case ControllerEvent.PrimarySkillPressed:
+                    Controller.OnPrimarySkillPressed -= OnCallAction;
+                    break;
+                case ControllerEvent.SecondarySkyllPressed:
+                    Controller.OnSecondarySkillPressed -= OnCallAction;
                     break;
                 default:
                     throw new NotImplementedException(ToString());
