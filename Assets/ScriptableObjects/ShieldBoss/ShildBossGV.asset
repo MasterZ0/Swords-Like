@@ -50,11 +50,6 @@ MonoBehaviour:
       PublicKeyToken=null
     serializedObject: {fileID: 0}
     serializedValue: null
-  - name: FireballAttackDuration
-    guid: e7b33249a1e8a044295dcdb37c413eca
-    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    serializedObject: {fileID: 0}
-    serializedValue: 0.0
   - name: FireballAttackPreparation
     guid: 82acdc7c2e57c0446ab87df1d7d343c6
     type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -72,6 +67,24 @@ MonoBehaviour:
       PublicKeyToken=null
     serializedObject: {fileID: 0}
     serializedValue: null
+  - name: '- Meteor Attack'
+    guid: 4b88705b645eb824a93e808f54c7db7d
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: 
+  - name: ArenaCenter
+    guid: b2462a8dd5b2a20438d117a48ec20a5f
+    type: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: 
+  - name: MeteorPrefab
+    guid: f5726c032be32914c859335b7df7e63f
+    type: Z3.GMTK2024.BattleSystem.Meteor, Z3.GMTK2024, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: 
   - name: '- Variables'
     guid: 3889c885bcbf90446a066e8523c0d8a0
     type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,

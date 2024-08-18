@@ -26,5 +26,13 @@ namespace Z3.GMTK2024.AI
         [Header("Meteor Attack")]
         [Range(0, 100)]
         public int ThirdAttackChance = 30;
+
+        public float MeteorAttackCenterRadius;
+        public float MeteorAttackFrequency;
+        public float MeteorAttackDuration;
+        public float MeteorAttackDelayForBlockRegion;
+        public float MeteorAttackRadiusForBlockRegion;
+        public Damage MeteorAttackDamage;
+
     }
 }
