@@ -63,6 +63,9 @@ MonoBehaviour:
     physicalBody: {fileID: 8776057202981900206}
   characterCamera:
     cameraTarget: {fileID: 8034076937856505141}
+    cinemachineVirtualCameras:
+    - {fileID: 4528015057974793607}
+    - {fileID: 6933366883975981395}
 --- !u!143 &6099942872375551210
 CharacterController:
   m_ObjectHideFlags: 0
