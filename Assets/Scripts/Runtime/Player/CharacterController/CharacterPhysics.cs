@@ -9,11 +9,11 @@ namespace Z3.GMTK2024
     [Serializable]
     public sealed class CharacterPhysics : CharacterControllerComponent
     {
-        [Header("Layers")]
-        [SerializeField] private LayerMask scenaryLayer;
+        [Header("Layers")] [SerializeField] private LayerMask scenaryLayer;
 
-        [Header("Components")]
-        [SerializeField] private CharacterController characterController;
+        [Header("Components")] [SerializeField]
+        private CharacterController characterController;
+
         [SerializeField] private CapsuleCollider physicalBody;
 
         public CharacterController CharacterController => characterController;
@@ -64,7 +64,8 @@ namespace Z3.GMTK2024
             targetYRotation = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg + EulerYCamera;
 
             // Rotation
-            float rotation = Mathf.SmoothDampAngle(Transform.eulerAngles.y, targetYRotation, ref rotationVelocity, Data.RotationSmoothTime);
+            float rotation = Mathf.SmoothDampAngle(Transform.eulerAngles.y, targetYRotation, ref rotationVelocity,
+                Data.RotationSmoothTime);
             Transform.rotation = Quaternion.Euler(0f, rotation, 0f);
         }
 
@@ -72,7 +73,7 @@ namespace Z3.GMTK2024
         {
             if (isUpdateIgnored)
                 return;
-            
+
             UpdateHorizontalVelocity();
             // UpdateVerticalVelocity();
             velocity.y = -Data.MaxFallingVelocity;
@@ -84,8 +85,9 @@ namespace Z3.GMTK2024
         {
             isUpdateIgnored = isIgnored;
         }
-        
+
         #region Private Methods
+
         /// <summary> Gravity and Jump Velocity </summary>
         private void UpdateVerticalVelocity()
         {
@@ -114,15 +116,17 @@ namespace Z3.GMTK2024
             float transition = moveSpeed > currentHorizontalSpeed ? Data.Acceleration : Data.Deceleration;
 
             // Interpolate between current horizontal speed and target speed
-            float speed = Mathf.Lerp(currentHorizontalSpeed, moveSpeed, transition * Time.fixedDeltaTime);
-            speed = Mathf.Min(moveSpeed, speed);
+            float speed = Mathf.Lerp(currentHorizontalSpeed, moveSpeed * movementScale,
+                transition * Time.fixedDeltaTime * movementScale);
+            speed = Mathf.Min(moveSpeed * movementScale, speed);
 
             moveSpeed = 0f;
 
             // Update forward velocity
             Vector3 targetDirection = Quaternion.Euler(0f, targetYRotation, 0f) * Vector3.forward;
-            velocity = targetDirection.normalized * (speed * movementScale);
+            velocity = targetDirection.normalized * speed;
         }
+
         #endregion
     }
 }

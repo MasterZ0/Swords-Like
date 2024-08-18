@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Z3.GMTK2024.States;
 using Z3.NodeGraph.Core;
 
@@ -10,6 +11,7 @@ namespace Z3.GMTK2024
     public class SizeChangePS : CharacterAction
     {
         [SerializeField] private Parameter<float> sizeRatio;
+        [SerializeField] private Parameter<float> speedMultiplier;
 
         private bool isInitialized;
         private float initialSizeRatio;
@@ -24,8 +26,8 @@ namespace Z3.GMTK2024
             isInitialized = true;
             var initialSize = Physics.Transform.localScale.x;
             var sizeRange = Data.SizeData.SizeRange;
-            sizeRatio = (initialSize - sizeRange.x) / (sizeRange.y - sizeRange.x);
-            initialSizeRatio = sizeRatio;
+            sizeRatio.Value = (initialSize - sizeRange.x) / (sizeRange.y - sizeRange.x);
+            initialSizeRatio = sizeRatio.Value;
             Apply();
         }
 
@@ -42,9 +44,9 @@ namespace Z3.GMTK2024
                 multiplier = -1;
             }
 
-            sizeRatio += Data.SizeData.SizeSpeed * Time.deltaTime * multiplier;
-            sizeRatio = Mathf.Clamp01(sizeRatio);
-            UI.SizeChangeUI.SetPercentage(sizeRatio);
+            sizeRatio.Value += Data.SizeData.SizeSpeed * Time.deltaTime * multiplier;
+            sizeRatio.Value = Mathf.Clamp01(sizeRatio.Value);
+            UI.SizeChangeUI.SetPercentage(sizeRatio.Value);
 
             // Apply the size effects
             Apply();
@@ -53,14 +55,16 @@ namespace Z3.GMTK2024
         private void Apply()
         {
             var sizeRange = Data.SizeData.SizeRange;
-            float size = (sizeRange.y - sizeRange.x) * (sizeRatio) + sizeRange.x;
+            float size = (sizeRange.y - sizeRange.x) * sizeRatio.Value + sizeRange.x;
             Physics.Transform.localScale = Vector3.one * size;
 
             // The starting size might not be from sizeRange.x, and initially we need everything to match with what
             // we set up in the Data.
             // Therefore, I am subtracting the initialSizeRatio to make it starts from zero.
-            float realSizeRatio = sizeRatio - initialSizeRatio;
+            float realSizeRatio = sizeRatio.Value - initialSizeRatio;
+
             Physics.MovementScale = 1 + realSizeRatio * Data.SizeData.MovementSizeMultiplier;
+            speedMultiplier.Value = Physics.MovementScale * Data.RunMoveSpeed;
             UpdateCameraDistance(1 + realSizeRatio);
         }
 

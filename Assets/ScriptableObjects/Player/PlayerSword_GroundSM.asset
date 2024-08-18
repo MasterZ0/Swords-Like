@@ -514,6 +514,9 @@ MonoBehaviour:
   sizeRatio:
     guid: 
     value: 0
+  speedMultiplier:
+    guid: d1356846dee7c1348b6e6527497f4914
+    value: 0
 --- !u!114 &4818164095595234619
 MonoBehaviour:
   m_ObjectHideFlags: 0
