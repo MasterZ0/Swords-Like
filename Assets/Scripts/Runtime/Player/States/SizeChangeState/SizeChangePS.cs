@@ -44,7 +44,7 @@ namespace Z3.GMTK2024
 
             sizeRatio += Data.SizeData.SizeSpeed * Time.deltaTime * multiplier;
             sizeRatio = Mathf.Clamp01(sizeRatio);
-
+            UI.SizeChangeUI.SetPercentage(sizeRatio);
 
             // Apply the size effects
             Apply();
