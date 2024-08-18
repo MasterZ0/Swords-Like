@@ -91,6 +91,24 @@ namespace Z3.GMTK2024.Inputs
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SizeIncrease"",
+                    ""type"": ""Button"",
+                    ""id"": ""08ff6ce5-b5f2-4f13-ae30-f12fe9cb0e50"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SizeDecrease"",
+                    ""type"": ""Button"",
+                    ""id"": ""04d96c14-f996-4b52-8218-3acb0946b970"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -207,11 +225,33 @@ namespace Z3.GMTK2024.Inputs
                 {
                     ""name"": """",
                     ""id"": ""834ab40f-e547-41b0-8a59-09f313192d55"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": ""Tap"",
                     ""processors"": """",
                     ""groups"": ""PC"",
                     ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8ea29ae5-9cbd-4465-8116-83dbd41d3b1b"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SizeIncrease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6e6cdcb4-091b-45eb-9494-2f5aa6e6db41"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SizeDecrease"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -257,6 +297,8 @@ namespace Z3.GMTK2024.Inputs
             m_Player_PrimarySkill = m_Player.FindAction("PrimarySkill", throwIfNotFound: true);
             m_Player_SecondarySkill = m_Player.FindAction("SecondarySkill", throwIfNotFound: true);
             m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
+            m_Player_SizeIncrease = m_Player.FindAction("SizeIncrease", throwIfNotFound: true);
+            m_Player_SizeDecrease = m_Player.FindAction("SizeDecrease", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -325,6 +367,8 @@ namespace Z3.GMTK2024.Inputs
         private readonly InputAction m_Player_PrimarySkill;
         private readonly InputAction m_Player_SecondarySkill;
         private readonly InputAction m_Player_Dash;
+        private readonly InputAction m_Player_SizeIncrease;
+        private readonly InputAction m_Player_SizeDecrease;
         public struct PlayerActions
         {
             private @Controls m_Wrapper;
@@ -336,6 +380,8 @@ namespace Z3.GMTK2024.Inputs
             public InputAction @PrimarySkill => m_Wrapper.m_Player_PrimarySkill;
             public InputAction @SecondarySkill => m_Wrapper.m_Player_SecondarySkill;
             public InputAction @Dash => m_Wrapper.m_Player_Dash;
+            public InputAction @SizeIncrease => m_Wrapper.m_Player_SizeIncrease;
+            public InputAction @SizeDecrease => m_Wrapper.m_Player_SizeDecrease;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -366,6 +412,12 @@ namespace Z3.GMTK2024.Inputs
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
+                @SizeIncrease.started += instance.OnSizeIncrease;
+                @SizeIncrease.performed += instance.OnSizeIncrease;
+                @SizeIncrease.canceled += instance.OnSizeIncrease;
+                @SizeDecrease.started += instance.OnSizeDecrease;
+                @SizeDecrease.performed += instance.OnSizeDecrease;
+                @SizeDecrease.canceled += instance.OnSizeDecrease;
             }
 
             private void UnregisterCallbacks(IPlayerActions instance)
@@ -391,6 +443,12 @@ namespace Z3.GMTK2024.Inputs
                 @Dash.started -= instance.OnDash;
                 @Dash.performed -= instance.OnDash;
                 @Dash.canceled -= instance.OnDash;
+                @SizeIncrease.started -= instance.OnSizeIncrease;
+                @SizeIncrease.performed -= instance.OnSizeIncrease;
+                @SizeIncrease.canceled -= instance.OnSizeIncrease;
+                @SizeDecrease.started -= instance.OnSizeDecrease;
+                @SizeDecrease.performed -= instance.OnSizeDecrease;
+                @SizeDecrease.canceled -= instance.OnSizeDecrease;
             }
 
             public void RemoveCallbacks(IPlayerActions instance)
@@ -435,6 +493,8 @@ namespace Z3.GMTK2024.Inputs
             void OnPrimarySkill(InputAction.CallbackContext context);
             void OnSecondarySkill(InputAction.CallbackContext context);
             void OnDash(InputAction.CallbackContext context);
+            void OnSizeIncrease(InputAction.CallbackContext context);
+            void OnSizeDecrease(InputAction.CallbackContext context);
         }
     }
 }

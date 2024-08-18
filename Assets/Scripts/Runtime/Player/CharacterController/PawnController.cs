@@ -20,8 +20,14 @@ namespace Z3.GMTK2024
         public event Action OnSprintReleased { add => sprint.OnInputUp += value; remove => sprint.OnInputUp -= value; }
         public event Action OnDashPressed { add => dash.OnInputDown += value; remove => dash.OnInputDown -= value; }
         public event Action OnDashReleased { add => dash.OnInputUp += value; remove => dash.OnInputUp -= value; }
+        public event Action OnSizeIncreasePressed { add => sizeIncrease.OnInputDown += value; remove => sizeIncrease.OnInputDown -= value; }
+        public event Action OnSizeIncreaseReleased { add => sizeIncrease.OnInputUp += value; remove => sizeIncrease.OnInputUp -= value; }
+        public event Action OnSizeDecreasePressed { add => sizeDecrease.OnInputDown += value; remove => sizeDecrease.OnInputDown -= value; }
+        public event Action OnSizeDecreaseReleased { add => sizeDecrease.OnInputUp += value; remove => sizeDecrease.OnInputUp -= value; }
 
         public bool IsMovePressed => Move != Vector2.zero;
+        public bool IsSizeIncreasedPressed => sizeIncrease.IsPressed;
+        public bool IsSizeDecreasePressed => sizeDecrease.IsPressed;
         public Vector2 Move => controls.Player.Move.ReadValue<Vector2>();
         public Vector2 Look => controls.Player.Look.ReadValue<Vector2>();
 
@@ -31,6 +37,8 @@ namespace Z3.GMTK2024
         private readonly InputButtonRegister jump;
         private readonly InputButtonRegister sprint;
         private readonly InputButtonRegister dash;
+        private readonly InputButtonRegister sizeIncrease;
+        private readonly InputButtonRegister sizeDecrease;
         private readonly InputButtonRegister primarySkill;
         private readonly InputButtonRegister secondarySkill;
 
@@ -44,6 +52,8 @@ namespace Z3.GMTK2024
             jump = new InputButtonRegister(controls.Player.Jump);
             sprint = new InputButtonRegister(controls.Player.Sprint);
             dash = new InputButtonRegister(controls.Player.Dash);
+            sizeIncrease = new InputButtonRegister(controls.Player.SizeIncrease);
+            sizeDecrease = new InputButtonRegister(controls.Player.SizeDecrease);
             primarySkill = new InputButtonRegister(controls.Player.PrimarySkill);
             secondarySkill = new InputButtonRegister(controls.Player.SecondarySkill);
 

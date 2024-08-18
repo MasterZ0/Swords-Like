@@ -114,3 +114,8 @@ MonoBehaviour:
     type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     serializedObject: {fileID: 0}
     serializedValue: 0.0
+  - name: SpeedMultiplier
+    guid: d1356846dee7c1348b6e6527497f4914
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 1.0

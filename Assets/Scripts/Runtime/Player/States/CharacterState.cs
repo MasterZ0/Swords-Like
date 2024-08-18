@@ -27,5 +27,6 @@ namespace Z3.GMTK2024.States
         protected Animator Animator => data.Value.Animator;
         protected PawnController Controller => data.Value.Controller;
         protected CharacterData Data => data.Value.Data;
+        protected CharacterUI UI => data.Value.CharacterUI;
     }
 }

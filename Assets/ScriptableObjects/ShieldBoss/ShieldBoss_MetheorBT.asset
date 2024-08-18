@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fe1e814f404c0946b65c8626350685b, type: 3}
-  m_Name: ShieldBoss_Skill3Bt
+  m_Name: ShieldBoss_MetheorBT
   m_EditorClassIdentifier: 
   referenceVariables: {fileID: 11400000, guid: 67491b4ac780e6a4d8a0a96a63acc615, type: 2}
   localVariables: []

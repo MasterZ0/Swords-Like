@@ -21,6 +21,7 @@ namespace Z3.GMTK2024
         [Header("Sub Modules")]
         [SerializeField] private CharacterPhysics characterPhysics;
         [SerializeField] private CharacterCamera characterCamera;
+        [SerializeField] private CharacterUI characterUI;
 
         public event Action<CharacterEvent> OnCharacterEvent = delegate { };
         public CharacterData Data => data;
@@ -28,6 +29,7 @@ namespace Z3.GMTK2024
         public CharacterCamera Camera => characterCamera;
         public Animator Animator => animator;
         public PawnController Controller { get; private set; }
+        public CharacterUI CharacterUI => characterUI;
 
         private void Awake()
         {

@@ -15,7 +15,7 @@ MonoBehaviour:
   inheritedVariables: []
   overrideVariables: []
   declaredVariables:
-  - name: Data
+  - name: ShieldBossData
     guid: 5b9eaed11d5fff84ea2186e34a5616c2
     type: Z3.GMTK2024.AI.ShieldBossED, Z3.GMTK2024, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
@@ -27,6 +27,12 @@ MonoBehaviour:
       PublicKeyToken=null
     serializedObject: {fileID: 0}
     serializedValue: null
+  - name: SelfTransform
+    guid: f0262f6e7771c144f8e43b98e1eb66d0
+    type: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
   - name: Enemy
     guid: 3f01fc78ca416b04a9cd20c6fad3b97f
     type: Z3.GMTK2024.AI.Enemy, Z3.GMTK2024, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -35,6 +41,34 @@ MonoBehaviour:
   - name: StartVariables
     guid: 36abdc6f2efbb6e48827e865affb69ac
     type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: '- Fireball Attack'
+    guid: a583ff1374a98944b9e9e0fc0f0a2d74
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: FireballAttackDuration
+    guid: e7b33249a1e8a044295dcdb37c413eca
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: FireballAttackPreparation
+    guid: 82acdc7c2e57c0446ab87df1d7d343c6
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
+  - name: FireballPoint
+    guid: 56dfa637daad2904f924fa41ecddb390
+    type: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: FireballPrefab
+    guid: 24a2e647fb8b0b64aac5e8d5b3b4468e
+    type: Z3.GMTK2024.BattleSystem.Fireball, Z3.GMTK2024, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     serializedObject: {fileID: 0}
     serializedValue: null
