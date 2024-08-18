@@ -172,6 +172,9 @@ MonoBehaviour:
   - guid: 48477c8fd0aefa145aa065fc1c6d9f4f
     serializedObject: {fileID: 2243870068444385360}
     serializedValue: 
+  - guid: 73c999b4ec5f07549b985325fa06424e
+    serializedObject: {fileID: 6761833000236754440}
+    serializedValue: 
 --- !u!1 &1420968060229428859
 GameObject:
   m_ObjectHideFlags: 0
