@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5944102559293597107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 867e3d04a7360834893faf7312a089f3, type: 3}
+  m_Name: 'ActionLeaf [44b01e9616a8cc146887aaa48a71c3a5]/DebugLog [25f609842e3880548b8da271057f8504]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 25f609842e3880548b8da271057f8504
+  message:
+    guid: 
+    value: Radius
+  logType:
+    guid: 
+    value: 3
+--- !u!114 &-829195090417565514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e48502d95ee5e4e89a1299cd31aa9a, type: 3}
+  m_Name: 'ActionLeaf [44b01e9616a8cc146887aaa48a71c3a5]/WaitDelay [0b67485cbb5bacb49a6588b6571aaf4d]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 0b67485cbb5bacb49a6588b6571aaf4d
+  waitTime:
+    guid: 
+    value: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe1e814f404c0946b65c8626350685b, type: 3}
+  m_Name: ShieldBoss_RadiusAttackBT
+  m_EditorClassIdentifier: 
+  referenceVariables: {fileID: 11400000, guid: 67491b4ac780e6a4d8a0a96a63acc615, type: 2}
+  localVariables: []
+  startNode: {fileID: 7407850149860257881}
+  subAssets:
+  - {fileID: 7407850149860257881}
+  - {fileID: -829195090417565514}
+  - {fileID: -5944102559293597107}
+--- !u!114 &7407850149860257881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [44b01e9616a8cc146887aaa48a71c3a5]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 44b01e9616a8cc146887aaa48a71c3a5
+  position: {x: 245, y: 218}
+  executionPolicy: 1
+  taskList:
+    taskList:
+    - {fileID: -5944102559293597107}
+    - {fileID: -829195090417565514}
