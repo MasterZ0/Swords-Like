@@ -50,3 +50,9 @@ MonoBehaviour:
   RadiusAttackChance: 30
   FireballAttackChance: 30
   ThirdAttackChance: 30
+  FireballAttackPreparation: 2
+  FireballAttackProjectileMoveSpeed: 10
+  FireballAttackProjectileRotationSpeed: 120
+  FireballAttackDuration: 6
+  FireballAttackFrequency: 0.1
+  FireballAttackBossRotationSpeed: 120

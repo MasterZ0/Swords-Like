@@ -1,5 +1,43 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7695190719257672289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b1d1de08dacc249bbfd04703554e41, type: 3}
+  m_Name: 'Parallel [465df18066e915b4e8f6fa2909e65082]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 465df18066e915b4e8f6fa2909e65082
+  position: {x: 516.58, y: 432.035}
+  children:
+  - {fileID: -3022200965398168881}
+  - {fileID: -6799315538551127965}
+  policy: 0
+--- !u!114 &-6799315538551127965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [191a43e42ed32e340a7ad33796b721b6]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 191a43e42ed32e340a7ad33796b721b6
+  position: {x: 617, y: 721}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: 5784090701782837264}
 --- !u!114 &-5771866914206028536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,10 +54,29 @@ MonoBehaviour:
   guid: e4446c169f35f0e42879bd58ab78b153
   message:
     guid: 
-    value: Fireball
+    value: Fireball Charging
   logType:
     guid: 
     value: 3
+--- !u!114 &-3022200965398168881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [5eb814126b92bb44cb2c23cd69042680]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 5eb814126b92bb44cb2c23cd69042680
+  position: {x: 348.22998, y: 723.8075}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: 6070277940959632444}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34,11 +91,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   referenceVariables: {fileID: 11400000, guid: 67491b4ac780e6a4d8a0a96a63acc615, type: 2}
   localVariables: []
-  startNode: {fileID: 7955145106894503105}
+  startNode: {fileID: 8444674900274959575}
   subAssets:
   - {fileID: 7955145106894503105}
   - {fileID: -5771866914206028536}
   - {fileID: 384875891823126768}
+  - {fileID: 8444674900274959575}
+  - {fileID: -7695190719257672289}
+  - {fileID: -6799315538551127965}
+  - {fileID: 5784090701782837264}
+  - {fileID: -3022200965398168881}
+  - {fileID: 6070277940959632444}
 --- !u!114 &384875891823126768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,8 +117,51 @@ MonoBehaviour:
   title: 
   guid: c086e35f052cb3941b03c9976e329603
   waitTime:
-    guid: 
+    guid: 82acdc7c2e57c0446ab87df1d7d343c6
     value: 1
+--- !u!114 &5784090701782837264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e48502d95ee5e4e89a1299cd31aa9a, type: 3}
+  m_Name: 'ActionLeaf [191a43e42ed32e340a7ad33796b721b6]/WaitDelay [48879773b1c87cc46b4aab112024e77c]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 48879773b1c87cc46b4aab112024e77c
+  waitTime:
+    guid: e7b33249a1e8a044295dcdb37c413eca
+    value: 1
+--- !u!114 &6070277940959632444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984ad2b4a518b8f498c65d2dddad3ef0, type: 3}
+  m_Name: 'ActionLeaf [5eb814126b92bb44cb2c23cd69042680]/FireballAttack [82240d9548ef2164e8f5c845eecaa709]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 82240d9548ef2164e8f5c845eecaa709
+  shieldBoss:
+    guid: 5b9eaed11d5fff84ea2186e34a5616c2
+    value: {fileID: 0}
+  transform:
+    guid: f0262f6e7771c144f8e43b98e1eb66d0
+    value: {fileID: 0}
+  shootPoint:
+    guid: 56dfa637daad2904f924fa41ecddb390
+    value: {fileID: 0}
+  fireball:
+    guid: 24a2e647fb8b0b64aac5e8d5b3b4468e
+    value: {fileID: 0}
 --- !u!114 &7955145106894503105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,9 +176,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 24474eb3e4af64a4ea28dad93c784194
-  position: {x: 383.2404, y: 315.65503}
+  position: {x: 164.99998, y: 455.6501}
   executionPolicy: 1
   taskList:
     taskList:
     - {fileID: -5771866914206028536}
     - {fileID: 384875891823126768}
+--- !u!114 &8444674900274959575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68acbc6c29c6ce468ebbfe8afd84409, type: 3}
+  m_Name: 'Sequencer [b99d4503a7e57df44b0a9b9780c14b45]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: b99d4503a7e57df44b0a9b9780c14b45
+  position: {x: 431.25, y: 139.15001}
+  children:
+  - {fileID: 7955145106894503105}
+  - {fileID: -7695190719257672289}
