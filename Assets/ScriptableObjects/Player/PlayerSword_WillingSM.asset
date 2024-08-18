@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 7231e4875cd179740b24ea48ff47a8af
-  position: {x: 244, y: -362.00006}
+  position: {x: 244.00002, y: -364.00906}
   transitionCheck: 0
   repeat: 0
   transitions:
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: b51236156bca5c94183e30c9e2457914
-  position: {x: 244.00005, y: -27.25098}
+  position: {x: 244.00006, y: -28.000044}
   transitionCheck: 0
   repeat: 0
   transitions:

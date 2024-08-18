@@ -100,3 +100,8 @@ MonoBehaviour:
   jumpRangeDuration: {x: -0.04, y: 0.25}
   fallingGravity: 3
   maxFallingVelocity: 11
+  sizeData:
+    <SizeSpeed>k__BackingField: 1
+    <SizeRatio>k__BackingField: 2
+    <MovementSizeMultiplier>k__BackingField: 2
+    <CameraDistanceMultiplier>k__BackingField: 1
