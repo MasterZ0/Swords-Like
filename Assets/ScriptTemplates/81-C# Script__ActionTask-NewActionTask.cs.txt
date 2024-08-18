@@ -1,0 +1,15 @@
+using Z3.NodeGraph.Core;
+
+#ROOTNAMESPACEBEGIN#
+    [NodeCategory(Categories.NodeGraph + "/NewActionTask")]
+    [NodeDescription("Please describe what this ActionTask does.")]
+    public class #SCRIPTNAME# : ActionTask 
+    {
+        [SerializeField] private Parameter<string> example = "Hello world";
+               
+        protected override void StartAction()
+        {
+            EndAction(true);
+        }
+    }
+#ROOTNAMESPACEEND#
