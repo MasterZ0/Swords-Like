@@ -15,6 +15,7 @@ namespace Z3.GMTK2024
 
         [Header("Radius Attack")]
         public float radiusAttackChance = 40f;
+        public float radiusAttackCooldown = 20f;
         public DamageData radiusAttackDamageSmall;
         public DamageData radiusAttackDamageMedium;
         public DamageData radiusAttackDamageLarge;

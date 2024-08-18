@@ -11,6 +11,10 @@ namespace Z3.GMTK2024.AI
         [Header("Radius Attack")]
         [Range(0, 100)]
         public int RadiusAttackChance = 30;
+        public float RadiusAttackFrequency;
+        public Damage radiusAttackDamageSmall;
+        public Damage radiusAttackDamageMedium;
+        public Damage radiusAttackDamageLarge;
 
         [Header("Fireball Attack")]
         [Range(0, 100)]

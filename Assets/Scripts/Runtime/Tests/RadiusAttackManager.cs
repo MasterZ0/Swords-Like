@@ -11,7 +11,14 @@ namespace Z3.GMTK2024
         [SerializeField] private HitBox mediumHb;
         [SerializeField] private HitBox largeHb;
 
-        public void SetDamage(DamageData small, DamageData medium, DamageData large)
+        private void Awake()
+        {
+            smallHb = transform.Find("SmallHitbox").GetComponent<HitBox>();
+            mediumHb = transform.Find("MediumHitbox").GetComponent<HitBox>();
+            largeHb = transform.Find("LargeHitbox").GetComponent<HitBox>();
+        }
+
+        public void SetDamage(Damage small, Damage medium, Damage large)
         {
 
         }
