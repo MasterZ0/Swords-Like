@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4545918526539594}
   - component: {fileID: 2946273583532793597}
+  - component: {fileID: 6858178477056872562}
   - component: {fileID: 198893725621481234}
   - component: {fileID: 199088265089551654}
   m_Layer: 0
@@ -52,6 +53,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactFx: {fileID: 7725013893269616931, guid: 5984aa819f48d724e953febc8dddc7f1, type: 3}
   part: {fileID: 198893725621481234}
+--- !u!114 &6858178477056872562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221690919802312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f77dffa47b6f84b92a8df55cfb038e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particles: {fileID: 198893725621481234}
 --- !u!198 &198893725621481234
 ParticleSystem:
   m_ObjectHideFlags: 0
