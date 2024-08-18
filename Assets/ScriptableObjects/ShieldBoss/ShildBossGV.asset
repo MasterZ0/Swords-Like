@@ -26,7 +26,7 @@ MonoBehaviour:
     type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     serializedObject: {fileID: 0}
-    serializedValue: 
+    serializedValue: null
   - name: Enemy
     guid: 3f01fc78ca416b04a9cd20c6fad3b97f
     type: Z3.GMTK2024.AI.Enemy, Z3.GMTK2024, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -44,3 +44,19 @@ MonoBehaviour:
       PublicKeyToken=null
     serializedObject: {fileID: 0}
     serializedValue: null
+  - name: ActionChances
+    guid: 14af1b6e26134f246a54e4b085ee2ed2
+    type: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: '{"$type":"System.Collections.Generic.List`1[[System.Single,
+      mscorlib]], mscorlib","$values":[]}'
+  - name: ActionsLimit
+    guid: ee65d83c305de654fa7a6bc118ffaa2d
+    type: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: '{"$type":"System.Collections.Generic.List`1[[System.Int32,
+      mscorlib]], mscorlib","$values":[]}'

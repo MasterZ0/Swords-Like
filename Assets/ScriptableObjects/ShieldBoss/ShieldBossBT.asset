@@ -18,10 +18,10 @@ MonoBehaviour:
     guid: 5b9eaed11d5fff84ea2186e34a5616c2
     value: {fileID: 0}
   actionChances:
-    guid: f4390b936a3fe854591f7423069ecf62
+    guid: 14af1b6e26134f246a54e4b085ee2ed2
     value: []
   actionLimit:
-    guid: f43df1adaa0936e4da31d9cb5e8684c3
+    guid: ee65d83c305de654fa7a6bc118ffaa2d
     value: 
 --- !u!114 &-8906556259686755249
 MonoBehaviour:
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: fd476c296bd5022418c47e3f0d33031b
-  position: {x: 781, y: 123.01795}
+  position: {x: 643.99994, y: 127.939224}
   child: {fileID: 3554694493928873143}
   repeaterMode: 0
   times:
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 5b7fe06ee5c8ac947a08b78f79ab54dc
-  position: {x: 1058.0001, y: -100.98205}
+  position: {x: 927.99994, y: -94.479095}
   executionPolicy: 0
   taskList:
     taskList:
@@ -140,13 +140,13 @@ MonoBehaviour:
   title: 
   guid: 00b2691d544381f458c0eaa9bea46a1f
   chancesEnter:
-    guid: f4390b936a3fe854591f7423069ecf62
+    guid: 14af1b6e26134f246a54e4b085ee2ed2
     value: []
   lastAction:
     guid: 
     value: -1
   actionsLimit:
-    guid: f43df1adaa0936e4da31d9cb5e8684c3
+    guid: ee65d83c305de654fa7a6bc118ffaa2d
     value: 
   resultChance:
     guid: 22d84cd777826674591ff2588c0cae16
@@ -327,7 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: e6c97cb46145d5d49a283efc6adb0e7d
-  position: {x: 773.99994, y: -380.9821}
+  position: {x: 643.99994, y: -374.4791}
   children:
   - {fileID: 5821514390052568469}
   - {fileID: 8914789307165989090}
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: f80ed867bf6c12940ae314b2a872b127
-  position: {x: 780.9999, y: 394.38284}
+  position: {x: 643.99994, y: 398.9392}
   children:
   - {fileID: -2361053411258900548}
   - {fileID: -1764789777370497497}
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: c24645d541c1a7047b6b95794d222859
-  position: {x: 503.32248, y: -125.00003}
+  position: {x: 373.00003, y: -118.00001}
   executionPolicy: 0
   taskList:
     taskList:
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: d3b611e4f2fd0634595afe0b67d9728e
-  position: {x: 773.99994, y: -124.98206}
+  position: {x: 643.99994, y: -118.4791}
   child: {fileID: -8906556259686755249}
   checkType: 1
   conditions:
