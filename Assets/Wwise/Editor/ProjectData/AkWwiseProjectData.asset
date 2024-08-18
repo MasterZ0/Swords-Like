@@ -465,6 +465,72 @@ MonoBehaviour:
         guid: 1508a2bd8b79fd4f9bb8b5d668a8d248
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Reverbs
   BankWwu:
+  - PhysicalPath: SoundBanks/Ambience.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GMTK2024_Banks
+      ObjectType: 12
+      guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+    - ElementName: Ambience
+      ObjectType: 12
+      guid: 8696f6f421a64b4a8a611ca26e92d66e
+    ParentPath: SoundBanks/GMTK2024_Banks/Ambience
+    guid: 8696f6f421a64b4a8a611ca26e92d66e
+    GuidInternal: 
+    m_lastTime: -8584776595093151129
+    List:
+    - name: AMB_Bank
+      guid: 35bd8c465df552418056c2af01295597
+      id: 1838976376
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Banks
+        ObjectType: 12
+        guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+      - ElementName: Ambience
+        ObjectType: 12
+        guid: 8696f6f421a64b4a8a611ca26e92d66e
+      - ElementName: AMB_Bank
+        ObjectType: 7
+        guid: 35bd8c465df552418056c2af01295597
+      Path: SoundBanks/GMTK2024_Banks/Ambience/AMB_Bank
+  - PhysicalPath: SoundBanks/Boss.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GMTK2024_Banks
+      ObjectType: 12
+      guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+    - ElementName: Boss
+      ObjectType: 12
+      guid: 711ebdcec92c4e4faacfd33e16f862c4
+    ParentPath: SoundBanks/GMTK2024_Banks/Boss
+    guid: 711ebdcec92c4e4faacfd33e16f862c4
+    GuidInternal: 
+    m_lastTime: -8584776595157350365
+    List:
+    - name: BOS_Bank
+      guid: bd92595c95aa7840a7bfb2c56080c721
+      id: 2366286276
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Banks
+        ObjectType: 12
+        guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+      - ElementName: Boss
+        ObjectType: 12
+        guid: 711ebdcec92c4e4faacfd33e16f862c4
+      - ElementName: BOS_Bank
+        ObjectType: 7
+        guid: bd92595c95aa7840a7bfb2c56080c721
+      Path: SoundBanks/GMTK2024_Banks/Boss/BOS_Bank
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -478,6 +544,118 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584778322804174714
     List: []
+  - PhysicalPath: SoundBanks/GMTK2024_Banks.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GMTK2024_Banks
+      ObjectType: 12
+      guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+    ParentPath: SoundBanks/GMTK2024_Banks
+    guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+    GuidInternal: 
+    m_lastTime: -8584776596310941612
+    List: []
+  - PhysicalPath: SoundBanks/Music.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GMTK2024_Banks
+      ObjectType: 12
+      guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+    - ElementName: Music
+      ObjectType: 12
+      guid: ffdf27ff8701b7489302346369c7db45
+    ParentPath: SoundBanks/GMTK2024_Banks/Music
+    guid: ffdf27ff8701b7489302346369c7db45
+    GuidInternal: 
+    m_lastTime: -8584776595235365891
+    List:
+    - name: MUS_Bank
+      guid: acb8ae01f5675e48b1d1a828def763f4
+      id: 827800787
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Banks
+        ObjectType: 12
+        guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+      - ElementName: Music
+        ObjectType: 12
+        guid: ffdf27ff8701b7489302346369c7db45
+      - ElementName: MUS_Bank
+        ObjectType: 7
+        guid: acb8ae01f5675e48b1d1a828def763f4
+      Path: SoundBanks/GMTK2024_Banks/Music/MUS_Bank
+  - PhysicalPath: SoundBanks/Player.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GMTK2024_Banks
+      ObjectType: 12
+      guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+    - ElementName: Player
+      ObjectType: 12
+      guid: 4506daa64741c44db9f934f80419bd40
+    ParentPath: SoundBanks/GMTK2024_Banks/Player
+    guid: 4506daa64741c44db9f934f80419bd40
+    GuidInternal: 
+    m_lastTime: -8584776595339029247
+    List:
+    - name: PLYR_Bank
+      guid: 69d5788e88d8624899e2fa1c99881afc
+      id: 3450962857
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Banks
+        ObjectType: 12
+        guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+      - ElementName: Player
+        ObjectType: 12
+        guid: 4506daa64741c44db9f934f80419bd40
+      - ElementName: PLYR_Bank
+        ObjectType: 7
+        guid: 69d5788e88d8624899e2fa1c99881afc
+      Path: SoundBanks/GMTK2024_Banks/Player/PLYR_Bank
+  - PhysicalPath: SoundBanks/UIUX.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GMTK2024_Banks
+      ObjectType: 12
+      guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+    - ElementName: UIUX
+      ObjectType: 12
+      guid: 06f1351157298e49a31782e36b837e1e
+    ParentPath: SoundBanks/GMTK2024_Banks/UIUX
+    guid: 06f1351157298e49a31782e36b837e1e
+    GuidInternal: 
+    m_lastTime: -8584776595429014470
+    List:
+    - name: MENU_Bank
+      guid: 741f257869653f47b7a408ba83e0d212
+      id: 3113887189
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Banks
+        ObjectType: 12
+        guid: 12ba8d7c27ec8a44afb4f436ae0b740f
+      - ElementName: UIUX
+        ObjectType: 12
+        guid: 06f1351157298e49a31782e36b837e1e
+      - ElementName: MENU_Bank
+        ObjectType: 7
+        guid: 741f257869653f47b7a408ba83e0d212
+      Path: SoundBanks/GMTK2024_Banks/UIUX/MENU_Bank
   EventWwu:
   - PhysicalPath: Events/Ambience.wwu
     PathAndIcons:
@@ -487,14 +665,252 @@ MonoBehaviour:
     - ElementName: GMTK2024_Events
       ObjectType: 12
       guid: 75a00eb933d73a42a6501229ef4b9050
+    - ElementName: GMTK2024_Events_SFX
+      ObjectType: 12
+      guid: 4921a8c4dc2604419a084d4b7a90f4c5
     - ElementName: Ambience
       ObjectType: 12
       guid: f9806f5aa8791e43b2d7ed938f45e0c9
-    ParentPath: Events/GMTK2024_Events/Ambience
+    ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/Ambience
     guid: f9806f5aa8791e43b2d7ed938f45e0c9
     GuidInternal: 
-    m_lastTime: -8584778320692626466
-    List: []
+    m_lastTime: -8584776597287686013
+    List:
+    - name: Play_AMB_2D_DungeonAtmos
+      guid: 9f679cfb83af72408a881b05154d253c
+      id: 4222994794
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Ambience
+        ObjectType: 12
+        guid: f9806f5aa8791e43b2d7ed938f45e0c9
+      - ElementName: Play_AMB_2D_DungeonAtmos
+        ObjectType: 3
+        guid: 9f679cfb83af72408a881b05154d253c
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Ambience/Play_AMB_2D_DungeonAtmos
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_AMB_3D_CaveDrops
+      guid: 5e4486148225744aa62405449fc6a331
+      id: 779615162
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Ambience
+        ObjectType: 12
+        guid: f9806f5aa8791e43b2d7ed938f45e0c9
+      - ElementName: Play_AMB_3D_CaveDrops
+        ObjectType: 3
+        guid: 5e4486148225744aa62405449fc6a331
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Ambience/Play_AMB_3D_CaveDrops
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events/Boss.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GMTK2024_Events
+      ObjectType: 12
+      guid: 75a00eb933d73a42a6501229ef4b9050
+    - ElementName: GMTK2024_Events_SFX
+      ObjectType: 12
+      guid: 4921a8c4dc2604419a084d4b7a90f4c5
+    - ElementName: Boss
+      ObjectType: 12
+      guid: 3d9bd92515e98c4f87e5dfa6778072ca
+    ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss
+    guid: 3d9bd92515e98c4f87e5dfa6778072ca
+    GuidInternal: 
+    m_lastTime: -8584776592276711854
+    List:
+    - name: Attacks
+      guid: 8aadd1f5d4c95849b1191724a7b8304c
+      id: 3768541028
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Boss
+        ObjectType: 12
+        guid: 3d9bd92515e98c4f87e5dfa6778072ca
+      - ElementName: Attacks
+        ObjectType: 4
+        guid: 8aadd1f5d4c95849b1191724a7b8304c
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Attacks
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_BOS_ATK_Combo
+      guid: 160e60fbf1e4c947ae5743cbeb1dc5d8
+      id: 2326399194
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Boss
+        ObjectType: 12
+        guid: 3d9bd92515e98c4f87e5dfa6778072ca
+      - ElementName: Attacks
+        ObjectType: 4
+        guid: 8aadd1f5d4c95849b1191724a7b8304c
+      - ElementName: Play_BOS_ATK_Combo
+        ObjectType: 3
+        guid: 160e60fbf1e4c947ae5743cbeb1dc5d8
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Attacks/Play_BOS_ATK_Combo
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_BOS_ATK_Shockwave
+      guid: 1e72a8efc993ff4189878d6cb3b1a87e
+      id: 4255133681
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Boss
+        ObjectType: 12
+        guid: 3d9bd92515e98c4f87e5dfa6778072ca
+      - ElementName: Attacks
+        ObjectType: 4
+        guid: 8aadd1f5d4c95849b1191724a7b8304c
+      - ElementName: Play_BOS_ATK_Shockwave
+        ObjectType: 3
+        guid: 1e72a8efc993ff4189878d6cb3b1a87e
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Attacks/Play_BOS_ATK_Shockwave
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_BOS_ATK_Swing
+      guid: e843a8dc21f1ca4cb8f4183cc00f443c
+      id: 182335946
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Boss
+        ObjectType: 12
+        guid: 3d9bd92515e98c4f87e5dfa6778072ca
+      - ElementName: Attacks
+        ObjectType: 4
+        guid: 8aadd1f5d4c95849b1191724a7b8304c
+      - ElementName: Play_BOS_ATK_Swing
+        ObjectType: 3
+        guid: e843a8dc21f1ca4cb8f4183cc00f443c
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Attacks/Play_BOS_ATK_Swing
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_BOS_DamageTaken
+      guid: a2f3753ed1d7a142a19c569950ee188f
+      id: 724278647
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Boss
+        ObjectType: 12
+        guid: 3d9bd92515e98c4f87e5dfa6778072ca
+      - ElementName: Play_BOS_DamageTaken
+        ObjectType: 3
+        guid: a2f3753ed1d7a142a19c569950ee188f
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Play_BOS_DamageTaken
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_BOS_Death
+      guid: cc85123a3c4692499e3cd10fd130276b
+      id: 2558195277
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Boss
+        ObjectType: 12
+        guid: 3d9bd92515e98c4f87e5dfa6778072ca
+      - ElementName: Play_BOS_Death
+        ObjectType: 3
+        guid: cc85123a3c4692499e3cd10fd130276b
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Play_BOS_Death
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_BOS_Footsteps
+      guid: a4c4a447d85393498aea8f370cab54e6
+      id: 2740614378
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Boss
+        ObjectType: 12
+        guid: 3d9bd92515e98c4f87e5dfa6778072ca
+      - ElementName: Play_BOS_Footsteps
+        ObjectType: 3
+        guid: a4c4a447d85393498aea8f370cab54e6
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Play_BOS_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -519,7 +935,39 @@ MonoBehaviour:
     ParentPath: Events/GMTK2024_Events
     guid: 75a00eb933d73a42a6501229ef4b9050
     GuidInternal: 
-    m_lastTime: -8584778320622563163
+    m_lastTime: -8584776597167342166
+    List: []
+  - PhysicalPath: Events/GMTK2024_Events_Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GMTK2024_Events
+      ObjectType: 12
+      guid: 75a00eb933d73a42a6501229ef4b9050
+    - ElementName: GMTK2024_Events_Music
+      ObjectType: 12
+      guid: 6792828a6beb704d8e6679855526a233
+    ParentPath: Events/GMTK2024_Events/GMTK2024_Events_Music
+    guid: 6792828a6beb704d8e6679855526a233
+    GuidInternal: 
+    m_lastTime: -8584776597170828053
+    List: []
+  - PhysicalPath: Events/GMTK2024_Events_SFX.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: GMTK2024_Events
+      ObjectType: 12
+      guid: 75a00eb933d73a42a6501229ef4b9050
+    - ElementName: GMTK2024_Events_SFX
+      ObjectType: 12
+      guid: 4921a8c4dc2604419a084d4b7a90f4c5
+    ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX
+    guid: 4921a8c4dc2604419a084d4b7a90f4c5
+    GuidInternal: 
+    m_lastTime: -8584776597287484630
     List: []
   - PhysicalPath: Events/Player.wwu
     PathAndIcons:
@@ -529,15 +977,110 @@ MonoBehaviour:
     - ElementName: GMTK2024_Events
       ObjectType: 12
       guid: 75a00eb933d73a42a6501229ef4b9050
+    - ElementName: GMTK2024_Events_SFX
+      ObjectType: 12
+      guid: 4921a8c4dc2604419a084d4b7a90f4c5
     - ElementName: Player
       ObjectType: 12
       guid: a5be13cc76d8b847988a04e9b75dd8d3
-    ParentPath: Events/GMTK2024_Events/Player
+    ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player
     guid: a5be13cc76d8b847988a04e9b75dd8d3
     GuidInternal: 
-    m_lastTime: -8584778320739295745
-    List: []
-  - PhysicalPath: Events/TestEvents.wwu
+    m_lastTime: -8584776593502144310
+    List:
+    - name: Play_PLYR_Attack
+      guid: 530d9ed20127754084fbd76a5e5d4fed
+      id: 3156901378
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Player
+        ObjectType: 12
+        guid: a5be13cc76d8b847988a04e9b75dd8d3
+      - ElementName: Play_PLYR_Attack
+        ObjectType: 3
+        guid: 530d9ed20127754084fbd76a5e5d4fed
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player/Play_PLYR_Attack
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PLYR_DamageTaken
+      guid: 6148f590f670624991d9ff5de8c764f8
+      id: 4153750570
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Player
+        ObjectType: 12
+        guid: a5be13cc76d8b847988a04e9b75dd8d3
+      - ElementName: Play_PLYR_DamageTaken
+        ObjectType: 3
+        guid: 6148f590f670624991d9ff5de8c764f8
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player/Play_PLYR_DamageTaken
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PLYR_Death
+      guid: c2646ce6af928a44a9ec6106041ac92f
+      id: 3433621352
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Player
+        ObjectType: 12
+        guid: a5be13cc76d8b847988a04e9b75dd8d3
+      - ElementName: Play_PLYR_Death
+        ObjectType: 3
+        guid: c2646ce6af928a44a9ec6106041ac92f
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player/Play_PLYR_Death
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PLYR_Footsteps
+      guid: 007008af3ab32e40b9137b7bab462fb6
+      id: 673033979
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Player
+        ObjectType: 12
+        guid: a5be13cc76d8b847988a04e9b75dd8d3
+      - ElementName: Play_PLYR_Footsteps
+        ObjectType: 3
+        guid: 007008af3ab32e40b9137b7bab462fb6
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player/Play_PLYR_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - PhysicalPath: Events/UIUX.wwu
     PathAndIcons:
     - ElementName: Events
       ObjectType: 5
@@ -545,14 +1088,63 @@ MonoBehaviour:
     - ElementName: GMTK2024_Events
       ObjectType: 12
       guid: 75a00eb933d73a42a6501229ef4b9050
-    - ElementName: TestEvents
+    - ElementName: GMTK2024_Events_SFX
       ObjectType: 12
-      guid: 1ab8fc37d7729340aad0080454365fec
-    ParentPath: Events/GMTK2024_Events/TestEvents
-    guid: 1ab8fc37d7729340aad0080454365fec
+      guid: 4921a8c4dc2604419a084d4b7a90f4c5
+    - ElementName: UIUX
+      ObjectType: 12
+      guid: 5debeca154d5ca4093b7fcb98ec9c18d
+    ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/UIUX
+    guid: 5debeca154d5ca4093b7fcb98ec9c18d
     GuidInternal: 
-    m_lastTime: -8584778320631296687
-    List: []
+    m_lastTime: -8584776592319321271
+    List:
+    - name: Play_MENU_Hover
+      guid: 208f9de06ff80d43aa109bcb768ac77a
+      id: 3835684012
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: UIUX
+        ObjectType: 12
+        guid: 5debeca154d5ca4093b7fcb98ec9c18d
+      - ElementName: Play_MENU_Hover
+        ObjectType: 3
+        guid: 208f9de06ff80d43aa109bcb768ac77a
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/UIUX/Play_MENU_Hover
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_MENU_Select
+      guid: 8fa4af2f9d4fc849b54066cbf34683de
+      id: 2167056030
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: UIUX
+        ObjectType: 12
+        guid: 5debeca154d5ca4093b7fcb98ec9c18d
+      - ElementName: Play_MENU_Select
+        ObjectType: 3
+        guid: 8fa4af2f9d4fc849b54066cbf34683de
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/UIUX/Play_MENU_Select
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:

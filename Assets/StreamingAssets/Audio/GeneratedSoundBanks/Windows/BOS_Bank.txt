@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	182335946	Play_BOS_ATK_Swing			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Attacks\Play_BOS_ATK_Swing	
+	724278647	Play_BOS_DamageTaken			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Play_BOS_DamageTaken	
+	2326399194	Play_BOS_ATK_Combo			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Attacks\Play_BOS_ATK_Combo	
+	2558195277	Play_BOS_Death			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Play_BOS_Death	
+	2740614378	Play_BOS_Footsteps			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Play_BOS_Footsteps	
+	4255133681	Play_BOS_ATK_Shockwave			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Attacks\Play_BOS_ATK_Shockwave	
+

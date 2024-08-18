@@ -1,0 +1,4 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2167056030	Play_MENU_Select			\GMTK2024_Events\GMTK2024_Events_SFX\UIUX\Play_MENU_Select	
+	3835684012	Play_MENU_Hover			\GMTK2024_Events\GMTK2024_Events_SFX\UIUX\Play_MENU_Hover	
+

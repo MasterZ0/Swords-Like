@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	673033979	Play_PLYR_Footsteps			\GMTK2024_Events\GMTK2024_Events_SFX\Player\Play_PLYR_Footsteps	
+	3156901378	Play_PLYR_Attack			\GMTK2024_Events\GMTK2024_Events_SFX\Player\Play_PLYR_Attack	
+	3433621352	Play_PLYR_Death			\GMTK2024_Events\GMTK2024_Events_SFX\Player\Play_PLYR_Death	
+	4153750570	Play_PLYR_DamageTaken			\GMTK2024_Events\GMTK2024_Events_SFX\Player\Play_PLYR_DamageTaken	
+

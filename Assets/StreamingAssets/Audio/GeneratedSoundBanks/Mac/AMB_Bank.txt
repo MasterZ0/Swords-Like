@@ -1,0 +1,4 @@
+Event	ID	Name			Wwise Object Path	Notes
+	779615162	Play_AMB_3D_CaveDrops			\GMTK2024_Events\GMTK2024_Events_SFX\Ambience\Play_AMB_3D_CaveDrops	
+	4222994794	Play_AMB_2D_DungeonAtmos			\GMTK2024_Events\GMTK2024_Events_SFX\Ambience\Play_AMB_2D_DungeonAtmos	
+
