@@ -173,6 +173,9 @@ MonoBehaviour:
   - guid: 48477c8fd0aefa145aa065fc1c6d9f4f
     serializedObject: {fileID: 2243870068444385360}
     serializedValue: 
+  - guid: 73c999b4ec5f07549b985325fa06424e
+    serializedObject: {fileID: 6761833000236754440}
+    serializedValue: 
 --- !u!1 &1420968060229428859
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +851,7 @@ Transform:
   m_GameObject: {fileID: 6886485873345865463}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0036649257, y: 0.9931283, z: 0.039269447}
+  m_LocalPosition: {x: 0.20000005, y: 1.375, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1187,7 +1190,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2243870068444385360}
-  eventReferences: []
+  eventReferences:
+  - eventName: OnAttackFinished
+    layer: 0
+    minWeight: 0
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!4 &9029533615024838930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ef53b288c9fd24c498f5d6fa11f1d13b, type: 3}
