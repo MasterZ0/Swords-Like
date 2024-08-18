@@ -64,7 +64,6 @@ MonoBehaviour:
     taskList:
     - {fileID: 5309203334320290118}
     - {fileID: 3326578959672463824}
-    - {fileID: -3021839339778448332}
   updateMode: 0
 --- !u!114 &-3865865539416294374
 MonoBehaviour:
@@ -93,26 +92,6 @@ MonoBehaviour:
     guid: 
     value: 0
   layer:
-    guid: 
-    value: 0
---- !u!114 &-3021839339778448332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d13c7202e2e3487c9c9f401d0838b571, type: 3}
-  m_Name: 'UpdateState [1f446f46d99d6dc4ba03c31f3968ba26]/SizeChangePS [593c6350eb4717949a7688f75d49a622]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 593c6350eb4717949a7688f75d49a622
-  data:
-    guid: d6d86bc21e2b5ec45ad078f0b4243495
-    value: {fileID: 0}
-  sizeRatio:
     guid: 
     value: 0
 --- !u!114 &-2486195314232466549
@@ -199,7 +178,6 @@ MonoBehaviour:
   - {fileID: -3865865539416294374}
   - {fileID: 5996375623811371838}
   - {fileID: 6567497772550660669}
-  - {fileID: -3021839339778448332}
 --- !u!114 &813275974018437927
 MonoBehaviour:
   m_ObjectHideFlags: 0

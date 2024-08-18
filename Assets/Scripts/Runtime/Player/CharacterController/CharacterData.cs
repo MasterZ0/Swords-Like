@@ -78,6 +78,7 @@ namespace Z3.GMTK2024.Data
     {
         [field: SerializeField] public float SizeSpeed { get; set; } = 0.5f;
         [field: SerializeField] public float SizeRatio { get; set; } = 1;
+        [field: SerializeField] public Vector2 SizeRange { get; set; } = new Vector2(0.5f, 2);
         [field: SerializeField] public float MovementSizeMultiplier { get; set; } = 1;
         [field: SerializeField] public float CameraDistanceMultiplier { get; set; } = 1;
     }
