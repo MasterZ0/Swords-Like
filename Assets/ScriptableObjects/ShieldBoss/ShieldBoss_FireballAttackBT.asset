@@ -159,7 +159,7 @@ MonoBehaviour:
   shootPoint:
     guid: 56dfa637daad2904f924fa41ecddb390
     value: {fileID: 0}
-  fireball:
+  fireballPrefab:
     guid: 24a2e647fb8b0b64aac5e8d5b3b4468e
     value: {fileID: 0}
 --- !u!114 &7955145106894503105
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: b99d4503a7e57df44b0a9b9780c14b45
-  position: {x: 431.25, y: 139.15001}
+  position: {x: 423, y: 140}
   children:
   - {fileID: 7955145106894503105}
   - {fileID: -7695190719257672289}
