@@ -291,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: b51236156bca5c94183e30c9e2457914
-  position: {x: 244.00002, y: -14.400051}
+  position: {x: 244.00002, y: -14.399999}
   transitionCheck: 0
   repeat: 0
   transitions:
