@@ -1,0 +1,15 @@
+using Z3.NodeGraph.Core;
+
+#ROOTNAMESPACEBEGIN#
+    [NodeCategory(Categories.NodeGraph + "/NewConditionTask")]
+    [NodeDescription("Please describe what this ConditionTask does.")]
+    public class #SCRIPTNAME# : ConditionTask 
+    {
+        [SerializeField] private Parameter<bool> example = true;
+
+        public override bool CheckCondition()
+        {
+            return example.Value;
+        }
+    }
+#ROOTNAMESPACEEND#

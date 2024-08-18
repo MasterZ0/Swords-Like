@@ -1,0 +1,15 @@
+using UnityEngine;
+using Z3.UIBuilder.Core;
+using AdventureGame.Shared;
+
+#ROOTNAMESPACEBEGIN# 
+
+    /// <summary>
+    /// Note to developers: Please describe what this class does.
+    /// </summary>
+    [CreateAssetMenu(menuName = MenuPath.ScriptableObjects + "#SCRIPTNAME#", fileName = "New" + nameof(#SCRIPTNAME#))]
+    public class #SCRIPTNAME# : ScriptableObject 
+    {
+        //[Title("#SCRIPTNAME#")]
+    }
+#ROOTNAMESPACEEND#
