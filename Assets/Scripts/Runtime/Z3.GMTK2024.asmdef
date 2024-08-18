@@ -3,9 +3,12 @@
     "rootNamespace": "Z3.GMTK2024",
     "references": [
         "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:8549ffc6b44de6a4ab73fcace6d34583",
+        "GUID:c1b8a05b4eee4fa46996a61da8f59f77",
         "GUID:df55f17f78f75a643aff19957150ab7f",
-        "GUID:9c94cf3ae2c3f0f40bd86a2d1066d5f9",
-        "GUID:65cb82271f3f0dd4eaad6e68e59b42a4"
+        "GUID:65cb82271f3f0dd4eaad6e68e59b42a4",
+        "GUID:0d23aca60b335b84db18b2e213b18747",
+        "GUID:9c94cf3ae2c3f0f40bd86a2d1066d5f9"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

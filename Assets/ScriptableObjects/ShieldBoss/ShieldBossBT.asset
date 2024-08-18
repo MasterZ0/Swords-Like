@@ -1,0 +1,600 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9180288524983585347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a751836938b60c4cb8a25dfcc49d349, type: 3}
+  m_Name: 'ActionLeaf [c24645d541c1a7047b6b95794d222859]/InitShieldBoss [4fa8cf68436500e45aa127f86dc6f8db]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 4fa8cf68436500e45aa127f86dc6f8db
+  data:
+    guid: 5b9eaed11d5fff84ea2186e34a5616c2
+    value: {fileID: 0}
+  actionChances:
+    guid: f4390b936a3fe854591f7423069ecf62
+    value: []
+  actionLimit:
+    guid: f43df1adaa0936e4da31d9cb5e8684c3
+    value: 
+--- !u!114 &-8906556259686755249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce2e92693575b943a71ca9daa2c10e8, type: 3}
+  m_Name: 'Repeat [fd476c296bd5022418c47e3f0d33031b]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: fd476c296bd5022418c47e3f0d33031b
+  position: {x: 781, y: 123.01795}
+  child: {fileID: 3554694493928873143}
+  repeaterMode: 0
+  times:
+    guid: 
+    value: 0
+  untilResult: 0
+--- !u!114 &-6518584395096450590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 867e3d04a7360834893faf7312a089f3, type: 3}
+  m_Name: 'ActionLeaf [51bdc92387d77e94999b1086c97a5c7b]/DebugLog [5ef4e908f1c393249b5c4719ecd9278a]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 5ef4e908f1c393249b5c4719ecd9278a
+  message:
+    guid: 
+    value: Index out of range
+  logType:
+    guid: 
+    value: 0
+--- !u!114 &-6137561401238478960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [5b7fe06ee5c8ac947a08b78f79ab54dc]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 5b7fe06ee5c8ac947a08b78f79ab54dc
+  position: {x: 1058.0001, y: -100.98205}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: 5664826855792770007}
+--- !u!114 &-5170941005623981116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb2046b1ff5baa4e9e4b92a8d21cbaa, type: 3}
+  m_Name: 'Selector [bdbe98c7fcbbc2140a91f6d669df8b42]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: bdbe98c7fcbbc2140a91f6d669df8b42
+  position: {x: 861.99994, y: 684.0011}
+  children:
+  - {fileID: 3181661937285379938}
+  - {fileID: -1113900898709772861}
+  - {fileID: 1736011565053805878}
+  - {fileID: 798333151284561961}
+--- !u!114 &-4942412879892420252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c78600ab1546642afcf67195212fd6, type: 3}
+  m_Name: 'ConditionDecorator [f194f810162b6bf48bf74173a4a42e73]/CheckInt [8f81e7befe988b94d82fbf3cc630ee86]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 8f81e7befe988b94d82fbf3cc630ee86
+  invertCondition: 0
+  firstParameter:
+    guid: c72e36d8d15de06478a46266a524b361
+    value: 0
+  secondParameter:
+    guid: 
+    value: 0
+  compare: 2
+--- !u!114 &-4090619082062849071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b568b30b095dce34eb9b90c009f4edb7, type: 3}
+  m_Name: 'ActionLeaf [bd7340570a48ac540b07e845e8009dae]/SequenceAnalyzer [00b2691d544381f458c0eaa9bea46a1f]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 00b2691d544381f458c0eaa9bea46a1f
+  chancesEnter:
+    guid: f4390b936a3fe854591f7423069ecf62
+    value: []
+  lastAction:
+    guid: 
+    value: -1
+  actionsLimit:
+    guid: f43df1adaa0936e4da31d9cb5e8684c3
+    value: 
+  resultChance:
+    guid: 22d84cd777826674591ff2588c0cae16
+    value: []
+--- !u!114 &-3455009511278852494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24595802f511ebc428b92ddb68677374, type: 3}
+  m_Name: 'ActionLeaf [bd7340570a48ac540b07e845e8009dae]/RandomIndex [fde380285ddf5aa4e9c32709b7e3dea9]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: fde380285ddf5aa4e9c32709b7e3dea9
+  actionChance:
+    guid: 22d84cd777826674591ff2588c0cae16
+    value: []
+  actionIndex:
+    guid: c72e36d8d15de06478a46266a524b361
+    value: -1
+--- !u!114 &-2784240110300237192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c78600ab1546642afcf67195212fd6, type: 3}
+  m_Name: 'ConditionDecorator [ca64adf264586bf48ad1c8092d0b4823]/CheckInt [c57a02a355d7b9d42915b1bdfe0ef88d]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: c57a02a355d7b9d42915b1bdfe0ef88d
+  invertCondition: 0
+  firstParameter:
+    guid: c72e36d8d15de06478a46266a524b361
+    value: 0
+  secondParameter:
+    guid: 
+    value: 2
+  compare: 2
+--- !u!114 &-2361053411258900548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [2f6eea97c50def140a215aa60dff8231]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 2f6eea97c50def140a215aa60dff8231
+  position: {x: 420.15005, y: 665.00006}
+  executionPolicy: 1
+  taskList:
+    taskList:
+    - {fileID: 4894852502015913945}
+    - {fileID: 8730070064479191026}
+--- !u!114 &-1764789777370497497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [bd7340570a48ac540b07e845e8009dae]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: bd7340570a48ac540b07e845e8009dae
+  position: {x: 644.0575, y: 665}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: -4090619082062849071}
+    - {fileID: -3455009511278852494}
+--- !u!114 &-1113900898709772861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6058c28015513448701eb378a47d8a, type: 3}
+  m_Name: 'ConditionDecorator [ce26a96de646d6941ae3686a47f9461c]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: ce26a96de646d6941ae3686a47f9461c
+  position: {x: 861.99994, y: 1020.0011}
+  child: {fileID: 8001226782009080222}
+  checkType: 0
+  conditions:
+    taskList:
+    - {fileID: 6782266723290940682}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe1e814f404c0946b65c8626350685b, type: 3}
+  m_Name: ShieldBossBT
+  m_EditorClassIdentifier: 
+  referenceVariables: {fileID: 11400000, guid: 67491b4ac780e6a4d8a0a96a63acc615, type: 2}
+  localVariables:
+  - name: BossStage
+    guid: e66fc866637d1194ab2a37ca2374a3bf
+    type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0
+  - name: ActionChancesResult
+    guid: 22d84cd777826674591ff2588c0cae16
+    type: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: ActionIndex
+    guid: c72e36d8d15de06478a46266a524b361
+    type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0
+  startNode: {fileID: 604196195996264218}
+  subAssets:
+  - {fileID: 604196195996264218}
+  - {fileID: 8914789307165989090}
+  - {fileID: 5821514390052568469}
+  - {fileID: 1581285643932592964}
+  - {fileID: -1764789777370497497}
+  - {fileID: -3455009511278852494}
+  - {fileID: -5170941005623981116}
+  - {fileID: 3181661937285379938}
+  - {fileID: -4942412879892420252}
+  - {fileID: -1113900898709772861}
+  - {fileID: 6782266723290940682}
+  - {fileID: 1736011565053805878}
+  - {fileID: -2784240110300237192}
+  - {fileID: 798333151284561961}
+  - {fileID: -6518584395096450590}
+  - {fileID: 3554694493928873143}
+  - {fileID: 5832398321095785105}
+  - {fileID: 8001226782009080222}
+  - {fileID: 2089700262403179435}
+  - {fileID: -6137561401238478960}
+  - {fileID: 5664826855792770007}
+  - {fileID: -8906556259686755249}
+  - {fileID: -9180288524983585347}
+  - {fileID: -2361053411258900548}
+  - {fileID: 4894852502015913945}
+  - {fileID: 8730070064479191026}
+  - {fileID: -4090619082062849071}
+--- !u!114 &604196195996264218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68acbc6c29c6ce468ebbfe8afd84409, type: 3}
+  m_Name: 'Sequencer [e6c97cb46145d5d49a283efc6adb0e7d]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: e6c97cb46145d5d49a283efc6adb0e7d
+  position: {x: 773.99994, y: -380.9821}
+  children:
+  - {fileID: 5821514390052568469}
+  - {fileID: 8914789307165989090}
+  - {fileID: -6137561401238478960}
+--- !u!114 &798333151284561961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [51bdc92387d77e94999b1086c97a5c7b]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 51bdc92387d77e94999b1086c97a5c7b
+  position: {x: 1368.9998, y: 1020.0011}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: -6518584395096450590}
+--- !u!114 &1581285643932592964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3f5a875bd09244a869dadbc9a8902d, type: 3}
+  m_Name: 'ConditionDecorator [d3b611e4f2fd0634595afe0b67d9728e]/CheckHealthPercentage
+    [aae1a4eb62ce3e646b7b404477e524a5]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: aae1a4eb62ce3e646b7b404477e524a5
+  invertCondition: 0
+  statusOwner:
+    guid: 3f01fc78ca416b04a9cd20c6fad3b97f
+  percentage:
+    guid: 
+    value: 0
+  checkType: 4
+--- !u!114 &1736011565053805878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6058c28015513448701eb378a47d8a, type: 3}
+  m_Name: 'ConditionDecorator [ca64adf264586bf48ad1c8092d0b4823]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: ca64adf264586bf48ad1c8092d0b4823
+  position: {x: 1114.9999, y: 1020.0011}
+  child: {fileID: 2089700262403179435}
+  checkType: 0
+  conditions:
+    taskList:
+    - {fileID: -2784240110300237192}
+--- !u!114 &2089700262403179435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7680217e8829a8f47b57639fd6b1d31d, type: 3}
+  m_Name: 'SubGraphDataBT [3a15b091cddaf67438fd70432d4f66f8]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 3a15b091cddaf67438fd70432d4f66f8
+  position: {x: 1163.9999, y: 1418.0011}
+  subGraph: {fileID: 11400000, guid: 24e11136edf0c7a4ab3c5168f6448d82, type: 2}
+--- !u!114 &3181661937285379938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6058c28015513448701eb378a47d8a, type: 3}
+  m_Name: 'ConditionDecorator [f194f810162b6bf48bf74173a4a42e73]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: f194f810162b6bf48bf74173a4a42e73
+  position: {x: 620.99994, y: 1020.0011}
+  child: {fileID: 5832398321095785105}
+  checkType: 0
+  conditions:
+    taskList:
+    - {fileID: -4942412879892420252}
+--- !u!114 &3554694493928873143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68acbc6c29c6ce468ebbfe8afd84409, type: 3}
+  m_Name: 'Sequencer [f80ed867bf6c12940ae314b2a872b127]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: f80ed867bf6c12940ae314b2a872b127
+  position: {x: 780.9999, y: 394.38284}
+  children:
+  - {fileID: -2361053411258900548}
+  - {fileID: -1764789777370497497}
+  - {fileID: -5170941005623981116}
+--- !u!114 &4894852502015913945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 867e3d04a7360834893faf7312a089f3, type: 3}
+  m_Name: 'ActionLeaf [2f6eea97c50def140a215aa60dff8231]/DebugLog [5c7c179778e827a4a9f8d04ae3479bab]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 5c7c179778e827a4a9f8d04ae3479bab
+  message:
+    guid: 
+    value: Idle
+  logType:
+    guid: 
+    value: 3
+--- !u!114 &5664826855792770007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68a4f1d0aa648868104a306651930fe, type: 3}
+  m_Name: 'ActionLeaf [5b7fe06ee5c8ac947a08b78f79ab54dc]/SetActiveGameObject [a725f1558baaa53409ba8272175870a1]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: a725f1558baaa53409ba8272175870a1
+  gameObject:
+    guid: SelfBinding
+    value: {fileID: 0}
+  active:
+    guid: 
+    value: 0
+--- !u!114 &5821514390052568469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [c24645d541c1a7047b6b95794d222859]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: c24645d541c1a7047b6b95794d222859
+  position: {x: 503.32248, y: -125.00003}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: -9180288524983585347}
+--- !u!114 &5832398321095785105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7680217e8829a8f47b57639fd6b1d31d, type: 3}
+  m_Name: 'SubGraphDataBT [15c5375c1ba6f914b84f983a4c6cb520]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 15c5375c1ba6f914b84f983a4c6cb520
+  position: {x: 604.9998, y: 1398.0011}
+  subGraph: {fileID: 11400000, guid: 692d59da860e8384c9acbecacfbefeb5, type: 2}
+--- !u!114 &6782266723290940682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c78600ab1546642afcf67195212fd6, type: 3}
+  m_Name: 'ConditionDecorator [ce26a96de646d6941ae3686a47f9461c]/CheckInt [d9e8f1489f37da4499cb78e41682c3bc]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: d9e8f1489f37da4499cb78e41682c3bc
+  invertCondition: 0
+  firstParameter:
+    guid: c72e36d8d15de06478a46266a524b361
+    value: 0
+  secondParameter:
+    guid: 
+    value: 1
+  compare: 2
+--- !u!114 &8001226782009080222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7680217e8829a8f47b57639fd6b1d31d, type: 3}
+  m_Name: 'SubGraphDataBT [64826775f50a51b4b9689c02708faffd]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 64826775f50a51b4b9689c02708faffd
+  position: {x: 882.99994, y: 1381.0011}
+  subGraph: {fileID: 11400000, guid: 1d06ffc68e916064e9ae3c9ab9dd38e2, type: 2}
+--- !u!114 &8730070064479191026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e48502d95ee5e4e89a1299cd31aa9a, type: 3}
+  m_Name: 'ActionLeaf [2f6eea97c50def140a215aa60dff8231]/WaitDelay [b3b1a25fd5e800d4a8b72c691b313a7e]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: b3b1a25fd5e800d4a8b72c691b313a7e
+  waitTime:
+    guid: 
+    value: 1
+--- !u!114 &8914789307165989090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6058c28015513448701eb378a47d8a, type: 3}
+  m_Name: 'ConditionDecorator [d3b611e4f2fd0634595afe0b67d9728e]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: d3b611e4f2fd0634595afe0b67d9728e
+  position: {x: 773.99994, y: -124.98206}
+  child: {fileID: -8906556259686755249}
+  checkType: 1
+  conditions:
+    taskList:
+    - {fileID: 1581285643932592964}

@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5771866914206028536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 867e3d04a7360834893faf7312a089f3, type: 3}
+  m_Name: 'ActionLeaf [24474eb3e4af64a4ea28dad93c784194]/DebugLog [e4446c169f35f0e42879bd58ab78b153]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: e4446c169f35f0e42879bd58ab78b153
+  message:
+    guid: 
+    value: Fireball
+  logType:
+    guid: 
+    value: 3
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe1e814f404c0946b65c8626350685b, type: 3}
+  m_Name: ShieldBoss_FireballAttackBT
+  m_EditorClassIdentifier: 
+  referenceVariables: {fileID: 11400000, guid: 67491b4ac780e6a4d8a0a96a63acc615, type: 2}
+  localVariables: []
+  startNode: {fileID: 7955145106894503105}
+  subAssets:
+  - {fileID: 7955145106894503105}
+  - {fileID: -5771866914206028536}
+  - {fileID: 384875891823126768}
+--- !u!114 &384875891823126768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e48502d95ee5e4e89a1299cd31aa9a, type: 3}
+  m_Name: 'ActionLeaf [24474eb3e4af64a4ea28dad93c784194]/WaitDelay [c086e35f052cb3941b03c9976e329603]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: c086e35f052cb3941b03c9976e329603
+  waitTime:
+    guid: 
+    value: 1
+--- !u!114 &7955145106894503105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [24474eb3e4af64a4ea28dad93c784194]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 24474eb3e4af64a4ea28dad93c784194
+  position: {x: 383.2404, y: 315.65503}
+  executionPolicy: 1
+  taskList:
+    taskList:
+    - {fileID: -5771866914206028536}
+    - {fileID: 384875891823126768}

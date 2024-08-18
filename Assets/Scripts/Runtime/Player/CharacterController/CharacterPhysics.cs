@@ -113,7 +113,7 @@ namespace Z3.GMTK2024
 
             // Update forward velocity
             Vector3 targetDirection = Quaternion.Euler(0f, targetYRotation, 0f) * Vector3.forward;
-            velocity = targetDirection.normalized * speed;
+            velocity = targetDirection.normalized * speed * Transform.localScale.x;
         }
         #endregion
     }
