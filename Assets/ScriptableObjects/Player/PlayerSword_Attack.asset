@@ -85,12 +85,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Attack
   guid: 47df00930f3292f40806f6b65ba24a92
-  position: {x: 777.1498, y: -53.599995}
+  position: {x: 775.58325, y: -53.600002}
   transitionCheck: 2
   repeat: 0
   transitions:
     transitions:
-    - {fileID: 3288593738117121595}
+    - {fileID: -3208682361864250390}
   executionPolicy: 0
   taskList:
     taskList:
@@ -205,26 +205,6 @@ MonoBehaviour:
   connection: {fileID: 1641832090758170731}
   conditions:
     taskList: []
---- !u!114 &-3873007004194012573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d1df26611464df45ae6a2046b3a8d25, type: 3}
-  m_Name: 'ActionState [47df00930f3292f40806f6b65ba24a92]/WaitStringEvent [a872d787e410cf74f9378e747fe416e8]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: a872d787e410cf74f9378e747fe416e8
-  data:
-    guid: 73c999b4ec5f07549b985325fa06424e
-    value: {fileID: 0}
-  eventName:
-    guid: 
-    value: OnAttackFinished
 --- !u!114 &-3298275772718520858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +234,7 @@ MonoBehaviour:
   layer:
     guid: 
     value: 0
---- !u!114 &-3223414124689765829
+--- !u!114 &-3208682361864250390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -264,10 +244,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
-  m_Name: 'ActionState [eaff0ecca75fb5b418c0c1e3f91ee3f4]/Transition [644a45de913b2d04ba38f61b33f34e06]'
+  m_Name: 'ActionState [47df00930f3292f40806f6b65ba24a92]/Transition [fe487480310cbf54ba5a750383087adc]'
   m_EditorClassIdentifier: 
   title: 
-  guid: 644a45de913b2d04ba38f61b33f34e06
+  guid: fe487480310cbf54ba5a750383087adc
   connection: {fileID: 1641832090758170731}
   conditions:
     taskList: []
@@ -324,10 +304,7 @@ MonoBehaviour:
   - {fileID: -5793841414461079380}
   - {fileID: -7064346078811000238}
   - {fileID: 3345750807523636864}
-  - {fileID: 2500344468225287035}
-  - {fileID: -3873007004194012573}
-  - {fileID: 3288593738117121595}
-  - {fileID: -3223414124689765829}
+  - {fileID: -3208682361864250390}
 --- !u!114 &1024352449296065653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,30 +364,6 @@ MonoBehaviour:
     taskList:
     - {fileID: 1024352449296065653}
     - {fileID: -5793841414461079380}
---- !u!114 &2500344468225287035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
-  m_Name: 'ActionState [eaff0ecca75fb5b418c0c1e3f91ee3f4]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: eaff0ecca75fb5b418c0c1e3f91ee3f4
-  position: {x: 829.5999, y: 157.18333}
-  transitionCheck: 2
-  repeat: 0
-  transitions:
-    transitions:
-    - {fileID: -3223414124689765829}
-  executionPolicy: 0
-  taskList:
-    taskList:
-    - {fileID: -3873007004194012573}
 --- !u!114 &3171952489063617662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,23 +393,6 @@ MonoBehaviour:
   layer:
     guid: 
     value: 0
---- !u!114 &3288593738117121595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
-  m_Name: 'ActionState [47df00930f3292f40806f6b65ba24a92]/Transition [3b4b3ea83b4ae2744b2e4d8642904232]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 3b4b3ea83b4ae2744b2e4d8642904232
-  connection: {fileID: 2500344468225287035}
-  conditions:
-    taskList: []
 --- !u!114 &3345750807523636864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +419,12 @@ MonoBehaviour:
     - 0.25
     - 0.25
     - 0.25
+  animationEventTrigger:
+    guid: 73c999b4ec5f07549b985325fa06424e
+    value: {fileID: 0}
+  eventName:
+    guid: 
+    value: OnAttackFinished
 --- !u!114 &8007591500285867535
 MonoBehaviour:
   m_ObjectHideFlags: 0
