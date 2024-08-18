@@ -1,29 +1,28 @@
 ﻿using System;
 using UnityEngine;
+using Z3.GMTK2024.States;
 using Z3.NodeGraph.Core;
 using Z3.NodeGraph.Tasks;
 
 namespace Z3.GMTK2024.Shared
 {
-    [NodeCategory(Categories.Events)]
-    [NodeDescription("Waits for a graph event")]
-    public class WaitStringEvent : ActionTask
+    public class WaitStringEventCondition : ConditionTask
     {
         [ParameterDefinition(AutoBindType.SelfBind)] [SerializeField]
         private Parameter<AnimationEventTrigger> data;
 
         [SerializeField] private Parameter<string> eventName;
-        private bool actionCalled;
 
         public override string Info => $"Wait Animation Event [{eventName}]";
 
-        protected override void StartAction()
+        private bool actionCalled;
+
+        public override void StartCondition()
         {
-            actionCalled = false;
             data.Value.OnEventTrigger += OnEventTrigger;
         }
 
-        protected override void StopAction()
+        public override void StopCondition()
         {
             data.Value.OnEventTrigger -= OnEventTrigger;
         }
@@ -36,15 +35,11 @@ namespace Z3.GMTK2024.Shared
             actionCalled = true;
         }
 
-        protected override void UpdateAction()
+        public override bool CheckCondition()
         {
-            if (actionCalled)
-            {
-                EndAction();
-                return;
-            }
-
-            base.UpdateAction();
+            bool value = actionCalled;
+            actionCalled = false;
+            return value;
         }
     }
 }

@@ -36,7 +36,10 @@ namespace Z3.GMTK2024.Data
         [Header(" - Air")] [SerializeField] private float fallingGravity = 3f;
         [SerializeField] private float maxFallingVelocity = 11f;
 
+        [Header(" - Attack")] [SerializeField] private float[] attackTimeFrames;
+
         [Header(" - Size")] [SerializeField] private SizeData sizeData;
+
 
         // General
         public float GroundGravity => groundGravity; // Map
@@ -68,6 +71,9 @@ namespace Z3.GMTK2024.Data
         // Air
         public float FallingGravity => fallingGravity;
         public float MaxFallingVelocity => maxFallingVelocity;
+
+        // Attack 
+        public float[] AttackTimeFrames => attackTimeFrames;
 
         // Size
         public SizeData SizeData => sizeData;

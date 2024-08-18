@@ -119,3 +119,9 @@ MonoBehaviour:
     type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     serializedObject: {fileID: 0}
     serializedValue: 1.0
+  - name: AnimationEventTrigger
+    guid: 73c999b4ec5f07549b985325fa06424e
+    type: Z3.GMTK2024.Shared.AnimationEventTrigger, Z3.GMTK2024, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
