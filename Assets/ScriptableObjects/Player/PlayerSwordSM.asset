@@ -57,7 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 1f446f46d99d6dc4ba03c31f3968ba26
-  position: {x: -202.01195, y: 464.62573}
+  position: {x: -201.5999, y: 462.39093}
   priority: 0
   executionPolicy: 0
   taskList:
@@ -237,7 +237,7 @@ MonoBehaviour:
     guid: 32d8c2a3ca7d9ca448a69f664237ed19
     value: {x: 0, y: 0, z: 0}
   maxVelocityScale:
-    guid: bea7e72610dff774fbaedd527b9bf422
+    guid: d1356846dee7c1348b6e6527497f4914
     value: 0
   animationBlendDamp:
     guid: 
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 9b0b61eaaede52e48859cca94bd55186
-  position: {x: 223.9881, y: 252.99992}
+  position: {x: 224.00009, y: 252.80006}
   transitionCheck: 2
   repeat: 0
   transitions:

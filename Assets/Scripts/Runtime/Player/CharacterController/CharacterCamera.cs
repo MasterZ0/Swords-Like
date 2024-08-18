@@ -1,14 +1,17 @@
 ﻿using Z3.GMTK2024.Gameplay;
 using System;
+using Cinemachine;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Z3.GMTK2024
 {
     [Serializable]
     public class CharacterCamera : CharacterControllerComponent
     {
-        [Header("Camera")]
-        [SerializeField] private Transform cameraTarget;
+        [Header("Camera")] [SerializeField] private Transform cameraTarget;
+
+        [SerializeField] private CinemachineVirtualCamera[] cinemachineVirtualCameras;
 
         public bool XLocked { get; private set; }
         public bool YLocked { get; private set; }
@@ -19,15 +22,19 @@ namespace Z3.GMTK2024
         private const float Threshold = 0.01f;
         public Transform CameraTarget => MainCamera.Camera.transform;
 
+        public CinemachineVirtualCamera[] CinemachineVirtualCameras => cinemachineVirtualCameras;
+
         private GameObject currentCamera;
 
         #region Initialization
+
         public override void Init(CharacterPawn CharacterController)
         {
             base.Init(CharacterController);
 
             yRotation = cameraTarget.eulerAngles.y;
         }
+
         #endregion
 
         public void Update()
