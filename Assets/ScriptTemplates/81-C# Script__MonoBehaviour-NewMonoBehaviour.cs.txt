@@ -1,0 +1,14 @@
+using UnityEngine;
+using Z3.UIBuilder.Core;
+
+#ROOTNAMESPACEBEGIN# 
+
+    /// <summary>
+    /// Note to developers: Please describe what this MonoBehaviour does.
+    /// </summary>
+    public class #SCRIPTNAME# : MonoBehaviour 
+    {
+        
+        //[Title("#SCRIPTNAME#")] // Remember to use attributes, #regions and XML Documentation :)
+    }
+#ROOTNAMESPACEEND#

@@ -7,7 +7,6 @@ namespace Z3.GMTK2024.BattleSystem
         // Name? 
         /// <summary> Used to get components </summary>
         Transform Pivot { get; }
-        Transform Head { get; }
         Transform Center { get; }
     }
 }

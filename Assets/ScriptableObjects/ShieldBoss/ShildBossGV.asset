@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93fc43bbb82ae6b4c89b625ef1b4ec40, type: 3}
+  m_Name: ShildBossGV
+  m_EditorClassIdentifier: 
+  inheritedVariables: []
+  overrideVariables: []
+  declaredVariables:
+  - name: Data
+    guid: 5b9eaed11d5fff84ea2186e34a5616c2
+    type: Z3.GMTK2024.AI.ShieldBossED, Z3.GMTK2024, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 11400000, guid: 8fec215da6e2a25439302c6ae380d2d9, type: 2}
+    serializedValue: 
+  - name: '- Config'
+    guid: 4d6c0f26ffbf15b4298d605828a475be
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: Enemy
+    guid: 3f01fc78ca416b04a9cd20c6fad3b97f
+    type: Z3.GMTK2024.AI.Enemy, Z3.GMTK2024, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: StartVariables
+    guid: 36abdc6f2efbb6e48827e865affb69ac
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: '- Variables'
+    guid: 3889c885bcbf90446a066e8523c0d8a0
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: ActionChances
+    guid: 14af1b6e26134f246a54e4b085ee2ed2
+    type: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: '{"$type":"System.Collections.Generic.List`1[[System.Single,
+      mscorlib]], mscorlib","$values":[]}'
+  - name: ActionsLimit
+    guid: ee65d83c305de654fa7a6bc118ffaa2d
+    type: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: '{"$type":"System.Collections.Generic.List`1[[System.Int32,
+      mscorlib]], mscorlib","$values":[]}'
