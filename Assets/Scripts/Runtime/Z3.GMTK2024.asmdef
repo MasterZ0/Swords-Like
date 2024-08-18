@@ -1,0 +1,19 @@
+{
+    "name": "Z3.GMTK2024",
+    "rootNamespace": "Z3.GMTK2024",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:df55f17f78f75a643aff19957150ab7f",
+        "GUID:9c94cf3ae2c3f0f40bd86a2d1066d5f9",
+        "GUID:65cb82271f3f0dd4eaad6e68e59b42a4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
