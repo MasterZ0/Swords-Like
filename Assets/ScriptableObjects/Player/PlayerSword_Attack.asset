@@ -85,7 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Attack
   guid: 47df00930f3292f40806f6b65ba24a92
-  position: {x: 775.58325, y: -53.600002}
+  position: {x: 776, y: -56.599064}
   transitionCheck: 2
   repeat: 0
   transitions:
