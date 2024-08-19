@@ -225,7 +225,7 @@ namespace Z3.GMTK2024.Inputs
                 {
                     ""name"": """",
                     ""id"": ""834ab40f-e547-41b0-8a59-09f313192d55"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": ""Tap"",
                     ""processors"": """",
                     ""groups"": ""PC"",
@@ -236,7 +236,7 @@ namespace Z3.GMTK2024.Inputs
                 {
                     ""name"": """",
                     ""id"": ""8ea29ae5-9cbd-4465-8116-83dbd41d3b1b"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
