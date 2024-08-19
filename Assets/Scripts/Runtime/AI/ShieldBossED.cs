@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Z3.NodeGraph.TaskPack.AstarPathfinding;
 using Z3.GMTK2024.BattleSystem;
 using Z3.GMTK2024.Shared;
 
@@ -15,6 +16,7 @@ namespace Z3.GMTK2024.AI
         [Range(0, 100)]
         public int RadiusAttackChance = 30;
         public float RadiusAttackFrequency;
+        public AIPathParameters RadiusAttackMoveParameters;
         public DamageData radiusAttackDamageSmall;
         public DamageData radiusAttackDamageMedium;
         public DamageData radiusAttackDamageLarge;

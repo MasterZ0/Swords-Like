@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 198893725621481234}
   - component: {fileID: 199088265089551654}
   m_Layer: 0
-  m_Name: Meteor
+  m_Name: ShieldBoss_Meteor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

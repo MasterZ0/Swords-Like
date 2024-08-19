@@ -76,7 +76,7 @@ MonoBehaviour:
   - {fileID: -3817449966835385244}
   - {fileID: -1368188743658101736}
   - {fileID: 603604606172498595}
-  - {fileID: 7215002750975967271}
+  - {fileID: 2914577394231864169}
 --- !u!114 &603604606172498595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +95,30 @@ MonoBehaviour:
   executionPolicy: 0
   taskList:
     taskList:
-    - {fileID: 7215002750975967271}
+    - {fileID: 2914577394231864169}
+--- !u!114 &2914577394231864169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d1537b5c4e2394196c27a998c5d19c, type: 3}
+  m_Name: 'ActionLeaf [d155a1a7a07ab2b488933468be706b84]/MeteorRainAttack [4bd0841e21ed4b84ebd7d0a363b01f1a]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 4bd0841e21ed4b84ebd7d0a363b01f1a
+  shieldBoss:
+    guid: 5b9eaed11d5fff84ea2186e34a5616c2
+    value: {fileID: 0}
+  meteorPrefab:
+    guid: f5726c032be32914c859335b7df7e63f
+    value: {fileID: 0}
+  arenaCenter:
+    guid: b2462a8dd5b2a20438d117a48ec20a5f
+    value: {fileID: 0}
 --- !u!114 &5154461481621615716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,29 +139,3 @@ MonoBehaviour:
     taskList:
     - {fileID: -5921214136712802557}
     - {fileID: -3817449966835385244}
---- !u!114 &7215002750975967271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c48ec7b11cb43b4ba17c5917bbac2bb, type: 3}
-  m_Name: 'ActionLeaf [d155a1a7a07ab2b488933468be706b84]/RadiusAttack [61951d4be8142704aafc9d34f72ee9ff]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 61951d4be8142704aafc9d34f72ee9ff
-  shieldBoss:
-    guid: 
-    value: {fileID: 0}
-  radiusPrefab:
-    guid: 
-    value: {fileID: 0}
-  bossData:
-    guid: 
-    value: {fileID: 0}
-  stompPoint:
-    guid: 
-    value: {fileID: 0}

@@ -178,6 +178,10 @@ GameObject:
   - component: {fileID: 9192411932671135057}
   - component: {fileID: 1496182824624067067}
   - component: {fileID: 8912648992644647787}
+  - component: {fileID: 5754116862266668434}
+  - component: {fileID: 3624594592231236401}
+  - component: {fileID: 2924257567305722899}
+  - component: {fileID: 5223516248541269051}
   m_Layer: 0
   m_Name: ShieldBoss
   m_TagString: Untagged
@@ -218,6 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 8fec215da6e2a25439302c6ae380d2d9, type: 2}
   center: {fileID: 2986860837934171528}
+  playerTransform: {fileID: 0}
   damageSoundReference: {fileID: 0}
   deathSoundReference: {fileID: 0}
   bodyRenderers:
@@ -251,6 +256,128 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &5754116862266668434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495334719209134249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1073741824
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &3624594592231236401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495334719209134249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1073741824
+  radius: 0.7
+  height: 2
+  canMove: 1
+  maxSpeed: 1.5
+  gravity: {x: NaN, y: NaN, z: NaN}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  endReachedDistance: 1.3
+  whenCloseToDestination: 1
+  rvoDensityBehavior:
+    enabled: 0
+    densityThreshold: 0.5
+    returnAfterBeingPushedAway: 0
+    progressAverage: 0
+    lastJobDensityResult: 0
+  centerOffsetCompatibility: NaN
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
+  orientation: 0
+  enableRotation: 1
+  autoRepath:
+    mode: 0
+    period: 0.5
+    sensitivity: 10
+    maximumPeriod: 2
+    visualizeSensitivity: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 4
+  pickNextWaypointDist: 1.5
+  alwaysDrawGizmos: 1
+  slowWhenNotFacingTarget: 1
+  preventMovingBackwards: 0
+  constrainInsideGraph: 0
+--- !u!114 &2924257567305722899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495334719209134249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6a34d769a1e4ac7b0b30e433aa443c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1073741824
+  smoothType: 3
+  subdivisions: 2
+  iterations: 2
+  strength: 0.5
+  uniformLength: 1
+  maxSegmentLength: 2
+  bezierTangentLength: 0.4
+  offset: 0.2
+  factor: 0.5
+--- !u!114 &5223516248541269051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495334719209134249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b090bec917bbe4c3bbc612ef13f7c4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1073741824
+  useRaycasting: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  thickRaycast: 0
+  thickRaycastRadius: 0
+  use2DPhysics: 0
+  raycastOffset: {x: 0, y: 0, z: 0}
+  useGraphRaycasting: 1
+  quality: 1
 --- !u!1 &1500711854241140241
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +492,12 @@ MonoBehaviour:
   - guid: 8cc1b02268d33984492a9c48c0feb202
     serializedObject: {fileID: 6453042226273794362}
     serializedValue: 
+  - guid: 1b6d99c248a584e488e9b3772f5dc7fe
+    serializedObject: {fileID: 3624594592231236401}
+    serializedValue: 
+  - guid: 30b4382dd383c654ead327eb8f864b29
+    serializedObject: {fileID: 0}
+    serializedValue: 2.0
   - guid: 80a75cfbc6629914d97c20fbc83146ce
     serializedObject: {fileID: 6206523776544955600, guid: ae710b4ec05c42e48b64e9d1e5caf850, type: 3}
     serializedValue: 
@@ -992,6 +1125,9 @@ MonoBehaviour:
   - guid: 8cc1b02268d33984492a9c48c0feb202
     serializedObject: {fileID: 6453042226273794362}
     serializedValue: 
+  - guid: 80a75cfbc6629914d97c20fbc83146ce
+    serializedObject: {fileID: 6206523776544955600, guid: ae710b4ec05c42e48b64e9d1e5caf850, type: 3}
+    serializedValue: 
 --- !u!1 &8027367759750921499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,6 +1235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 8fec215da6e2a25439302c6ae380d2d9, type: 2}
   center: {fileID: 7164565398765923654}
+  playerTransform: {fileID: 0}
   damageSoundReference: {fileID: 0}
   deathSoundReference: {fileID: 0}
   bodyRenderers:

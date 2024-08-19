@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7533783888009343304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6058c28015513448701eb378a47d8a, type: 3}
+  m_Name: 'ConditionDecorator [fa06eacd386d0e646a216234247d684d]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: fa06eacd386d0e646a216234247d684d
+  position: {x: -72.15957, y: 591}
+  child: {fileID: 875712710745172320}
+  checkType: 0
+  conditions:
+    taskList:
+    - {fileID: -7187455835630628018}
+--- !u!114 &-7187455835630628018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d659d6264e5814e948f0a63746f898, type: 3}
+  m_Name: 'ConditionDecorator [fa06eacd386d0e646a216234247d684d]/CheckVectorDistance
+    [0ba98c08c43e1d244919c7edae8ea144]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 0ba98c08c43e1d244919c7edae8ea144
+  invertCondition: 0
+  vectorA:
+    guid: f0262f6e7771c144f8e43b98e1eb66d0
+    value: {x: 0, y: 0, z: 0}
+  vectorB:
+    guid: ec26c1cbf9df5be43ab658bb3a83f79b
+    value: {x: 0, y: 0, z: 0}
+  comparison: 4
+  distance:
+    guid: 30b4382dd383c654ead327eb8f864b29
+    value: 1
 --- !u!114 &-5944102559293597107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20,6 +66,43 @@ MonoBehaviour:
   logType:
     guid: 
     value: 3
+--- !u!114 &-4500498923703271710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5bbd8ac6c5e0d44e88cba11b8cf6fb5, type: 3}
+  m_Name: 'ActionLeaf [f28bb70e773bbe04596372fdf56aa315]/MoveToTarget [4000346e2d3188341a728204d72b99b5]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 4000346e2d3188341a728204d72b99b5
+  aiPath:
+    guid: 1b6d99c248a584e488e9b3772f5dc7fe
+    value: {fileID: 0}
+  target:
+    guid: ec26c1cbf9df5be43ab658bb3a83f79b
+    value: {x: 0, y: 0, z: 0}
+--- !u!114 &-4466641038853658234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e48502d95ee5e4e89a1299cd31aa9a, type: 3}
+  m_Name: 'ActionLeaf [86cc684d34e0e6b40a382e55be55d7ba]/WaitDelay [3759dc01f8ae1834c88944511e4a66bc]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 3759dc01f8ae1834c88944511e4a66bc
+  waitTime:
+    guid: 
+    value: 1.5
 --- !u!114 &-829195090417565514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,6 +142,32 @@ MonoBehaviour:
   - {fileID: 7985225569174684556}
   - {fileID: 5672662654559059249}
   - {fileID: 879505963283847123}
+  - {fileID: 875712710745172320}
+  - {fileID: -4500498923703271710}
+  - {fileID: -7533783888009343304}
+  - {fileID: -7187455835630628018}
+  - {fileID: 6700554080920841716}
+  - {fileID: 4455228406773861338}
+  - {fileID: -4466641038853658234}
+--- !u!114 &875712710745172320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [f28bb70e773bbe04596372fdf56aa315]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: f28bb70e773bbe04596372fdf56aa315
+  position: {x: -72.00007, y: 813.7807}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: -4500498923703271710}
 --- !u!114 &879505963283847123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,6 +191,25 @@ MonoBehaviour:
   stompPoint:
     guid: 8cc1b02268d33984492a9c48c0feb202
     value: {fileID: 0}
+--- !u!114 &4455228406773861338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [86cc684d34e0e6b40a382e55be55d7ba]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 86cc684d34e0e6b40a382e55be55d7ba
+  position: {x: 619.5, y: 358.00003}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: -4466641038853658234}
 --- !u!114 &5672662654559059249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,11 +224,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 81d536f6745647840bd73a9db05e398c
-  position: {x: 385, y: 358}
+  position: {x: 401.09085, y: 357.99988}
   executionPolicy: 0
   taskList:
     taskList:
     - {fileID: 879505963283847123}
+--- !u!114 &6700554080920841716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c841f42e1d2cdd84c9f182ee206a47b9, type: 3}
+  m_Name: 'Remap [8bdd29eaf6db0ee4ea268036d6d892d6]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 8bdd29eaf6db0ee4ea268036d6d892d6
+  position: {x: -72.15957, y: 358}
+  child: {fileID: -7533783888009343304}
+  successResult: 0
+  failureResult: 0
 --- !u!114 &7407850149860257881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 44b01e9616a8cc146887aaa48a71c3a5
-  position: {x: 189, y: 344}
+  position: {x: 189.00009, y: 357.99988}
   executionPolicy: 1
   taskList:
     taskList:
@@ -135,7 +281,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 866c03946ffc5344dade061c15594639
-  position: {x: 310, y: 124}
+  position: {x: 188.99997, y: 53.1817}
   children:
+  - {fileID: 6700554080920841716}
   - {fileID: 7407850149860257881}
   - {fileID: 5672662654559059249}
+  - {fileID: 4455228406773861338}

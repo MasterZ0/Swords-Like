@@ -49184,7 +49184,7 @@ GameObject:
   - component: {fileID: 7513134546787721534}
   - component: {fileID: 198090912862583912}
   m_Layer: 0
-  m_Name: Crater
+  m_Name: ShieldBoss_Meteor_Crater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

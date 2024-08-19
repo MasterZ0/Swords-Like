@@ -15,6 +15,7 @@ namespace Z3.GMTK2024.AI
         [Title("Enemy")]
         [SerializeField] private EnemyData enemyData;
         [SerializeField] private Transform center;
+        [SerializeField] private Transform playerTransform;
 
         //[Header("Prefabs")]
         //[SerializeField] private ParticleVFX hitFX;
@@ -41,6 +42,7 @@ namespace Z3.GMTK2024.AI
         #endregion
 
         public EnemyStatus Status { get; private set; }
+        public Transform PlayerTransform => playerTransform;
 
         private Material[] defaultSharedMaterial;
 
