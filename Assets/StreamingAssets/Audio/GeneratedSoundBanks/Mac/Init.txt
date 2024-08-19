@@ -18,9 +18,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
 	1069431850	Player			\Default Work Unit\Master Audio Bus\Player	
+	1560169506	Boss			\Default Work Unit\Master Audio Bus\Boss	
+	2607556080	Menu			\Default Work Unit\Master Audio Bus\Menu	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3934156282	Ambient3D			\Default Work Unit\Master Audio Bus\Ambience\Ambient3D	
 	3950933845	Ambient2D			\Default Work Unit\Master Audio Bus\Ambience\Ambient2D	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1193032327	CloseReverb			\Default Work Unit\Master Audio Bus\Reverbs\CloseReverb	

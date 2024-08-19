@@ -2,3 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2167056030	Play_MENU_Select			\GMTK2024_Events\GMTK2024_Events_SFX\UIUX\Play_MENU_Select	
 	3835684012	Play_MENU_Hover			\GMTK2024_Events\GMTK2024_Events_SFX\UIUX\Play_MENU_Hover	
 
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	58142816	GMTK2024_ProjectSword_UIUX_Menu_Hover	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_UIUX_Menu_Hover_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\UIUX\UIUX_Menu\GMTK2024_ProjectSword_UIUX_Menu_Hover		95988
+	530080731	GMTK2024_ProjectSword_UIUX_Menu_Select	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_UIUX_Menu_Select_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\UIUX\UIUX_Menu\GMTK2024_ProjectSword_UIUX_Menu_Select		95988
+

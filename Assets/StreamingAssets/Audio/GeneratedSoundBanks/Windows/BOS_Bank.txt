@@ -1,8 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
-	182335946	Play_BOS_ATK_Swing			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Attacks\Play_BOS_ATK_Swing	
+	516026728	Play_BOS_ATK_Meteor			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Attacks\Play_BOS_ATK_Meteor	
 	724278647	Play_BOS_DamageTaken			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Play_BOS_DamageTaken	
-	2326399194	Play_BOS_ATK_Combo			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Attacks\Play_BOS_ATK_Combo	
+	1880719579	Play_BOS_ATK_FireBall			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Attacks\Play_BOS_ATK_FireBall	
 	2558195277	Play_BOS_Death			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Play_BOS_Death	
 	2740614378	Play_BOS_Footsteps			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Play_BOS_Footsteps	
 	4255133681	Play_BOS_ATK_Shockwave			\GMTK2024_Events\GMTK2024_Events_SFX\Boss\Attacks\Play_BOS_ATK_Shockwave	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	373933631	GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-001	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-001_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Boss\BOS_Attacks\BOS_ATK_Shockwave\GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-001		243864
+	403273954	GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-003	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-003_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Boss\BOS_Attacks\BOS_ATK_Shockwave\GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-003		228400
+	459846115	GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-002	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-002_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Boss\BOS_Attacks\BOS_ATK_Shockwave\GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-002		120876
+	807809641	GMTK2024_ProjectSword_BOS_ATK_Shockwave_Magic	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_BOS_ATK_Shockwave_Magic_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Boss\BOS_Attacks\BOS_ATK_Shockwave\GMTK2024_ProjectSword_BOS_ATK_Shockwave_Magic		332976
+	981883016	GMTK2024_ProjectSword_BOS_DMG_	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_BOS_DMG__10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Boss\BOS_DamageTaken\GMTK2024_ProjectSword_BOS_DMG_		95988
+	988877850	GMTK2024_ProjectSword_BOS_ATK_FireBall	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_BOS_ATK_FireBall_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Boss\BOS_Attacks\GMTK2024_ProjectSword_BOS_ATK_FireBall		96096
 

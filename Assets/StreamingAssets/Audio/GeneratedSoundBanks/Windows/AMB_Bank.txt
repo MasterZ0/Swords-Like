@@ -2,3 +2,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	779615162	Play_AMB_3D_CaveDrops			\GMTK2024_Events\GMTK2024_Events_SFX\Ambience\Play_AMB_3D_CaveDrops	
 	4222994794	Play_AMB_2D_DungeonAtmos			\GMTK2024_Events\GMTK2024_Events_SFX\Ambience\Play_AMB_2D_DungeonAtmos	
 
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	62690997	AMB_2D_DungeonAtmos	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_AMB_Amb2D_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Ambience\AMB_2D_DungeonAtmos		10752096
+	179598089	GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-002	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-002_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Ambience\AMB_3D_CaveDrops\GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-002		768096
+	409072184	GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-001	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-001_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Ambience\AMB_3D_CaveDrops\GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-001		768096
+	414008242	GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-004	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-004_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Ambience\AMB_3D_CaveDrops\GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-004		768096
+	931975730	GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-003	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-003_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Ambience\AMB_3D_CaveDrops\GMTK2024_ProjectSword_AMB_Amb3D_CaveDrip-003		768096
+
