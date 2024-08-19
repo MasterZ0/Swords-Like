@@ -83,6 +83,7 @@ namespace Z3.GMTK2024
 
             var timePassedSinceLastAttack = Time.time - lastAttackTime;
             var timeFrame = Data.AttackTimeFrames[currentAttackId];
+            timeFrame *= Pawn.Size * Data.SizeData.AttackTimeFrameMultiplier;
             if (timePassedSinceLastAttack < timeFrame)
             {
                 currentAttackId++;

@@ -28,9 +28,12 @@ namespace Z3.GMTK2024
             }
             else
             {
-                dodgeDirection = -transform.forward; ;
+                dodgeDirection = -transform.forward;
+                ;
                 Animator.PlayState(dodge, transition);
             }
+
+            Pawn.Status.SetInvincible(Data.DashDuration);
         }
 
         protected override void UpdateAction()

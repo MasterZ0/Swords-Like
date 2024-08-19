@@ -23,6 +23,10 @@ namespace Z3.GMTK2024.BattleSystem
         }
 
         public virtual void DamageDealt(DamageInfo damageInfo) { }
+        public virtual void SetInvincible(float duration)
+        {
+            // TODO This feels wrong but let's just do this for now
+        }
 
         public virtual void TakeDamage(Damage damage)
         {

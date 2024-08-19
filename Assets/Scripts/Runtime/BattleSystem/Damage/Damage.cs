@@ -22,6 +22,12 @@ namespace Z3.GMTK2024.BattleSystem
             Sender = sender;
         }
 
+        public Damage(Vector2Int value, IStatusOwner sender = null)
+        {
+            damageRange = value;
+            Sender = sender;
+        }
+        
         public Damage(int value, IStatusOwner sender = null)
         {
             damageRange = value.ToVectorInt();
