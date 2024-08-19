@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 40b128494d214846b4ec1a1aca80fa95
     GuidInternal: 
-    m_lastTime: -8584778321049341041
+    m_lastTime: -8584775288568907561
     List:
     - name: Ambience
       guid: a6795054ea2cd74dbe66d955d381fe38
@@ -362,6 +362,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: f9407f14ffeada43bae42cb5a2ea04ac
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Ambience/Ambient3D
+    - name: Boss
+      guid: ac975cb2df869342bcadbee995c529d9
+      id: 1560169506
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b128494d214846b4ec1a1aca80fa95
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Boss
+        ObjectType: 2
+        guid: ac975cb2df869342bcadbee995c529d9
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Boss
     - name: CloseReverb
       guid: bcfd40c6e4c5bf4989fc5823241c4b82
       id: 1193032327
@@ -416,6 +433,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: Menu
+      guid: bec3ea124b957c4eb0add8a7bd126b82
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b128494d214846b4ec1a1aca80fa95
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Menu
+        ObjectType: 2
+        guid: bec3ea124b957c4eb0add8a7bd126b82
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Menu
     - name: Motion Factory Bus
       guid: c6b9f92af16ee946b5f2e30c9e602c74
       id: 985987111
@@ -430,6 +464,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: c6b9f92af16ee946b5f2e30c9e602c74
       Path: Master-Mixer Hierarchy/Default Work Unit/Motion Factory Bus
+    - name: Music
+      guid: 1d04d9520ff0684fbec1b8f6de44b897
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b128494d214846b4ec1a1aca80fa95
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 1d04d9520ff0684fbec1b8f6de44b897
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Music
     - name: Player
       guid: 9986c293a3bb5d4590b5e78434dac598
       id: 1069431850
@@ -674,7 +725,7 @@ MonoBehaviour:
     ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/Ambience
     guid: f9806f5aa8791e43b2d7ed938f45e0c9
     GuidInternal: 
-    m_lastTime: -8584776597287686013
+    m_lastTime: -8584775826077851888
     List:
     - name: Play_AMB_2D_DungeonAtmos
       guid: 9f679cfb83af72408a881b05154d253c
@@ -739,7 +790,7 @@ MonoBehaviour:
     ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss
     guid: 3d9bd92515e98c4f87e5dfa6778072ca
     GuidInternal: 
-    m_lastTime: -8584776592276711854
+    m_lastTime: -8584775299542352973
     List:
     - name: Attacks
       guid: 8aadd1f5d4c95849b1191724a7b8304c
@@ -986,7 +1037,7 @@ MonoBehaviour:
     ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player
     guid: a5be13cc76d8b847988a04e9b75dd8d3
     GuidInternal: 
-    m_lastTime: -8584776593502144310
+    m_lastTime: -8584775300778004842
     List:
     - name: Play_PLYR_Attack
       guid: 530d9ed20127754084fbd76a5e5d4fed
@@ -1097,7 +1148,7 @@ MonoBehaviour:
     ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/UIUX
     guid: 5debeca154d5ca4093b7fcb98ec9c18d
     GuidInternal: 
-    m_lastTime: -8584776592319321271
+    m_lastTime: -8584775300421532705
     List:
     - name: Play_MENU_Hover
       guid: 208f9de06ff80d43aa109bcb768ac77a
