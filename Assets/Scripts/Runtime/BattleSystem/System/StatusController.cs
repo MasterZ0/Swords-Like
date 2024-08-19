@@ -4,7 +4,7 @@ namespace Z3.GMTK2024.BattleSystem
 {
     public abstract class BasicStatusController<TAttributes> : IStatusController where TAttributes : BasicAttributesController
     {
-        public event Action<DamageInfo> OnTakeDamage = delegate { };
+        public event Action<DamageInfo> OnTakeDamage;
 
         public TAttributes Attributes { get; set; }
         IAttributes IStatusController.Attributes => Attributes;
@@ -12,18 +12,6 @@ namespace Z3.GMTK2024.BattleSystem
         {
             get => Attributes.CurrentHP;
             set => Attributes.SetHP(value);
-        }
-
-        protected int CurrentMP
-        {
-            get => Attributes.CurrentMP;
-            set => Attributes.SetMP(value);
-        }
-
-        protected int CurrentSP
-        {
-            get => Attributes.CurrentSP;
-            set => Attributes.SetSP(value);
         }
 
         protected virtual bool Invincible => false;
@@ -50,7 +38,7 @@ namespace Z3.GMTK2024.BattleSystem
             CurrentHP -= effectiveDamage;
 
             DamageInfo damageInfo = new DamageInfo(damage, this, effectiveDamage);
-            OnTakeDamage(damageInfo);
+            OnTakeDamage?.Invoke(damageInfo);
 
             if (!IsDead)
             {

@@ -44,8 +44,6 @@ namespace Z3.GMTK2024.BattleSystem
 
         #region Attributes
         public static float HPPercentage(this IAttributes attributes) => (float)attributes.CurrentHP / attributes.MaxHP;
-        public static float MPPercentage(this IAttributes attributes) => (float)attributes.CurrentMP / attributes.MaxMP;
-        public static float SPPercentage(this IAttributes attributes) => (float)attributes.CurrentSP / attributes.MaxSP;
         public static bool IsDead(this IAttributes attributes) => attributes.CurrentHP <= 0;
         #endregion
     }
