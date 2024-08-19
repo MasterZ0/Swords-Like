@@ -131,26 +131,6 @@ MonoBehaviour:
     guid: 
     value: 0
   compare: 2
---- !u!114 &-4538865925048854109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cccff10195f0bdb4d930718e29739461, type: 3}
-  m_Name: 'ActionLeaf [2f6eea97c50def140a215aa60dff8231]/PlaySound [816707f4738cabd41807ceaf12d3dcdb]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 816707f4738cabd41807ceaf12d3dcdb
-  attachedObject:
-    guid: f0262f6e7771c144f8e43b98e1eb66d0
-    value: {fileID: 0}
-  soundData:
-    guid: 
-    value: {fileID: 11400000, guid: b79689b26037f9242b99bef2bc8f7670, type: 2}
 --- !u!114 &-4526227272211740754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +243,6 @@ MonoBehaviour:
     taskList:
     - {fileID: 4894852502015913945}
     - {fileID: 8730070064479191026}
-    - {fileID: -4538865925048854109}
 --- !u!114 &-1764789777370497497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +364,6 @@ MonoBehaviour:
   - {fileID: -4090619082062849071}
   - {fileID: -4526227272211740754}
   - {fileID: -880691601832307961}
-  - {fileID: -4538865925048854109}
 --- !u!114 &604196195996264218
 MonoBehaviour:
   m_ObjectHideFlags: 0
