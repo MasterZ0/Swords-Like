@@ -1,43 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7695190719257672289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b1d1de08dacc249bbfd04703554e41, type: 3}
-  m_Name: 'Parallel [465df18066e915b4e8f6fa2909e65082]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 465df18066e915b4e8f6fa2909e65082
-  position: {x: 516.58, y: 432.035}
-  children:
-  - {fileID: -3022200965398168881}
-  - {fileID: -6799315538551127965}
-  policy: 0
---- !u!114 &-6799315538551127965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
-  m_Name: 'ActionLeaf [191a43e42ed32e340a7ad33796b721b6]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 191a43e42ed32e340a7ad33796b721b6
-  position: {x: 617, y: 721}
-  executionPolicy: 0
-  taskList:
-    taskList:
-    - {fileID: 5784090701782837264}
 --- !u!114 &-5771866914206028536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,7 +34,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 5eb814126b92bb44cb2c23cd69042680
-  position: {x: 348.22998, y: 723.8075}
+  position: {x: 488.55, y: 470.99997}
   executionPolicy: 0
   taskList:
     taskList:
@@ -97,9 +59,6 @@ MonoBehaviour:
   - {fileID: -5771866914206028536}
   - {fileID: 384875891823126768}
   - {fileID: 8444674900274959575}
-  - {fileID: -7695190719257672289}
-  - {fileID: -6799315538551127965}
-  - {fileID: 5784090701782837264}
   - {fileID: -3022200965398168881}
   - {fileID: 6070277940959632444}
 --- !u!114 &384875891823126768
@@ -118,23 +77,6 @@ MonoBehaviour:
   guid: c086e35f052cb3941b03c9976e329603
   waitTime:
     guid: 82acdc7c2e57c0446ab87df1d7d343c6
-    value: 1
---- !u!114 &5784090701782837264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31e48502d95ee5e4e89a1299cd31aa9a, type: 3}
-  m_Name: 'ActionLeaf [191a43e42ed32e340a7ad33796b721b6]/WaitDelay [48879773b1c87cc46b4aab112024e77c]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 48879773b1c87cc46b4aab112024e77c
-  waitTime:
-    guid: e7b33249a1e8a044295dcdb37c413eca
     value: 1
 --- !u!114 &6070277940959632444
 MonoBehaviour:
@@ -196,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: b99d4503a7e57df44b0a9b9780c14b45
-  position: {x: 423, y: 140}
+  position: {x: 313.75, y: 166.45}
   children:
   - {fileID: 7955145106894503105}
-  - {fileID: -7695190719257672289}
+  - {fileID: -3022200965398168881}

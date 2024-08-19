@@ -31,7 +31,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 450a74721421be4428e2767f9f83f6e4
-  position: {x: 159.00009, y: 119.000015}
+  position: {x: 159.20006, y: 119.61672}
   transitionCheck: 2
   repeat: 0
   transitions:
@@ -64,13 +64,37 @@ MonoBehaviour:
     value: Attack_02
   transition:
     guid: 
-    value: 0.25
+    value: 0.1
   waitUntilFinish:
     guid: 
-    value: 0
+    value: 1
   layer:
     guid: 
     value: 0
+--- !u!114 &-7064346078811000238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
+  m_Name: 'ActionState [47df00930f3292f40806f6b65ba24a92]'
+  m_EditorClassIdentifier: 
+  title: Attack
+  guid: 47df00930f3292f40806f6b65ba24a92
+  position: {x: 775.58325, y: -53.600002}
+  transitionCheck: 2
+  repeat: 0
+  transitions:
+    transitions:
+    - {fileID: -3208682361864250390}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: 3345750807523636864}
 --- !u!114 &-6938411708033555287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 2a06ae008be103246933ab3cad3ba045
-  position: {x: 159.00003, y: 395.10336}
+  position: {x: 158.4, y: 394.39996}
   transitionCheck: 2
   repeat: 0
   transitions:
@@ -142,6 +166,28 @@ MonoBehaviour:
   controllerEvent:
     guid: 
     value: 3
+--- !u!114 &-5793841414461079380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c38f32d4e1424fc28d6e2c5391ecfdd6, type: 3}
+  m_Name: 'ActionState [450a74721421be4428e2767f9f83f6e4]/Transition [ae75b70b17ce6834390e525ddef7413c]/WaitStringEventCondition
+    [b46530b98e5b022478b5c437899a816e]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: b46530b98e5b022478b5c437899a816e
+  invertCondition: 0
+  data:
+    guid: 73c999b4ec5f07549b985325fa06424e
+    value: {fileID: 0}
+  eventName:
+    guid: 
+    value: OnAttackFinished
 --- !u!114 &-5725815003284130639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,13 +227,30 @@ MonoBehaviour:
     value: Attack_03
   transition:
     guid: 
-    value: 0.25
+    value: 0.1
   waitUntilFinish:
     guid: 
-    value: 0
+    value: 1
   layer:
     guid: 
     value: 0
+--- !u!114 &-3208682361864250390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
+  m_Name: 'ActionState [47df00930f3292f40806f6b65ba24a92]/Transition [fe487480310cbf54ba5a750383087adc]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: fe487480310cbf54ba5a750383087adc
+  connection: {fileID: 1641832090758170731}
+  conditions:
+    taskList: []
 --- !u!114 &-2426204143250610033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +269,7 @@ MonoBehaviour:
   conditions:
     taskList:
     - {fileID: -6332109112464755845}
+    - {fileID: 8033008845970650533}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   referenceVariables: {fileID: 11400000, guid: 6a685e8ae60dc6d4280c294b4360439c, type: 2}
   localVariables: []
-  startNode: {fileID: -8216091475698088051}
+  startNode: {fileID: -7064346078811000238}
   subAssets:
   - {fileID: -8216091475698088051}
   - {fileID: -6938411708033555287}
@@ -236,6 +300,11 @@ MonoBehaviour:
   - {fileID: -3298275772718520858}
   - {fileID: -6332109112464755845}
   - {fileID: 1024352449296065653}
+  - {fileID: 8033008845970650533}
+  - {fileID: -5793841414461079380}
+  - {fileID: -7064346078811000238}
+  - {fileID: 3345750807523636864}
+  - {fileID: -3208682361864250390}
 --- !u!114 &1024352449296065653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +363,7 @@ MonoBehaviour:
   conditions:
     taskList:
     - {fileID: 1024352449296065653}
+    - {fileID: -5793841414461079380}
 --- !u!114 &3171952489063617662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,13 +386,45 @@ MonoBehaviour:
     value: Attack_01
   transition:
     guid: 
-    value: 0.25
+    value: 0.1
   waitUntilFinish:
     guid: 
-    value: 0
+    value: 1
   layer:
     guid: 
     value: 0
+--- !u!114 &3345750807523636864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eee3e97427f4ecab14030138da4cfbe, type: 3}
+  m_Name: 'ActionState [47df00930f3292f40806f6b65ba24a92]/AttackPS [24fa6fcd8c5489843b89ec6948413668]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 24fa6fcd8c5489843b89ec6948413668
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
+  animator:
+    guid: 48477c8fd0aefa145aa065fc1c6d9f4f
+    value: {fileID: 0}
+  transitions:
+    guid: 
+    value:
+    - 0.25
+    - 0.25
+    - 0.25
+  animationEventTrigger:
+    guid: 73c999b4ec5f07549b985325fa06424e
+    value: {fileID: 0}
+  eventName:
+    guid: 
+    value: OnAttackFinished
 --- !u!114 &8007591500285867535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,3 +442,25 @@ MonoBehaviour:
   connection: {fileID: 1641832090758170731}
   conditions:
     taskList: []
+--- !u!114 &8033008845970650533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c38f32d4e1424fc28d6e2c5391ecfdd6, type: 3}
+  m_Name: 'ActionState [450a74721421be4428e2767f9f83f6e4]/Transition [ae75b70b17ce6834390e525ddef7413c]/WaitStringEventCondition
+    [5ae50ad5d5f2eb043a0e0a6bb95dee24]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 5ae50ad5d5f2eb043a0e0a6bb95dee24
+  invertCondition: 0
+  data:
+    guid: 73c999b4ec5f07549b985325fa06424e
+    value: {fileID: 0}
+  eventName:
+    guid: 
+    value: OnAttackFinished

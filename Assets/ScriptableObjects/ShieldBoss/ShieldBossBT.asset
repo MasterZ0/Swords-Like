@@ -17,6 +17,12 @@ MonoBehaviour:
   data:
     guid: 5b9eaed11d5fff84ea2186e34a5616c2
     value: {fileID: 0}
+  enemy:
+    guid: 3f01fc78ca416b04a9cd20c6fad3b97f
+    value: {fileID: 0}
+  playerTransform:
+    guid: ec26c1cbf9df5be43ab658bb3a83f79b
+    value: {fileID: 0}
   actionChances:
     guid: 14af1b6e26134f246a54e4b085ee2ed2
     value: []
@@ -44,22 +50,6 @@ MonoBehaviour:
     guid: 
     value: 0
   untilResult: 0
---- !u!114 &-8226232436272012256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7680217e8829a8f47b57639fd6b1d31d, type: 3}
-  m_Name: 'SubGraphDataBT [e14afa8edf183214881289208b6b2efb]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: e14afa8edf183214881289208b6b2efb
-  position: {x: 1115, y: 665}
-  subGraph: {fileID: 11400000, guid: 1d06ffc68e916064e9ae3c9ab9dd38e2, type: 2}
 --- !u!114 &-6518584395096450590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +131,30 @@ MonoBehaviour:
     guid: 
     value: 0
   compare: 2
+--- !u!114 &-4526227272211740754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbbdd18bc25c2004ea88b74b97d5af67, type: 3}
+  m_Name: 'ActionLeaf [c24645d541c1a7047b6b95794d222859]/SetAstarAIParameters [3eac1b79cf61a254bb2df6c3f691ce92]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 3eac1b79cf61a254bb2df6c3f691ce92
+  aiPath:
+    guid: 1b6d99c248a584e488e9b3772f5dc7fe
+    value: {fileID: 0}
+  aiPathParameters:
+    guid: cb29450a675dbea49a0002ab1ad281ab
+    value:
+      maxSpeed: 10
+      rotationSpeed: 360
+      slowdownDistance: 3
+      endReachedDistance: 2
 --- !u!114 &-4090619082062849071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +173,7 @@ MonoBehaviour:
     guid: 14af1b6e26134f246a54e4b085ee2ed2
     value: []
   lastAction:
-    guid: 
+    guid: c72e36d8d15de06478a46266a524b361
     value: -1
   actionsLimit:
     guid: ee65d83c305de654fa7a6bc118ffaa2d
@@ -294,7 +308,8 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
       Culture=neutral, PublicKeyToken=b77a5c561934e089
     serializedObject: {fileID: 0}
-    serializedValue: null
+    serializedValue: '{"$type":"System.Collections.Generic.List`1[[System.Single,
+      mscorlib]], mscorlib","$values":[]}'
   - name: ActionIndex
     guid: c72e36d8d15de06478a46266a524b361
     type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -329,7 +344,7 @@ MonoBehaviour:
   - {fileID: 4894852502015913945}
   - {fileID: 8730070064479191026}
   - {fileID: -4090619082062849071}
-  - {fileID: -8226232436272012256}
+  - {fileID: -4526227272211740754}
 --- !u!114 &604196195996264218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,7 +479,7 @@ MonoBehaviour:
   children:
   - {fileID: -2361053411258900548}
   - {fileID: -1764789777370497497}
-  - {fileID: -8226232436272012256}
+  - {fileID: -5170941005623981116}
 --- !u!114 &4894852502015913945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,11 +534,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: c24645d541c1a7047b6b95794d222859
-  position: {x: 373.00003, y: -118.00001}
+  position: {x: 306.36008, y: -118.00001}
   executionPolicy: 0
   taskList:
     taskList:
     - {fileID: -9180288524983585347}
+    - {fileID: -4526227272211740754}
 --- !u!114 &5832398321095785105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,8 +609,8 @@ MonoBehaviour:
   title: 
   guid: b3b1a25fd5e800d4a8b72c691b313a7e
   waitTime:
-    guid: 
-    value: 1
+    guid: a5a310b5c6b50e143bdde77aedf4e417
+    value: 2
 --- !u!114 &8914789307165989090
 MonoBehaviour:
   m_ObjectHideFlags: 0

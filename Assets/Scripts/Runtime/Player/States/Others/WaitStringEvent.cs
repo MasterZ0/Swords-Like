@@ -9,14 +9,17 @@ namespace Z3.GMTK2024.Shared
     [NodeDescription("Waits for a graph event")]
     public class WaitStringEvent : ActionTask
     {
-        [ParameterDefinition(AutoBindType.SelfBind)]
-        [SerializeField] private Parameter<AnimationEventTrigger> data;
+        [ParameterDefinition(AutoBindType.SelfBind)] [SerializeField]
+        private Parameter<AnimationEventTrigger> data;
+
         [SerializeField] private Parameter<string> eventName;
+        private bool actionCalled;
 
         public override string Info => $"Wait Animation Event [{eventName}]";
 
         protected override void StartAction()
         {
+            actionCalled = false;
             data.Value.OnEventTrigger += OnEventTrigger;
         }
 
@@ -30,7 +33,18 @@ namespace Z3.GMTK2024.Shared
             if (!sentEventName.Equals(eventName.Value, StringComparison.OrdinalIgnoreCase))
                 return;
 
-            EndAction();
+            actionCalled = true;
+        }
+
+        protected override void UpdateAction()
+        {
+            if (actionCalled)
+            {
+                EndAction();
+                return;
+            }
+
+            base.UpdateAction();
         }
     }
 }

@@ -6,7 +6,5 @@ namespace Z3.GMTK2024.BattleSystem
     public class DamageData
     {
         public Vector2Int value;
-        public DamageType damageType;
-        public bool showHitParticle = true;
     }
 }

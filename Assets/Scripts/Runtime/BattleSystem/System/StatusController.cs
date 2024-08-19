@@ -65,7 +65,5 @@ namespace Z3.GMTK2024.BattleSystem
         protected abstract void Damage(DamageInfo damageInfo);
 
         protected abstract void Death(DamageInfo damageInfo);
-
-        public virtual bool Restore(AttributePoint attribute, int amount) => false;
     }
 }
