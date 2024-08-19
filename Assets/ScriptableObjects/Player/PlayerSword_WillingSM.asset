@@ -35,6 +35,25 @@ MonoBehaviour:
   conditions:
     taskList:
     - {fileID: -3227112339446753067}
+--- !u!114 &-5490978037554746118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa3b1280a42489d899c312f42cd63b2, type: 3}
+  m_Name: 'AnyState [106262037ac2ec04bb857cabcb9c58fa]/Transition [c03d77ce6855f954489109f680a6c496]/CheckDashCooldownPS
+    [1d7203f10d752f942a39a1b88256d133]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 1d7203f10d752f942a39a1b88256d133
+  invertCondition: 0
+  data:
+    guid: d6d86bc21e2b5ec45ad078f0b4243495
+    value: {fileID: 0}
 --- !u!114 &-4052803281120581822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +208,7 @@ MonoBehaviour:
   - {fileID: 7614537682830603658}
   - {fileID: 7068526577119625522}
   - {fileID: 6892338981924017537}
+  - {fileID: -5490978037554746118}
 --- !u!114 &566463601610608891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +355,7 @@ MonoBehaviour:
   conditions:
     taskList:
     - {fileID: 6892338981924017537}
+    - {fileID: -5490978037554746118}
 --- !u!114 &7614537682830603658
 MonoBehaviour:
   m_ObjectHideFlags: 0

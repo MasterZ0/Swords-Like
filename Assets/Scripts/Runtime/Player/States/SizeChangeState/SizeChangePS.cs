@@ -63,6 +63,7 @@ namespace Z3.GMTK2024
             // Therefore, I am subtracting the initialSizeRatio to make it starts from zero.
             float realSizeRatio = sizeRatio.Value - initialSizeRatio;
 
+            Pawn.Size = 1 + realSizeRatio;
             Physics.MovementScale = 1 + realSizeRatio * Data.SizeData.MovementSizeMultiplier;
             speedMultiplier.Value = Physics.MovementScale * Data.RunMoveSpeed;
             UpdateCameraDistance(1 + realSizeRatio);

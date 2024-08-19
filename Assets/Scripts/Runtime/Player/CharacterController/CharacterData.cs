@@ -21,6 +21,7 @@ namespace Z3.GMTK2024.Data
         [SerializeField] private float deceleration = 15f;
 
         [Header(" - Dodge")] 
+        [SerializeField] private float dashCooldown = 0.7f;
         [SerializeField] private float dashDuration = 0.7f;
         [SerializeField] private float dashSpeed = 3f;
         [SerializeField] private ParticleSystem.MinMaxCurve dashSpeedVariation;
@@ -66,6 +67,7 @@ namespace Z3.GMTK2024.Data
         public float Deceleration => deceleration;
 
         // Dodge
+        public float DashCooldown => dashCooldown;
         public float DashDuration => dashDuration;
 
         public float DashSpeed => dashSpeed;
@@ -108,6 +110,9 @@ namespace Z3.GMTK2024.Data
         [field: SerializeField] public float SizeRatio { get; set; } = 1;
         [field: SerializeField] public Vector2 SizeRange { get; set; } = new Vector2(0.5f, 2);
         [field: SerializeField] public float MovementSizeMultiplier { get; set; } = 1;
+        [field: SerializeField] public float DamageSizeMultiplier { get; set; } = 1;
         [field: SerializeField] public float CameraDistanceMultiplier { get; set; } = 1;
+        [field: SerializeField] public float AttackTimeFrameMultiplier { get; set; } = 1;
+        [field: SerializeField] public float DashCooldownMultiplier { get; set; } = 1;
     }
 }

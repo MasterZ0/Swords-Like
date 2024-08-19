@@ -11,15 +11,13 @@ namespace Z3.GMTK2024
     public class HealthMesh
     {
         [field: SerializeField] public GameObject mesh { get; private set; }
-        [Range(0, 1)]
-        [field: SerializeField] public float percentage { get; private set; }
+        [Range(0, 1)] [field: SerializeField] public float percentage { get; private set; }
     }
 
     [Serializable]
     public class CharacterStatus : BasicStatusController<BasicAttributesController>
     {
-        [Header("Status")]
-        [SerializeField] private HitBox swordHitbox;
+        [Header("Status")] [SerializeField] private HitBox swordHitbox;
         [SerializeField] private List<HealthMesh> healthMeshes;
 
         protected override bool Invincible => invincibleTime > 0f;
@@ -55,7 +53,14 @@ namespace Z3.GMTK2024
                 _ => throw new NotImplementedException(),
             };
 
-            swordHitbox.SetDamage(new Damage(damageData, Controller));
+            int multiplier = Mathf.RoundToInt(Controller.Size * Data.SizeData.DamageSizeMultiplier);
+            swordHitbox.SetDamage(new Damage(damageData.value * multiplier, Controller));
+        }
+
+        public override void SetInvincible(float duration)
+        {
+            base.SetInvincible(duration);
+            
         }
 
         public void Reset()
@@ -98,7 +103,6 @@ namespace Z3.GMTK2024
 
         protected override void Damage(DamageInfo damageInfo)
         {
-
             invincibleTime = Data.InvisibleDuration;
             ReceiveDamage(damageInfo);
 

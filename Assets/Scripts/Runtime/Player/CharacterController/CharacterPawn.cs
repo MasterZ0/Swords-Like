@@ -38,6 +38,7 @@ namespace Z3.GMTK2024
         public IStatusController Status => CharacterStatus;
         public Transform Pivot => transform;
         public Transform Center => center;
+        public float Size { get; set; }
 
         private void Awake()
         {
