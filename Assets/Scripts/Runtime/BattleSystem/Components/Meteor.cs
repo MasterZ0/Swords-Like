@@ -16,11 +16,9 @@ namespace Z3.GMTK2024.BattleSystem
             List<ParticleCollisionEvent> collisionEvents = new List<ParticleCollisionEvent>();
             int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);
 
-            for (int i = 0; i < numCollisionEvents; i++)
+            if (numCollisionEvents > 0)
             {
-                // Instantiate effect at the collision point with an offset
-                Vector3 spawnPosition = collisionEvents[i].intersection + collisionEvents[i].normal;
-                HitBox instance = ObjectPool.SpawnPooledObject(impactFx, spawnPosition, Quaternion.identity);
+                HitBox instance = ObjectPool.SpawnPooledObject(impactFx, collisionEvents[0].intersection, Quaternion.identity);
 
                 instance.transform.LookAt(transform.position);
                 instance.SetDamage(Damage);

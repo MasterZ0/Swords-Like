@@ -2,20 +2,32 @@
 using System;
 using Z3.GMTK2024.BattleSystem;
 using Z3.GMTK2024.Data;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Z3.GMTK2024
 {
+    [Serializable]
+    public class HealthMesh
+    {
+        [field: SerializeField] public GameObject mesh { get; private set; }
+        [Range(0, 1)]
+        [field: SerializeField] public float percentage { get; private set; }
+    }
+
     [Serializable]
     public class CharacterStatus : BasicStatusController<BasicAttributesController>
     {
         [Header("Status")]
         [SerializeField] private HitBox swordHitbox;
+        [SerializeField] private List<HealthMesh> healthMeshes;
 
         protected override bool Invincible => invincibleTime > 0f;
 
         private CharacterPawn Controller { get; set; }
         private CharacterData Data => Controller.Data;
 
+        private HealthMesh currentHealthMesh;
         private float invincibleTime;
 
         public void Init(CharacterPawn controller)
@@ -25,8 +37,10 @@ namespace Z3.GMTK2024
             /// Setup Attributes
             Inject(Attributes = new BasicAttributesController(Data.MaxHealth));
 
-            Attributes.SetMaxHP(Data.MaxHealth);
-            Attributes.RecoveryAllPoints();
+            currentHealthMesh = healthMeshes[0];
+
+            Attributes.OnUpdateStatus += OnUpdateHealth;
+            OnUpdateHealth();
 
             StartAttack(0);
         }
@@ -72,8 +86,19 @@ namespace Z3.GMTK2024
             // Finish: Call VFX and layer? (projectile bool)
         }
 
+        private void OnUpdateHealth()
+        {
+            float healthPercentage = Attributes.HPPercentage();
+
+            currentHealthMesh.mesh.SetActive(false);
+            // Note: The first element is the higher range and the last must to be 0
+            currentHealthMesh = healthMeshes.First(h => healthPercentage >= h.percentage);
+            currentHealthMesh.mesh.SetActive(true);
+        }
+
         protected override void Damage(DamageInfo damageInfo)
         {
+
             invincibleTime = Data.InvisibleDuration;
             ReceiveDamage(damageInfo);
 

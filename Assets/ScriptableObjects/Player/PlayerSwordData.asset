@@ -110,7 +110,7 @@ MonoBehaviour:
     <SizeRange>k__BackingField: {x: 0.5, y: 2}
     <MovementSizeMultiplier>k__BackingField: 2
     <CameraDistanceMultiplier>k__BackingField: 1
-  maxHealth: 1
+  maxHealth: 100
   invisibleDuration: 2
   firstAttackDamage:
     value: {x: 5, y: 10}
