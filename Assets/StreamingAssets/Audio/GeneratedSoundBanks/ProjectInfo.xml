@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="GMTK Game Jam 2024" GUID="{A5FEB958-DEEB-4CC3-B6CD-0449E489AF14}" Generator="2022.1.8.8316"/>
+	<CacheRoot>Y:/Documents/WwiseProjects/GMTK Game Jam 2024/.cache/</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{1080CEAC-D147-4B57-BD5A-C57E98E13C58}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="Y:/Documents/WwiseProjects/GMTK Game Jam 2024/GeneratedSoundBanks/Mac/"/>
+		<Platform Name="Windows" GUID="{B2278819-3F99-4332-B7B8-C229E0A1FF03}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Y:/Documents/WwiseProjects/GMTK Game Jam 2024/GeneratedSoundBanks/Windows/"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{D159D0BC-A9FF-4CD6-A080-029779055053}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{F460E021-AA6B-2FF6-E297-5F53FA7876C0}</FileHash>
+</ProjectInfo>
