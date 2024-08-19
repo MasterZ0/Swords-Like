@@ -1,5 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1905286632191063534
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 0.953589, y: 1, z: 0.87375236, w: -0.045781557}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 0.99692434, y: 0.924565, z: 1, w: 0.16350545}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 0.80797434, y: 0.8975695, z: 1, w: 0.06540221}
 --- !u!114 &-32820517437979890
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -17,14 +39,14 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   threshold:
-    m_OverrideState: 0
-    m_Value: 0.9
+    m_OverrideState: 1
+    m_Value: 10
   intensity:
     m_OverrideState: 1
     m_Value: 1
   scatter:
-    m_OverrideState: 0
-    m_Value: 0.7
+    m_OverrideState: 1
+    m_Value: 0.816
   clamp:
     m_OverrideState: 0
     m_Value: 65472
@@ -62,6 +84,7 @@ MonoBehaviour:
   components:
   - {fileID: 1881579288749618558}
   - {fileID: -32820517437979890}
+  - {fileID: -1905286632191063534}
 --- !u!114 &1881579288749618558
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -74,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   mode:
     m_OverrideState: 1
     m_Value: 1

@@ -12,6 +12,5 @@ namespace Z3.GMTK2024.BattleSystem
 
         void TakeDamage(Damage damage);
         void DamageDealt(DamageInfo info);
-        bool Restore(AttributePoint attribute, int amount);
     }
 }

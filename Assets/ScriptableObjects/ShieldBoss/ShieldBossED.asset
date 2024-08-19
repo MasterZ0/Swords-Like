@@ -49,10 +49,15 @@ MonoBehaviour:
     showHitParticle: 1
   RadiusAttackChance: 30
   FireballAttackChance: 30
-  ThirdAttackChance: 30
   FireballAttackPreparation: 2
   FireballAttackProjectileMoveSpeed: 10
-  FireballAttackProjectileRotationSpeed: 120
+  FireballAttackProjectileRotationSpeed: 0
   FireballAttackDuration: 6
   FireballAttackFrequency: 0.1
   FireballAttackBossRotationSpeed: 120
+  ThirdAttackChance: 30
+  MeteorAttackCenterRadius: 50
+  MeteorAttackFrequency: 0.1
+  MeteorAttackDuration: 10
+  MeteorAttackDelayForBlockRegion: 5
+  MeteorAttackRadiusForBlockRegion: 4

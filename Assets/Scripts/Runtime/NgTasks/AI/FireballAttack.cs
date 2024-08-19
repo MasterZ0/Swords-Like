@@ -12,13 +12,28 @@ namespace Z3.GMTK2024.NgTasks
         [SerializeField] private Parameter<Fireball> fireballPrefab;
 
         private float nextTimeToAttack;
+        private float time;
 
         protected override void StartAction()
         {
+            base.StartAction();
+
+            time = 0f;
             nextTimeToAttack = 0f;
         }
 
         protected override void UpdateAction()
+        {
+            SpawnFireball();
+
+            time += DeltaTime;
+            if (time >= ShieldBossData.FireballAttackDuration)
+            {
+                EndAction();
+            }
+        }
+
+        private void SpawnFireball()
         {
             // Rotate boss
             float rotationAmount = ShieldBossData.FireballAttackBossRotationSpeed * DeltaTime;

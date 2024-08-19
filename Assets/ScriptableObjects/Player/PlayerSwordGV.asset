@@ -44,7 +44,7 @@ MonoBehaviour:
     type: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     serializedObject: {fileID: 0}
-    serializedValue: null
+    serializedValue: 
   - name: '- CM'
     guid: b0e7fdb7903b3c84d9735721248b843d
     type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
