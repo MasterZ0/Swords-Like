@@ -301,6 +301,18 @@
       "dependencies": {},
       "hash": "2c5b3ced551c18d55289daa4ac6d87ba2bcd6702"
     },
+    "com.z3.camera-shake": {
+      "version": "https://github.com/Z3-Studio/UTK-Camera-Shake.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.z3.utils": "1.0.4",
+        "com.z3.ui-builder": "0.1.4-beta",
+        "com.z3.node-graph": "0.4.1-beta",
+        "com.unity.cinemachine": "2.10.0"
+      },
+      "hash": "0cf62ad8a8d38569be92113b0984f09c563f64c1"
+    },
     "com.z3.node-graph": {
       "version": "https://github.com/Z3-Studio/UTK-Node-Graph.git",
       "depth": 0,
@@ -353,7 +365,7 @@
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
-      "hash": "8f76bc54debbe9073ee137c9ede1eae17bd10844"
+      "hash": "13b4f7445634feb93ded8a32444342d23a345542"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
