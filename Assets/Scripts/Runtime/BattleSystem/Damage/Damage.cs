@@ -16,20 +16,16 @@ namespace Z3.GMTK2024.BattleSystem
 
         private Vector2Int damageRange;
 
-        public Damage(DamageData damageData, IStatusOwner sender)
+        public Damage(DamageData damageData, IStatusOwner sender = null)
         {
             damageRange = damageData.value;
             Sender = sender;
         }
 
-        public Damage(DamageData damageData)
-        {
-            damageRange = damageData.value;
-        }
-
-        public Damage(int value)
+        public Damage(int value, IStatusOwner sender = null)
         {
             damageRange = value.ToVectorInt();
+            Sender = sender;
         }
 
         public void AddHitBoxInfo(HitBox hitBox, Vector3 contact)

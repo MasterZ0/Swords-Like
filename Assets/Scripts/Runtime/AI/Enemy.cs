@@ -4,6 +4,8 @@ using UnityEngine;
 using Z3.UIBuilder.Core;
 using Z3.GMTK2024.BattleSystem;
 using Z3.Audio.FMODIntegration;
+using UnityEngine.UI;
+using UnityEngine.InputSystem.XR;
 
 namespace Z3.GMTK2024.AI
 {
@@ -16,6 +18,7 @@ namespace Z3.GMTK2024.AI
         [SerializeField] private EnemyData enemyData;
         [SerializeField] private Transform center;
         [SerializeField] private Transform playerTransform;
+        [SerializeField] private Slider healthBar;
 
         //[Header("Prefabs")]
         //[SerializeField] private ParticleVFX hitFX;
@@ -54,6 +57,7 @@ namespace Z3.GMTK2024.AI
             defaultSharedMaterial = bodyRenderers.Select(r => r.sharedMaterial).ToArray();
 
             Status = new EnemyStatus(this);
+            Status.Attributes.OnUpdateStatus += OnUpdateStatus;
         }
 
         private void OnEnable()
@@ -82,8 +86,6 @@ namespace Z3.GMTK2024.AI
         {
             //HitVFX.ApplyHitFX(this, bodyRenderers, defaultSharedMaterial);
             damageSoundReference?.PlaySound(transform);
-
-            Debug.Log("damage");
 
             GetContacts(damageInfo, out Vector3 position, out Quaternion rotation);
 
@@ -124,6 +126,11 @@ namespace Z3.GMTK2024.AI
         {
             dropItemEnabled = !disableDrop;
             this.Kill();
+        }
+
+        private void OnUpdateStatus()
+        {
+            healthBar.value = Status.Attributes.HPPercentage();
         }
     }
 }
