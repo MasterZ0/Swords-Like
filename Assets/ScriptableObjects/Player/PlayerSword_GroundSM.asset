@@ -22,47 +22,6 @@ MonoBehaviour:
   controllerAction:
     guid: 
     value: 0
---- !u!114 &-8120619884390033580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eb4fd9f679a4ee4fb68331da2db0573, type: 3}
-  m_Name: 'AnyState [f680902e78081d84b8ffcba15d25797e]/Transition [6c0d2891c2d6e2344ac9c70637c6a659]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 6c0d2891c2d6e2344ac9c70637c6a659
-  connection: {fileID: -7480514897293818871}
-  conditions:
-    taskList:
-    - {fileID: 5482948941290964461}
---- !u!114 &-7480514897293818871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af8295c7e11e1444b9a81b37e7812ad2, type: 3}
-  m_Name: 'ActionState [ad544c026c7f032469a7e7a7ad99db9a]'
-  m_EditorClassIdentifier: 
-  title: Jump
-  guid: ad544c026c7f032469a7e7a7ad99db9a
-  position: {x: -502, y: 570.99994}
-  transitionCheck: 1
-  repeat: 0
-  transitions:
-    transitions: []
-  executionPolicy: 0
-  taskList:
-    taskList:
-    - {fileID: -5890203336406701909}
 --- !u!114 &-6371369065015306964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,24 +48,6 @@ MonoBehaviour:
     taskList:
     - {fileID: 2781943589228599882}
     - {fileID: 8410159707579019199}
---- !u!114 &-5890203336406701909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a583efc17bc3d2544806f2d045566e49, type: 3}
-  m_Name: 'ActionListSM [ad544c026c7f032469a7e7a7ad99db9a]/SetBoolean [e9169e0bb35c55b4683db903bc1b9b9b]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: e9169e0bb35c55b4683db903bc1b9b9b
-  value:
-    guid: 01fde3c1f037ce043b24918caf3b564e
-    value: 0
-  operation: 0
 --- !u!114 &-5254077798057883529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,26 +74,6 @@ MonoBehaviour:
   taskList:
     taskList:
     - {fileID: -2090579857630405939}
---- !u!114 &-5018968625525223829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2985adac49a2564b88f64ecdefcbd9f, type: 3}
-  m_Name: 'AnyState [f680902e78081d84b8ffcba15d25797e]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: f680902e78081d84b8ffcba15d25797e
-  position: {x: -502, y: 327.99997}
-  priority: -1
-  canTransitionToSelf: 0
-  transitions:
-    transitions:
-    - {fileID: -8120619884390033580}
 --- !u!114 &-4974066682815953546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,15 +301,11 @@ MonoBehaviour:
   subAssets:
   - {fileID: -6371369065015306964}
   - {fileID: 4818164095595234619}
-  - {fileID: -7480514897293818871}
-  - {fileID: -5890203336406701909}
   - {fileID: -5254077798057883529}
   - {fileID: -3015679316404802628}
   - {fileID: -2089260753344611935}
   - {fileID: -4974066682815953546}
   - {fileID: -2024032871382546727}
-  - {fileID: -5018968625525223829}
-  - {fileID: -8120619884390033580}
   - {fileID: 8412451526456542635}
   - {fileID: 62194074160222164}
   - {fileID: 3214325499158104557}
@@ -396,7 +313,6 @@ MonoBehaviour:
   - {fileID: -2090579857630405939}
   - {fileID: -4786902152601628460}
   - {fileID: 2781943589228599882}
-  - {fileID: 5482948941290964461}
   - {fileID: -3855220328460012159}
   - {fileID: 885709594223680726}
   - {fileID: -2547524945927568284}
@@ -535,28 +451,6 @@ MonoBehaviour:
   conditions:
     taskList:
     - {fileID: -2547524945927568284}
---- !u!114 &5482948941290964461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fa979d3b33dbee44af4148bed11ea18, type: 3}
-  m_Name: 'AnyState [f680902e78081d84b8ffcba15d25797e]/Transition [6c0d2891c2d6e2344ac9c70637c6a659]/CheckControllerEventPS
-    [0bae701ad0c7eb541b94659b2c84e095]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 0bae701ad0c7eb541b94659b2c84e095
-  invertCondition: 0
-  data:
-    guid: d6d86bc21e2b5ec45ad078f0b4243495
-    value: {fileID: 0}
-  controllerEvent:
-    guid: 
-    value: 0
 --- !u!114 &5778894703924070035
 MonoBehaviour:
   m_ObjectHideFlags: 0
