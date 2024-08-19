@@ -341,7 +341,7 @@ MonoBehaviour:
   title: 
   guid: 9b0b61eaaede52e48859cca94bd55186
   position: {x: 223.99998, y: 253.00002}
-  transitionCheck: 2
+  transitionCheck: 0
   repeat: 0
   transitions:
     transitions:
