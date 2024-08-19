@@ -51,11 +51,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   referenceVariables: {fileID: 11400000, guid: 67491b4ac780e6a4d8a0a96a63acc615, type: 2}
   localVariables: []
-  startNode: {fileID: 7407850149860257881}
+  startNode: {fileID: 7985225569174684556}
   subAssets:
   - {fileID: 7407850149860257881}
   - {fileID: -829195090417565514}
   - {fileID: -5944102559293597107}
+  - {fileID: 7985225569174684556}
+  - {fileID: 5672662654559059249}
+  - {fileID: 879505963283847123}
+--- !u!114 &879505963283847123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c48ec7b11cb43b4ba17c5917bbac2bb, type: 3}
+  m_Name: 'ActionLeaf [81d536f6745647840bd73a9db05e398c]/RadiusAttack [0464c8b77c59c644b9d4cb2c561f13b0]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 0464c8b77c59c644b9d4cb2c561f13b0
+  shieldBoss:
+    guid: 5b9eaed11d5fff84ea2186e34a5616c2
+    value: {fileID: 0}
+  radiusPrefab:
+    guid: 80a75cfbc6629914d97c20fbc83146ce
+    value: {fileID: 0}
+  stompPoint:
+    guid: 8cc1b02268d33984492a9c48c0feb202
+    value: {fileID: 0}
+--- !u!114 &5672662654559059249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [81d536f6745647840bd73a9db05e398c]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 81d536f6745647840bd73a9db05e398c
+  position: {x: 385, y: 358}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: 879505963283847123}
 --- !u!114 &7407850149860257881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,9 +115,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 44b01e9616a8cc146887aaa48a71c3a5
-  position: {x: 245, y: 218}
+  position: {x: 189, y: 344}
   executionPolicy: 1
   taskList:
     taskList:
     - {fileID: -5944102559293597107}
     - {fileID: -829195090417565514}
+--- !u!114 &7985225569174684556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68acbc6c29c6ce468ebbfe8afd84409, type: 3}
+  m_Name: 'Sequencer [866c03946ffc5344dade061c15594639]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 866c03946ffc5344dade061c15594639
+  position: {x: 310, y: 124}
+  children:
+  - {fileID: 7407850149860257881}
+  - {fileID: 5672662654559059249}

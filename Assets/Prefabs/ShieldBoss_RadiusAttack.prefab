@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8521741619977925069}
   - component: {fileID: 31327755064851513}
   - component: {fileID: 6155131639013522604}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LargeHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 2195689189750846986}
   - component: {fileID: 9160265825450405400}
   - component: {fileID: 3136428815763042099}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SmallHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 7503321041577806015}
   - component: {fileID: 421199780768998151}
   - component: {fileID: 5770175549130080176}
+  - component: {fileID: 6206523776544955600}
   m_Layer: 0
   m_Name: ShieldBoss_RadiusAttack
   m_TagString: Untagged
@@ -207,6 +208,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 421199780768998151}
+--- !u!114 &6206523776544955600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739749242005435833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7392c31ee8257564e86c1a7c812061ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smallHitbox: {fileID: 3136428815763042099}
+  mediumHitbox: {fileID: 2098757199517446790}
+  largeHitbox: {fileID: 6155131639013522604}
 --- !u!1 &8431215326363888359
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +234,7 @@ GameObject:
   - component: {fileID: 4127820506574381118}
   - component: {fileID: 1586402464161689623}
   - component: {fileID: 2098757199517446790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MediumHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +271,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

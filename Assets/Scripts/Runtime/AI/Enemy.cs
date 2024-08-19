@@ -4,7 +4,6 @@ using UnityEngine;
 using Z3.UIBuilder.Core;
 using Z3.GMTK2024.BattleSystem;
 using Z3.Audio.FMODIntegration;
-using Z3.ObjectPooling;
 
 namespace Z3.GMTK2024.AI
 {
@@ -83,8 +82,6 @@ namespace Z3.GMTK2024.AI
             damageSoundReference?.PlaySound(transform);
 
             Debug.Log("damage");
-            if (!damageInfo.Damage.ShowHitParticle)
-                return;
 
             GetContacts(damageInfo, out Vector3 position, out Quaternion rotation);
 

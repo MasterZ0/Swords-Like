@@ -44,6 +44,33 @@ MonoBehaviour:
       PublicKeyToken=null
     serializedObject: {fileID: 0}
     serializedValue: null
+  - name: '- Fixed Variables'
+    guid: 3889c885bcbf90446a066e8523c0d8a0
+    type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    serializedObject: {fileID: 0}
+    serializedValue: null
+  - name: IdleTime
+    guid: a5a310b5c6b50e143bdde77aedf4e417
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 2.0
+  - name: ActionChances
+    guid: 14af1b6e26134f246a54e4b085ee2ed2
+    type: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: '{"$type":"System.Collections.Generic.List`1[[System.Single,
+      mscorlib]], mscorlib","$values":[]}'
+  - name: ActionsLimit
+    guid: ee65d83c305de654fa7a6bc118ffaa2d
+    type: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
+      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: '{"$type":"System.Collections.Generic.List`1[[System.Int32,
+      mscorlib]], mscorlib","$values":[]}'
   - name: '- Fireball Attack'
     guid: a583ff1374a98944b9e9e0fc0f0a2d74
     type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
@@ -72,38 +99,34 @@ MonoBehaviour:
     type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     serializedObject: {fileID: 0}
-    serializedValue: 
+    serializedValue: null
   - name: ArenaCenter
     guid: b2462a8dd5b2a20438d117a48ec20a5f
     type: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     serializedObject: {fileID: 0}
-    serializedValue: 
+    serializedValue: null
   - name: MeteorPrefab
     guid: f5726c032be32914c859335b7df7e63f
     type: Z3.GMTK2024.BattleSystem.Meteor, Z3.GMTK2024, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     serializedObject: {fileID: 0}
-    serializedValue: 
-  - name: '- Variables'
-    guid: 3889c885bcbf90446a066e8523c0d8a0
+    serializedValue: null
+  - name: '- Radius Attack'
+    guid: 0caa5de25fbdf7c48a425879f700edf4
     type: Z3.NodeGraph.Core.Title, Z3.NodeGraph, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     serializedObject: {fileID: 0}
     serializedValue: null
-  - name: ActionChances
-    guid: 14af1b6e26134f246a54e4b085ee2ed2
-    type: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0,
-      Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
-      Culture=neutral, PublicKeyToken=b77a5c561934e089
+  - name: StompPoint
+    guid: 8cc1b02268d33984492a9c48c0feb202
+    type: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
     serializedObject: {fileID: 0}
-    serializedValue: '{"$type":"System.Collections.Generic.List`1[[System.Single,
-      mscorlib]], mscorlib","$values":[]}'
-  - name: ActionsLimit
-    guid: ee65d83c305de654fa7a6bc118ffaa2d
-    type: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0,
-      Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0,
-      Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedValue: null
+  - name: RadiusPrefab
+    guid: 80a75cfbc6629914d97c20fbc83146ce
+    type: Z3.GMTK2024.RadiusAttackController, Z3.GMTK2024, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
     serializedObject: {fileID: 0}
-    serializedValue: '{"$type":"System.Collections.Generic.List`1[[System.Int32,
-      mscorlib]], mscorlib","$values":[]}'
+    serializedValue: null
