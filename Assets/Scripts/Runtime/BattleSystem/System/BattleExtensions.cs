@@ -31,7 +31,6 @@ namespace Z3.GMTK2024.BattleSystem
 
         #region IStatusOwner simplified
         public static void TakeDamage(this IStatusOwner controller, Damage damage) => controller.Status.TakeDamage(damage);
-        public static bool Restore(this IStatusOwner controller, AttributePoint attributePoint, int amount) => controller.Status.Restore(attributePoint, amount);
         public static IAttributes GetAttributes(this IStatusOwner controller) => controller.Status.Attributes;
         public static bool IsDead(this IStatusOwner controller) => controller.GetAttributes().IsDead();
         #endregion

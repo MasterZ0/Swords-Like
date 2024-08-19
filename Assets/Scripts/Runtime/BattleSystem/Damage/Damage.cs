@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 using Z3.Utils.ExtensionMethods;
 
 namespace Z3.GMTK2024.BattleSystem
@@ -9,10 +7,6 @@ namespace Z3.GMTK2024.BattleSystem
     {
         // Damage
         public int Value => damageRange.RandomRange();
-        public int StaminaDamage { get; } // Only blockable damages
-        // public int Intensity { get; } // Injury?
-        public bool ShowHitParticle { get; }
-        public DamageType DamageType { get; }
         public IStatusOwner Sender { get; }
 
         // Hitbox
@@ -24,13 +18,13 @@ namespace Z3.GMTK2024.BattleSystem
 
         public Damage(DamageData damageData, IStatusOwner sender)
         {
-            StaminaDamage = damageData.value.x;
             damageRange = damageData.value;
-
-            ShowHitParticle = damageData.showHitParticle;
-
-            DamageType = damageData.damageType;
             Sender = sender;
+        }
+
+        public Damage(DamageData damageData)
+        {
+            damageRange = damageData.value;
         }
 
         public Damage(int value)
@@ -50,5 +44,7 @@ namespace Z3.GMTK2024.BattleSystem
             float targetX = HitBoxSender.transform.position.x - transform.position.x;
             return targetX > 0 ? 1 : -1;
         }
+
+        public static implicit operator Damage(DamageData damageData) => new Damage(damageData);
     }
 }

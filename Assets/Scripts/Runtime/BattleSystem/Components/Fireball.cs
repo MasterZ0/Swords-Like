@@ -1,5 +1,4 @@
-﻿using log4net.Util;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Z3.GMTK2024.BattleSystem
 {

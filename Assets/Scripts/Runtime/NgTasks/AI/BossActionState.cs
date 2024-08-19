@@ -9,6 +9,11 @@ namespace Z3.GMTK2024.NgTasks
     {
         [SerializeField] private Parameter<ShieldBossED> shieldBoss;
 
-        public ShieldBossED ShieldBossData => shieldBoss.Value;
+        public ShieldBossED ShieldBossData { get; private set; }
+
+        protected override void StartAction()
+        {
+            ShieldBossData = shieldBoss.Value;
+        }
     }
 }
