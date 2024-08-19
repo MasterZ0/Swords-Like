@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
 using Z3.UIBuilder.Core;
@@ -7,9 +8,16 @@ namespace Z3.GMTK2024
 {
     public class GameController : MonoBehaviour
     {
+        public static GameController Instance { get; private set; }
+
         [SerializeField] private PlayableDirector introTimeline;
         [SerializeField] private PlayableDirector bossTimeline;
         [SerializeField] private PlayableDirector bossDefeatedTimeline;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         [Button]
         public void OnIntro()
