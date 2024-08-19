@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Z3.GMTK2024.Shared;
 using Z3.GMTK2024.States;
 using Z3.NodeGraph.Core;
@@ -36,6 +35,7 @@ namespace Z3.GMTK2024
             animationEventTrigger.Value.OnEventTrigger += OnEventTrigger;
 
             DecideAttackId();
+            Pawn.CharacterStatus.StartAttack(currentAttackId);
 
             animator.Value.PlayState(attackAnimationHashed[currentAttackId], transitions.Value[currentAttackId]);
             lastAttackTime = Time.time;

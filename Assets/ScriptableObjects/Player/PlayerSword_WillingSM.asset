@@ -35,35 +35,6 @@ MonoBehaviour:
   conditions:
     taskList:
     - {fileID: -3227112339446753067}
---- !u!114 &-7006286388708636547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fb3cee5a1b134b44b653350524b9868, type: 3}
-  m_Name: 'ActionState [55fe2c5c86875d347bcf67a4215af6ff]/PlayAnimation [997bfc1d273c86b46a5e8cc09058262c]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 997bfc1d273c86b46a5e8cc09058262c
-  animator:
-    guid: 48477c8fd0aefa145aa065fc1c6d9f4f
-    value: {fileID: 0}
-  stateName:
-    guid: 
-    value: Dash
-  transition:
-    guid: 
-    value: 0.25
-  waitUntilFinish:
-    guid: 
-    value: 0
-  layer:
-    guid: 
-    value: 0
 --- !u!114 &-4052803281120581822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +116,9 @@ MonoBehaviour:
   data:
     guid: d6d86bc21e2b5ec45ad078f0b4243495
     value: {fileID: 0}
+  dash: Dash
+  dodge: Dodge
+  transition: 0.25
 --- !u!114 &-1118351314560017038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +183,6 @@ MonoBehaviour:
   - {fileID: 5596447796050262565}
   - {fileID: -1510750609195577631}
   - {fileID: -8477188601978917249}
-  - {fileID: -7006286388708636547}
   - {fileID: 3755673978131154462}
   - {fileID: -3227112339446753067}
   - {fileID: 2403326197597923876}
@@ -321,7 +294,6 @@ MonoBehaviour:
   executionPolicy: 1
   taskList:
     taskList:
-    - {fileID: -7006286388708636547}
     - {fileID: -1510750609195577631}
 --- !u!114 &6892338981924017537
 MonoBehaviour:
