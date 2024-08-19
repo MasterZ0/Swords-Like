@@ -15,7 +15,6 @@
     "com.unity.splines": "2.5.2",
     "com.unity.timeline": "1.8.6",
     "com.unity.ugui": "2.0.0",
-    "com.z3.audio.fmod-integration": "https://github.com/Z3-Studio/UTK-Audio-FMOD-Integration.git",
     "com.z3.node-graph": "https://github.com/Z3-Studio/UTK-Node-Graph.git",
     "com.z3.node-graph.astar-pathfinding": "https://github.com/Z3-Studio/UTK-NGTP-Astar-Pathfinding.git",
     "com.z3.node-graph.final-ik": "https://github.com/Z3-Studio/UTK-NGTP-Final-IK.git",
