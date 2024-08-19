@@ -17,7 +17,7 @@ namespace Z3.GMTK2024.AI
         [SerializeField] private EnemyData enemyData;
         [SerializeField] private Transform center;
         [SerializeField] private Transform playerTransform;
-        [SerializeField] private Slider healthBar;
+        [SerializeField] private Image healthBar;
 
         //[Header("Prefabs")]
         //[SerializeField] private ParticleVFX hitFX;
@@ -129,7 +129,7 @@ namespace Z3.GMTK2024.AI
 
         private void OnUpdateStatus()
         {
-            healthBar.value = Status.Attributes.HPPercentage();
+            healthBar.fillAmount = Status.Attributes.HPPercentage();
         }
     }
 }
