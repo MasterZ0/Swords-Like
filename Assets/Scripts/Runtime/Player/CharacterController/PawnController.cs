@@ -69,6 +69,18 @@ namespace Z3.GMTK2024
             controls.Dispose();
         }
 
+        public void SetActive(bool enabled)
+        {
+            if (enabled)
+            {
+                controls.Enable();
+            }
+            else
+            {
+                controls.Disable();
+            }
+        }
+
         private void OnLook(CallbackContext ctx) => OnMoveCamera?.Invoke(ctx.ReadValue<Vector2>());
     }
 }

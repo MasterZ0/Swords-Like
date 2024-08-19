@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 using Z3.GMTK2024.States;
+using Z3.Utils.ExtensionMethods;
 
 namespace Z3.GMTK2024
 {
     public class DashPS : CharacterAction
     {
+        [SerializeField] private string dash = "Dash";
+        [SerializeField] private string dodge = "Dodge";
+        [SerializeField] private float transition = 0.25f;
+
         private Vector3 dodgeDirection;
         private float time;
 
@@ -15,7 +20,17 @@ namespace Z3.GMTK2024
 
             Transform transform = Physics.Transform;
             Vector2 directional = Controller.Move;
-            dodgeDirection =  directional != Vector2.zero ? transform.forward : -transform.forward;
+
+            if (directional != Vector2.zero)
+            {
+                dodgeDirection = transform.forward;
+                Animator.PlayState(dash, transition);
+            }
+            else
+            {
+                dodgeDirection = -transform.forward; ;
+                Animator.PlayState(dodge, transition);
+            }
         }
 
         protected override void UpdateAction()

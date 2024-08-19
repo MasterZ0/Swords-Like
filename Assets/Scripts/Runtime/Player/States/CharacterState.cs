@@ -22,6 +22,7 @@ namespace Z3.GMTK2024.States
         [ParameterDefinition(AutoBindType.SelfBind)]
         [SerializeField] protected Parameter<CharacterPawn> data;
 
+        protected CharacterPawn Pawn => data.Value;
         protected CharacterCamera Camera => data.Value.Camera;
         protected CharacterPhysics Physics => data.Value.Physics;
         protected Animator Animator => data.Value.Animator;
