@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -284,7 +284,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -511,35 +511,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   credits:
   - nome: Jhonnatan Barbosa
-    icone: {fileID: 21300000, guid: fdb51edd68fdaf0498c573690837c3df, type: 2}
+    icone: {fileID: 21300000, guid: 252b7f255fc329f4a9d55afb937c073c, type: 3}
     funcoes: Game Designer
     portfolioLink: https://www.jhorro.com
   - nome: Vishwaas Khare
-    icone: {fileID: 0}
+    icone: {fileID: 21300000, guid: c883661ef51b4e740a07ee1a997c96f4, type: 3}
     funcoes: 3D artist
     portfolioLink: https://vishwaas.artstation.com/
   - nome: Malachi Gregory (Malakazam)
-    icone: {fileID: 0}
+    icone: {fileID: 21300000, guid: 6c57b3a4d4131834fa90e1e823eb9c98, type: 3}
     funcoes: Sound Designer
     portfolioLink: https://malachigregory.com/
   - nome: Sam Beagles
-    icone: {fileID: 0}
+    icone: {fileID: 21300000, guid: 6c57b3a4d4131834fa90e1e823eb9c98, type: 3}
     funcoes: Composer
     portfolioLink: https://sambeagles.wordpress.com/
   - nome: Drawxiemonium (Filipa)
-    icone: {fileID: 0}
+    icone: {fileID: 21300000, guid: c883661ef51b4e740a07ee1a997c96f4, type: 3}
     funcoes: 3D Artist
     portfolioLink: https://linktr.ee/WeirdNovaWorks
   - nome: 'Poxamarquinhos '
-    icone: {fileID: 21300000, guid: d13cf9404c91cc946bcf6943bf5006e0, type: 3}
+    icone: {fileID: 21300000, guid: 86e9b0c99a738e6409d496fb8c53d0c1, type: 3}
     funcoes: Illustrator
     portfolioLink: https://www.instagram.com/mochi_moon/
   - nome: Vinicius Januzzi
-    icone: {fileID: 21300000, guid: ee66682eb999c7c48840ae9b252a4ebf, type: 3}
+    icone: {fileID: 21300000, guid: d31cecf05e109fc41ab20194c2804826, type: 3}
     funcoes: Programmer
     portfolioLink: https://github.com/vinicimnoposte
   - nome: Duong Luu
-    icone: {fileID: 0}
+    icone: {fileID: 21300000, guid: d31cecf05e109fc41ab20194c2804826, type: 3}
     funcoes: Programmer
     portfolioLink: https://www.linkedin.com/in/dunbs/
   creditCardPrefab: {fileID: 7335282256044439202, guid: e302bee0c4809fc46998c4bf5aca986e, type: 3}
@@ -730,7 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -768,7 +768,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
