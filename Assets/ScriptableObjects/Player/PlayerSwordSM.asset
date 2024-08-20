@@ -45,6 +45,7 @@ MonoBehaviour:
     taskList:
     - {fileID: -3865865539416294374}
     - {fileID: -7151892054797352266}
+    - {fileID: 6523671009860259994}
 --- !u!114 &-7151892054797352266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,10 +156,11 @@ MonoBehaviour:
   transitions:
     transitions:
     - {fileID: 6567497772550660669}
-  executionPolicy: 0
+  executionPolicy: 1
   taskList:
     taskList:
     - {fileID: 3401277753713758987}
+    - {fileID: 7421996158657124011}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +203,8 @@ MonoBehaviour:
   - {fileID: 8331916055935008929}
   - {fileID: 1848613144645102780}
   - {fileID: 7555036558843807765}
+  - {fileID: 6523671009860259994}
+  - {fileID: 7421996158657124011}
 --- !u!114 &813275974018437927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,7 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 9b0b61eaaede52e48859cca94bd55186
-  position: {x: 223.99998, y: 253.00002}
+  position: {x: 224.00008, y: 252.79999}
   transitionCheck: 0
   repeat: 0
   transitions:
@@ -390,6 +394,26 @@ MonoBehaviour:
   eventType:
     guid: 
     value: 1
+--- !u!114 &6523671009860259994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b40b044023e090d42bfc245f7430d1ff, type: 3}
+  m_Name: 'ActionState [04348f7a78b000e4e83b3e8a57373925]/ShakeCamera [6f9db98e3fc09e1478de47e48fbea558]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 6f9db98e3fc09e1478de47e48fbea558
+  shakeData:
+    guid: 
+    value: {fileID: 11400000, guid: f0956409bcbf1514baf689bb1335b862, type: 2}
+  waitUntilFinish:
+    guid: 
+    value: 0
 --- !u!114 &6567497772550660669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,6 +431,26 @@ MonoBehaviour:
   connection: {fileID: 4879223665775132127}
   conditions:
     taskList: []
+--- !u!114 &7421996158657124011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b40b044023e090d42bfc245f7430d1ff, type: 3}
+  m_Name: 'ActionState [1f9c6a1efba7ef44d9ccb93d2f69569b]/ShakeCamera [18aecb0c3c6ee2a4daa99b19d9417efe]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 18aecb0c3c6ee2a4daa99b19d9417efe
+  shakeData:
+    guid: 
+    value: {fileID: 11400000, guid: dd6f48f92be38bb4ea2e7f9571676ba3, type: 2}
+  waitUntilFinish:
+    guid: 
+    value: 0
 --- !u!114 &7555036558843807765
 MonoBehaviour:
   m_ObjectHideFlags: 0

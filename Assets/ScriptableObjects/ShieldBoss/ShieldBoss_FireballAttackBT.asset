@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5771866914206028536
+--- !u!114 &-8348237724108727916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,17 +9,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 867e3d04a7360834893faf7312a089f3, type: 3}
-  m_Name: 'ActionLeaf [24474eb3e4af64a4ea28dad93c784194]/DebugLog [e4446c169f35f0e42879bd58ab78b153]'
+  m_Script: {fileID: 11500000, guid: b40b044023e090d42bfc245f7430d1ff, type: 3}
+  m_Name: 'ActionLeaf [24474eb3e4af64a4ea28dad93c784194]/ShakeCamera [4aea1d29e768373419e58f80743dc066]'
   m_EditorClassIdentifier: 
   title: 
-  guid: e4446c169f35f0e42879bd58ab78b153
-  message:
+  guid: 4aea1d29e768373419e58f80743dc066
+  shakeData:
     guid: 
-    value: Fireball Charging
-  logType:
+    value: {fileID: 11400000, guid: ee18e6a2c635386409713bcabdc8d9d8, type: 2}
+  waitUntilFinish:
     guid: 
-    value: 3
+    value: 0
+--- !u!114 &-7305330599617969351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e48502d95ee5e4e89a1299cd31aa9a, type: 3}
+  m_Name: 'ActionLeaf [24474eb3e4af64a4ea28dad93c784194]/WaitDelay [40354023008a9584799fe1edadb8e991]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 40354023008a9584799fe1edadb8e991
+  waitTime:
+    guid: 82acdc7c2e57c0446ab87df1d7d343c6
+    value: 1
 --- !u!114 &-3022200965398168881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,9 +52,10 @@ MonoBehaviour:
   title: 
   guid: 5eb814126b92bb44cb2c23cd69042680
   position: {x: 488.55, y: 470.99997}
-  executionPolicy: 0
+  executionPolicy: 1
   taskList:
     taskList:
+    - {fileID: 4304276909819710928}
     - {fileID: 6070277940959632444}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -56,12 +74,14 @@ MonoBehaviour:
   startNode: {fileID: 8444674900274959575}
   subAssets:
   - {fileID: 7955145106894503105}
-  - {fileID: -5771866914206028536}
-  - {fileID: 384875891823126768}
   - {fileID: 8444674900274959575}
   - {fileID: -3022200965398168881}
   - {fileID: 6070277940959632444}
---- !u!114 &384875891823126768
+  - {fileID: 4179725994484449737}
+  - {fileID: 4304276909819710928}
+  - {fileID: -7305330599617969351}
+  - {fileID: -8348237724108727916}
+--- !u!114 &4179725994484449737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,14 +90,55 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31e48502d95ee5e4e89a1299cd31aa9a, type: 3}
-  m_Name: 'ActionLeaf [24474eb3e4af64a4ea28dad93c784194]/WaitDelay [c086e35f052cb3941b03c9976e329603]'
+  m_Script: {fileID: 11500000, guid: 0fb3cee5a1b134b44b653350524b9868, type: 3}
+  m_Name: 'ActionLeaf [24474eb3e4af64a4ea28dad93c784194]/PlayAnimation [0820bbaf3b9c94f47859e6a569d9a240]'
   m_EditorClassIdentifier: 
   title: 
-  guid: c086e35f052cb3941b03c9976e329603
-  waitTime:
-    guid: 82acdc7c2e57c0446ab87df1d7d343c6
-    value: 1
+  guid: 0820bbaf3b9c94f47859e6a569d9a240
+  animator:
+    guid: 99825d63c74893c41ba86e9b1e25b833
+    value: {fileID: 0}
+  stateName:
+    guid: 
+    value: Fireball_Start
+  transition:
+    guid: 
+    value: 0.25
+  waitUntilFinish:
+    guid: 
+    value: 0
+  layer:
+    guid: 
+    value: 0
+--- !u!114 &4304276909819710928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb3cee5a1b134b44b653350524b9868, type: 3}
+  m_Name: 'ActionLeaf [5eb814126b92bb44cb2c23cd69042680]/PlayAnimation [2ec37726309cb944ab42a692b82c4d2f]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 2ec37726309cb944ab42a692b82c4d2f
+  animator:
+    guid: 99825d63c74893c41ba86e9b1e25b833
+    value: {fileID: 0}
+  stateName:
+    guid: 
+    value: Fireball_Loop
+  transition:
+    guid: 
+    value: 0.25
+  waitUntilFinish:
+    guid: 
+    value: 0
+  layer:
+    guid: 
+    value: 0
 --- !u!114 &6070277940959632444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,12 +179,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 24474eb3e4af64a4ea28dad93c784194
-  position: {x: 164.99998, y: 455.6501}
+  position: {x: 96.51404, y: 470.4}
   executionPolicy: 1
   taskList:
     taskList:
-    - {fileID: -5771866914206028536}
-    - {fileID: 384875891823126768}
+    - {fileID: 4179725994484449737}
+    - {fileID: -8348237724108727916}
+    - {fileID: -7305330599617969351}
 --- !u!114 &8444674900274959575
 MonoBehaviour:
   m_ObjectHideFlags: 0

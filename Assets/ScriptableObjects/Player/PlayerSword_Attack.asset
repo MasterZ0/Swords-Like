@@ -31,7 +31,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 450a74721421be4428e2767f9f83f6e4
-  position: {x: 159, y: 120}
+  position: {x: 159.20006, y: 119.61672}
   transitionCheck: 2
   repeat: 0
   transitions:
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Attack
   guid: 47df00930f3292f40806f6b65ba24a92
-  position: {x: 776.0001, y: -53.99997}
+  position: {x: 775.19995, y: -54.81671}
   transitionCheck: 2
   repeat: 0
   transitions:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 2a06ae008be103246933ab3cad3ba045
-  position: {x: 157.99997, y: 396.01135}
+  position: {x: 158.4, y: 394.39996}
   transitionCheck: 2
   repeat: 0
   transitions:
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: deaaba174f6bad141a02ac65dee08ede
-  position: {x: 160.15001, y: 714.00006}
+  position: {x: 159.00006, y: 714.20245}
   transitionCheck: 2
   repeat: 0
   transitions:

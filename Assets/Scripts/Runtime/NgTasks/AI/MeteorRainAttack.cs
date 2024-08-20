@@ -10,6 +10,7 @@ namespace Z3.GMTK2024.NgTasks
     {
         [SerializeField] private Parameter<Meteor> meteorPrefab;
         [SerializeField] private Parameter<Transform> arenaCenter;
+        [SerializeField] private Parameter<Transform> playerCenter;
 
         private Meteor prefab;
         private float time;
@@ -59,8 +60,12 @@ namespace Z3.GMTK2024.NgTasks
             for (int attempts = 0; attempts < MaxAttempts; attempts++)
             {
                 // Get random position in arena
-                Vector2 randomCircle = Random.insideUnitCircle * ShieldBossData.MeteorAttackCenterRadius;
-                spawnPosition = new Vector3(randomCircle.x, 0, randomCircle.y) + arenaCenter.Value.position;
+                Vector2 randomCircle = Random.insideUnitCircle * ShieldBossData.MeteorAttackAttackRadius;
+                spawnPosition = new Vector3(randomCircle.x, 0, randomCircle.y) + playerCenter.Value.position;
+
+                // Inside of arena
+                if (Vector3.Distance(spawnPosition, arenaCenter.Value.position) >= ShieldBossData.MeteorAttackArenaRadius)
+                    continue;
 
                 // Check if is free
                 bool isValidPosition = true;
