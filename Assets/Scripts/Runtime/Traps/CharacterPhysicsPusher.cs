@@ -34,7 +34,7 @@ namespace Z3
 
             var dir = (other.transform.position - transform.position).normalized;
             float dot = Vector3.Dot(dir, velocity);
-            if (dot < 0.2f) return;
+            if (dot < 0.1f) return;
             var impact = dir * hitForce;
             impact.y = 0;
 
