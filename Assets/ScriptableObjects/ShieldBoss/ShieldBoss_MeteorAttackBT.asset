@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 2d7171733d7b1ab4e96344e4e4b10553
-  position: {x: 707.25, y: 905.05005}
+  position: {x: 704.99994, y: 929.00006}
   child: {fileID: 7848543251029912373}
   repeaterMode: 0
   times:
@@ -35,7 +35,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: cc3677d9ead02f849a953ba601f392b7
-  position: {x: 579, y: 1326.9761}
+  position: {x: 576.99994, y: 1351}
   executionPolicy: 0
   taskList:
     taskList:
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 0dc56637a5b9dcb47bb940f777c058ed
-  position: {x: 756.0001, y: 429.2}
+  position: {x: 729, y: 426}
   children:
   - {fileID: 5154461481621615716}
   - {fileID: 2981363830166848765}
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 50b44276b8811584e8b590a04b6309e9
-  position: {x: 804, y: 1326.9761}
+  position: {x: 801.99994, y: 1351}
   executionPolicy: 0
   taskList:
     taskList:
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: d155a1a7a07ab2b488933468be706b84
-  position: {x: 981.0001, y: 922.87415}
+  position: {x: 967.7752, y: 929.00006}
   executionPolicy: 0
   taskList:
     taskList:
@@ -206,6 +206,9 @@ MonoBehaviour:
     value: {fileID: 0}
   arenaCenter:
     guid: b2462a8dd5b2a20438d117a48ec20a5f
+    value: {fileID: 0}
+  playerCenter:
+    guid: ec26c1cbf9df5be43ab658bb3a83f79b
     value: {fileID: 0}
 --- !u!114 &2981363830166848765
 MonoBehaviour:
@@ -310,7 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 356e0ef3e996bb54ea318900c39a5d22
-  position: {x: 705, y: 1117.9761}
+  position: {x: 702.99994, y: 1142}
   children:
   - {fileID: -7823911140672373760}
   - {fileID: -599267024615570764}
