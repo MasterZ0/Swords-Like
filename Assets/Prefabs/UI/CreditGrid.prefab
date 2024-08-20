@@ -542,6 +542,14 @@ MonoBehaviour:
     icone: {fileID: 21300000, guid: d31cecf05e109fc41ab20194c2804826, type: 3}
     funcoes: Programmer
     portfolioLink: https://www.linkedin.com/in/dunbs/
+  - nome: Leonidas Maciel
+    icone: {fileID: 21300000, guid: 12af9536bcb09d342b52c8fa8bc22109, type: 3}
+    funcoes: Game Designer, Animator, 3D Artist
+    portfolioLink: 
+  - nome: Master Z (Andre)
+    icone: {fileID: 21300000, guid: d31cecf05e109fc41ab20194c2804826, type: 3}
+    funcoes: Programmer
+    portfolioLink: https://z3-studio.com/
   creditCardPrefab: {fileID: 7335282256044439202, guid: e302bee0c4809fc46998c4bf5aca986e, type: 3}
   gridParent: {fileID: 3031060635443290810}
 --- !u!1 &4449787767259858603
