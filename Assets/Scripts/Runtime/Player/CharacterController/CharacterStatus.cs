@@ -4,6 +4,7 @@ using Z3.GMTK2024.BattleSystem;
 using Z3.GMTK2024.Data;
 using System.Collections.Generic;
 using System.Linq;
+using Z3.Effects;
 
 namespace Z3.GMTK2024
 {
@@ -19,6 +20,7 @@ namespace Z3.GMTK2024
     {
         [Header("Status")] [SerializeField] private HitBox swordHitbox;
         [SerializeField] private List<HealthMesh> healthMeshes;
+        [SerializeField] private BlinkVFX blinkVFX;
 
         protected override bool Invincible => invincibleTime > 0f;
 
@@ -36,6 +38,7 @@ namespace Z3.GMTK2024
             Inject(Attributes = new BasicAttributesController(Data.MaxHealth));
 
             currentHealthMesh = healthMeshes[0];
+            blinkVFX.Renderer = currentHealthMesh.mesh.GetComponent<Renderer>();
 
             Attributes.OnUpdateStatus += OnUpdateHealth;
             OnUpdateHealth();
@@ -60,7 +63,8 @@ namespace Z3.GMTK2024
         public override void SetInvincible(float duration)
         {
             base.SetInvincible(duration);
-            
+            // A code smell, but it's quick
+            invincibleTime = Mathf.Max(invincibleTime, duration);
         }
 
         public void Reset()
@@ -99,11 +103,19 @@ namespace Z3.GMTK2024
             // Note: The first element is the higher range and the last must to be 0
             currentHealthMesh = healthMeshes.First(h => healthPercentage >= h.percentage);
             currentHealthMesh.mesh.SetActive(true);
+            blinkVFX.Renderer = currentHealthMesh.mesh.GetComponent<Renderer>();
+        }
+
+        public override void TakeDamage(Damage damage)
+        {
+            base.TakeDamage(damage);
+            blinkVFX.Blink();
         }
 
         protected override void Damage(DamageInfo damageInfo)
         {
             invincibleTime = Data.InvisibleDuration;
+
             ReceiveDamage(damageInfo);
 
             // Check shield, damage insity, next state event (criticalInjury), knockback direction
