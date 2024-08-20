@@ -1,5 +1,34 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1107 &-8915714794497348613
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Attack
+  m_ChildStates:
+  - serializedVersion: 1
+    m_State: {fileID: -1074138952588621765}
+    m_Position: {x: 0, y: 0, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 870837793544207372}
+    m_Position: {x: 0, y: 0, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 2878643838472657307}
+    m_Position: {x: 0, y: 0, z: 0}
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours:
+  - {fileID: -1909206393071245636}
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: -1074138952588621765}
 --- !u!1102 &-8766709362262166634
 AnimatorState:
   serializedVersion: 6
@@ -21,7 +50,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 8556828655511536414, guid: e837f8d91ba6346fda91477e999b1ba2, type: 3}
+  m_Motion: {fileID: 7400000, guid: 7496183284dd1d04b98df3ed6e17214c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -85,8 +114,8 @@ AnimatorStateMachine:
     m_Position: {x: -50, y: 440, z: 0}
   m_ChildStateMachines:
   - serializedVersion: 1
-    m_StateMachine: {fileID: 2331215944345979907}
-    m_Position: {x: 500, y: 510, z: 0}
+    m_StateMachine: {fileID: -8915714794497348613}
+    m_Position: {x: 510, y: 510, z: 0}
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
@@ -193,6 +222,19 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-1909206393071245636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc54f5ead8e40e38e009e8e5054c552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: OnAttackFinished
 --- !u!1102 &-1841291491965191509
 AnimatorState:
   serializedVersion: 6
@@ -214,7 +256,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 4601210490471838279, guid: e837f8d91ba6346fda91477e999b1ba2, type: 3}
+  m_Motion: {fileID: 7400000, guid: 30141dc04a38e3c42b4013ad3e597323, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -376,7 +418,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
-  m_ExitTime: 0.33
+  m_ExitTime: 0.79310346
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -685,7 +727,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 4324067047782585191, guid: e837f8d91ba6346fda91477e999b1ba2, type: 3}
+    m_Motion: {fileID: 7400000, guid: 8154cc07355736d4daa50f26a97825df, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -693,7 +735,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 1401386787141629786, guid: e837f8d91ba6346fda91477e999b1ba2, type: 3}
+    m_Motion: {fileID: 7400000, guid: 11dc67f7867bbc945ae1980e86069e86, type: 2}
     m_Threshold: 0.33
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1.5
@@ -701,7 +743,7 @@ BlendTree:
     m_DirectBlendParameter: Speed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 5543649247633552276, guid: e837f8d91ba6346fda91477e999b1ba2, type: 3}
+    m_Motion: {fileID: 7400000, guid: a326fa3a58e5434489b5b4591c7aad61, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 2.5
