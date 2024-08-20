@@ -31,7 +31,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 450a74721421be4428e2767f9f83f6e4
-  position: {x: 159.20006, y: 119.61672}
+  position: {x: 159, y: 120}
   transitionCheck: 2
   repeat: 0
   transitions:
@@ -42,7 +42,6 @@ MonoBehaviour:
   taskList:
     taskList:
     - {fileID: 3171952489063617662}
-    - {fileID: -1779942020221552462}
 --- !u!114 &-8079603922336653941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +120,6 @@ MonoBehaviour:
   taskList:
     taskList:
     - {fileID: -8079603922336653941}
-    - {fileID: 1135651188842028306}
 --- !u!114 &-6687233235530181860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: deaaba174f6bad141a02ac65dee08ede
-  position: {x: 159.00006, y: 714.20245}
+  position: {x: 160.15001, y: 714.00006}
   transitionCheck: 2
   repeat: 0
   transitions:
@@ -146,7 +144,6 @@ MonoBehaviour:
   taskList:
     taskList:
     - {fileID: -3298275772718520858}
-    - {fileID: 4119316907676242367}
 --- !u!114 &-6332109112464755845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,26 +270,6 @@ MonoBehaviour:
     taskList:
     - {fileID: -6332109112464755845}
     - {fileID: 8033008845970650533}
---- !u!114 &-1779942020221552462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cccff10195f0bdb4d930718e29739461, type: 3}
-  m_Name: 'ActionState [450a74721421be4428e2767f9f83f6e4]/PlaySound [88b88f6e677b0444c825a1a219a8ced2]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 88b88f6e677b0444c825a1a219a8ced2
-  attachedObject:
-    guid: 
-    value: {fileID: 0}
-  soundData:
-    guid: 
-    value: {fileID: 11400000, guid: 9d9198672a9614e7cb42052ebbfd2c99, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,9 +305,6 @@ MonoBehaviour:
   - {fileID: -7064346078811000238}
   - {fileID: 3345750807523636864}
   - {fileID: -3208682361864250390}
-  - {fileID: -1779942020221552462}
-  - {fileID: 1135651188842028306}
-  - {fileID: 4119316907676242367}
 --- !u!114 &1024352449296065653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,26 +327,6 @@ MonoBehaviour:
   controllerEvent:
     guid: 
     value: 3
---- !u!114 &1135651188842028306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cccff10195f0bdb4d930718e29739461, type: 3}
-  m_Name: 'ActionState [2a06ae008be103246933ab3cad3ba045]/PlaySound [8a8fe6afc1b064512ba8ea445e2b9490]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: 8a8fe6afc1b064512ba8ea445e2b9490
-  attachedObject:
-    guid: 
-    value: {fileID: 0}
-  soundData:
-    guid: 
-    value: {fileID: 11400000, guid: 2297187960a2645cb81098f9c3bd8c28, type: 2}
 --- !u!114 &1641832090758170731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,26 +425,6 @@ MonoBehaviour:
   eventName:
     guid: 
     value: OnAttackFinished
---- !u!114 &4119316907676242367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cccff10195f0bdb4d930718e29739461, type: 3}
-  m_Name: 'ActionState [deaaba174f6bad141a02ac65dee08ede]/PlaySound [fa1a7ac0a81e347039d470f120c4435f]'
-  m_EditorClassIdentifier: 
-  title: 
-  guid: fa1a7ac0a81e347039d470f120c4435f
-  attachedObject:
-    guid: 
-    value: {fileID: 0}
-  soundData:
-    guid: 
-    value: {fileID: 11400000, guid: b040ead6a3c0f46adb14165a32c943cd, type: 2}
 --- !u!114 &8007591500285867535
 MonoBehaviour:
   m_ObjectHideFlags: 0

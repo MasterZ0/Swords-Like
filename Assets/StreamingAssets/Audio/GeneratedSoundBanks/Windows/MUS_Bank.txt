@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	951125801	Play_MusicMaster			\GMTK2024_Events\GMTK2024_Events_Music\Play_MusicMaster	
+	4080737523	Stop_MusicMaster			\GMTK2024_Events\GMTK2024_Events_Music\Stop_MusicMaster	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3103015060	MusicStates			\Default Work Unit\MusicStates	
+
+State	ID	Name	State Group			Notes
+	748895195	None	MusicStates			
+	1769137949	Mus_FinalScene	MusicStates			
+	3149643052	Mus_Menu	MusicStates			
+	3450947812	Mus_BossFight	MusicStates			
+	4242578485	Mus_Extra	MusicStates			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	589589547	GMTK_MainMenu_FullTrack_44_72BPM	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK_MainMenu_FullTrack_44_72BPM_D79FB2B7.wem		\Interactive Music Hierarchy\GMTK2024_Music\MasterMusic\MUS_Menu\GMTK_MainMenu_FullTrack_44_72BPM\GMTK_MainMenu_FullTrack_44_72BPM		37191096
+	609524174	GMTK_ExtraMenu_FullTrack_44_63BPM138BPM	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK_ExtraMenu_FullTrack_44_63BPM138BPM_D79FB2B7.wem		\Interactive Music Hierarchy\GMTK2024_Music\MasterMusic\MUS_Extra\GMTK_ExtraMenu_FullTrack_44_63BPM138BPM\GMTK_ExtraMenu_FullTrack_44_63BPM138BPM		11928096
+	676509989	GMTK_FinalScene_FullTrack_44_84BPM	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK_FinalScene_FullTrack_44_84BPM_D79FB2B7.wem		\Interactive Music Hierarchy\GMTK2024_Music\MasterMusic\MUS_FinalScene\GMTK_FinalScene_FullTrack_44_84BPM\GMTK_FinalScene_FullTrack_44_84BPM		8568096
+

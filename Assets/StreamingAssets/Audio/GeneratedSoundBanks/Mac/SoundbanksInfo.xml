@@ -9,11 +9,61 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="827800787" Type="User" Language="SFX" Hash="{5AA64E35-6D32-1F37-09DC-002797A39990}">
+		<SoundBank Id="827800787" Type="User" Language="SFX" Hash="{4B1EEC25-DCF8-C25A-56BA-44B569527238}">
 			<ShortName>MUS_Bank</ShortName>
 			<Path>MUS_Bank.bnk</Path>
+			<Media>
+				<File Id="589589547" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK_MainMenu_FullTrack_44_72BPM.wav</ShortName>
+					<CachePath>SFX/GMTK_MainMenu_FullTrack_44_72BPM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="609524174" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK_ExtraMenu_FullTrack_44_63BPM138BPM.wav</ShortName>
+					<CachePath>SFX/GMTK_ExtraMenu_FullTrack_44_63BPM138BPM_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="676509989" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK_FinalScene_FullTrack_44_84BPM.wav</ShortName>
+					<CachePath>SFX/GMTK_FinalScene_FullTrack_44_84BPM_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="951125801" Name="Play_MusicMaster" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3103015060" Id="4242578485"/>
+							<MediaRefs>
+								<MediaRef Id="609524174"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3103015060" Id="1769137949"/>
+							<MediaRefs>
+								<MediaRef Id="676509989"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3103015060" Id="3149643052"/>
+							<MediaRefs>
+								<MediaRef Id="589589547"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4080737523" Name="Stop_MusicMaster" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="3103015060" Name="MusicStates">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1769137949" Name="Mus_FinalScene"/>
+						<State Id="3149643052" Name="Mus_Menu"/>
+						<State Id="3450947812" Name="Mus_BossFight"/>
+						<State Id="4242578485" Name="Mus_Extra"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1079FB2B-3123-55E0-45BD-C0F893FD7673}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E8F3ECE3-3783-5581-E0F3-FDD1C5D09045}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -66,6 +116,17 @@
 				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
 				<GameParameter Id="4160247818" Name="SS_Air_Turbulence"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3103015060" Name="MusicStates">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1769137949" Name="Mus_FinalScene"/>
+						<State Id="3149643052" Name="Mus_Menu"/>
+						<State Id="3450947812" Name="Mus_BossFight"/>
+						<State Id="4242578485" Name="Mus_Extra"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<AcousticTextures>
 				<AcousticTexture Id="504532776" Name="Brick">
 					<Properties>
@@ -230,7 +291,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2366286276" Type="User" Language="SFX" Hash="{2702C1E2-CE4A-5F2A-4204-E2AD2283D6B2}">
+		<SoundBank Id="2366286276" Type="User" Language="SFX" Hash="{668E2DA9-39B5-3B62-C8F2-2774BF952A41}">
 			<ShortName>BOS_Bank</ShortName>
 			<Path>BOS_Bank.bnk</Path>
 			<Media>
@@ -379,13 +440,17 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3450962857" Type="User" Language="SFX" Hash="{8784F251-1A0C-AFDA-7D4D-AA93DD9E7C8C}">
+		<SoundBank Id="3450962857" Type="User" Language="SFX" Hash="{80D5B6D3-9CA5-2022-E461-5014FA0CDA9A}">
 			<ShortName>PLYR_Bank</ShortName>
 			<Path>PLYR_Bank.bnk</Path>
 			<Media>
 				<File Id="24588175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-001.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="38717424" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_PLYR_ATK_Swing-003.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_ATK_Swing-003_10C4C929.wem</CachePath>
 				</File>
 				<File Id="142045308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GMTK2024_ProjectSword_PLYR_Death.wav</ShortName>
@@ -403,6 +468,10 @@
 					<ShortName>GMTK2024_ProjectSword_PLYR_FootStep_MetalLayer-003.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_FootStep_MetalLayer-003_10C4C929.wem</CachePath>
 				</File>
+				<File Id="309489317" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_PLYR_ATK_Swing-001.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_ATK_Swing-001_10C4C929.wem</CachePath>
+				</File>
 				<File Id="330140524" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GMTK2024_ProjectSword_PLYR_Damage-004.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_Damage-004_10C4C929.wem</CachePath>
@@ -414,6 +483,10 @@
 				<File Id="387817810" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GMTK2024_ProjectSword_PLYR_FootStep_MetalLayer-001.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_FootStep_MetalLayer-001_10C4C929.wem</CachePath>
+				</File>
+				<File Id="474361080" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_PLYR_ATK_Swing-002.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_ATK_Swing-002_10C4C929.wem</CachePath>
 				</File>
 				<File Id="591720533" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-004.wav</ShortName>
@@ -465,7 +538,44 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3156901378" Name="Play_PLYR_Attack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2871506208" Name="Play_PLYR_Attack_01" DurationType="OneShot" DurationMin="0.72464335" DurationMax="0.861751">
+					<MediaRefs>
+						<MediaRef Id="309489317"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
+						<AuxBusRef Id="4155604923" Name="LongReverb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2871506211" Name="Play_PLYR_Attack_02" DurationType="OneShot" DurationMin="0.5373835" DurationMax="0.63906026">
+					<MediaRefs>
+						<MediaRef Id="474361080"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
+						<AuxBusRef Id="4155604923" Name="LongReverb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2871506210" Name="Play_PLYR_Attack_03" DurationType="OneShot" DurationMin="1.229454" DurationMax="1.4620755">
+					<MediaRefs>
+						<MediaRef Id="38717424"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
+						<AuxBusRef Id="4155604923" Name="LongReverb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2405469790" Name="Play_PLYR_Attack_Sequence" DurationType="OneShot" DurationMin="0.5373835" DurationMax="1.4620755">
+					<MediaRefs>
+						<MediaRef Id="38717424"/>
+						<MediaRef Id="309489317"/>
+						<MediaRef Id="474361080"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
+						<AuxBusRef Id="4155604923" Name="LongReverb"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="4153750570" Name="Play_PLYR_DamageTaken" DurationType="OneShot" DurationMin="0.65481836" DurationMax="1.319508">
 					<MediaRefs>
 						<MediaRef Id="168619767"/>
@@ -521,5 +631,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D328A520-ECCE-E8A3-87AA-27D9463FB55F}</FileHash>
+	<FileHash>{A86823A2-0D14-0916-50CE-79302F7C7188}</FileHash>
 </SoundBanksInfo>
