@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 154a18c0033fcb34989e4facc8fa67eb, type: 3}
-  m_Name: Boss_TakeDamageSD
+  m_Script: {fileID: 11500000, guid: bfb7be0b9267a424da5acee9d79f2760, type: 3}
+  m_Name: FF0CDC3E-7C17-475B-B437-6A320B7E2800
   m_EditorClassIdentifier: 
-  eventReference:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 01842f0800c6e4eb2b00490bc415f2ba, type: 2}
+  objectName: Play_BOS_ATK_Meteor_Rumble
+  id: 1875915164
+  guid: FF0CDC3E-7C17-475B-B437-6A320B7E2800

@@ -181,7 +181,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1838976376" Type="User" Language="SFX" Hash="{B86625DB-0C8A-E43E-2D26-FCAFDC1CD14C}">
+		<SoundBank Id="1838976376" Type="User" Language="SFX" Hash="{67C45350-8C3C-1A08-3207-864DCE21CCAD}">
 			<ShortName>AMB_Bank</ShortName>
 			<Path>AMB_Bank.bnk</Path>
 			<Media>
@@ -230,10 +230,18 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2366286276" Type="User" Language="SFX" Hash="{51582202-386E-5F89-D516-F9606F48559C}">
+		<SoundBank Id="2366286276" Type="User" Language="SFX" Hash="{2702C1E2-CE4A-5F2A-4204-E2AD2283D6B2}">
 			<ShortName>BOS_Bank</ShortName>
 			<Path>BOS_Bank.bnk</Path>
 			<Media>
+				<File Id="6579909" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_BOS_FootStep-003.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_BOS_FootStep-003_10C4C929.wem</CachePath>
+				</File>
+				<File Id="23862778" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_BOS_FootStep-002.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_BOS_FootStep-002_10C4C929.wem</CachePath>
+				</File>
 				<File Id="373933631" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-001.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-001_10C4C929.wem</CachePath>
@@ -246,9 +254,25 @@
 					<ShortName>GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-002.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_BOS_ATK_Shockwave_Blast-002_10C4C929.wem</CachePath>
 				</File>
+				<File Id="518620082" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_BOS_FootStep-005.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_BOS_FootStep-005_10C4C929.wem</CachePath>
+				</File>
+				<File Id="790489603" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_BOS_FootStep-001.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_BOS_FootStep-001_10C4C929.wem</CachePath>
+				</File>
 				<File Id="807809641" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GMTK2024_ProjectSword_BOS_ATK_Shockwave_Magic.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_BOS_ATK_Shockwave_Magic_10C4C929.wem</CachePath>
+				</File>
+				<File Id="896489680" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_BOS_ATK_Meteor_Rumble.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_BOS_ATK_Meteor_Rumble_542CF7D5.wem</CachePath>
+				</File>
+				<File Id="898986482" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_BOS_ATK_Meteor_Impact.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_BOS_ATK_Meteor_Impact_10C4C929.wem</CachePath>
 				</File>
 				<File Id="981883016" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GMTK2024_ProjectSword_BOS_DMG_.wav</ShortName>
@@ -258,9 +282,13 @@
 					<ShortName>GMTK2024_ProjectSword_BOS_ATK_FireBall.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_BOS_ATK_FireBall_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1015541868" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_BOS_FootStep-004.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_BOS_FootStep-004_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="1880719579" Name="Play_BOS_ATK_FireBall" DurationType="OneShot" DurationMin="0.5" DurationMax="0.6674199">
+				<Event Id="1880719579" Name="Play_BOS_ATK_FireBall" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.5" DurationMax="0.6674199">
 					<MediaRefs>
 						<MediaRef Id="988877850"/>
 					</MediaRefs>
@@ -268,8 +296,25 @@
 						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="516026728" Name="Play_BOS_ATK_Meteor" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="4255133681" Name="Play_BOS_ATK_Shockwave" DurationType="OneShot" DurationMin="0.6290625" DurationMax="1.73375">
+				<Event Id="1710112781" Name="Play_BOS_ATK_Meteor_Impact" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.26587912" DurationMax="0.47374275">
+					<MediaRefs>
+						<MediaRef Id="898986482"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
+						<AuxBusRef Id="4155604923" Name="LongReverb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1875915164" Name="Play_BOS_ATK_Meteor_Rumble" MaxAttenuation="50" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="896489680"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
+						<AuxBusRef Id="4155604923" Name="LongReverb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="4255133681" Name="Play_BOS_ATK_Shockwave" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.6290625" DurationMax="1.73375">
 					<MediaRefs>
 						<MediaRef Id="373933631"/>
 						<MediaRef Id="403273954"/>
@@ -287,7 +332,19 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="2558195277" Name="Play_BOS_Death" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2740614378" Name="Play_BOS_Footsteps" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2740614378" Name="Play_BOS_Footsteps" MaxAttenuation="75" DurationType="OneShot" DurationMin="1" DurationMax="1.3348398">
+					<MediaRefs>
+						<MediaRef Id="6579909"/>
+						<MediaRef Id="23862778"/>
+						<MediaRef Id="518620082"/>
+						<MediaRef Id="790489603"/>
+						<MediaRef Id="1015541868"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
+						<AuxBusRef Id="4155604923" Name="LongReverb"/>
+					</AuxBusRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="3113887189" Type="User" Language="SFX" Hash="{36DB4DFE-16EF-5F83-98E2-9600C890B76A}">
@@ -322,7 +379,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3450962857" Type="User" Language="SFX" Hash="{F5276625-1082-A8DD-0A74-B2D453266E03}">
+		<SoundBank Id="3450962857" Type="User" Language="SFX" Hash="{8784F251-1A0C-AFDA-7D4D-AA93DD9E7C8C}">
 			<ShortName>PLYR_Bank</ShortName>
 			<Path>PLYR_Bank.bnk</Path>
 			<Media>
@@ -398,13 +455,17 @@
 					<ShortName>GMTK2024_ProjectSword_PLYR_Damage-001.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_Damage-001_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1003335309" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK2024_ProjectSword_PLYR_Dodge.wav</ShortName>
+					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_Dodge_10C4C929.wem</CachePath>
+				</File>
 				<File Id="1017491906" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-002.wav</ShortName>
 					<CachePath>SFX/GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-002_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3156901378" Name="Play_PLYR_Attack" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3156901378" Name="Play_PLYR_Attack" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4153750570" Name="Play_PLYR_DamageTaken" DurationType="OneShot" DurationMin="0.65481836" DurationMax="1.319508">
 					<MediaRefs>
 						<MediaRef Id="168619767"/>
@@ -420,6 +481,15 @@
 				<Event Id="3433621352" Name="Play_PLYR_Death" DurationType="OneShot" DurationMin="2" DurationMax="2">
 					<MediaRefs>
 						<MediaRef Id="142045308"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
+						<AuxBusRef Id="4155604923" Name="LongReverb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2145164375" Name="Play_PLYR_Dodge" DurationType="OneShot" DurationMin="0.8543162" DurationMax="1.0457288">
+					<MediaRefs>
+						<MediaRef Id="1003335309"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="1193032327" Name="CloseReverb"/>
@@ -451,5 +521,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{60B3EC54-7C92-4F58-4327-B383BD511079}</FileHash>
+	<FileHash>{D328A520-ECCE-E8A3-87AA-27D9463FB55F}</FileHash>
 </SoundBanksInfo>

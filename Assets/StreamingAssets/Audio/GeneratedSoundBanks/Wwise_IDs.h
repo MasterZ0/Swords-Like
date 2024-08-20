@@ -24,7 +24,9 @@ namespace AK
         static const AkUniqueID PLAY_BOS_FOOTSTEPS = 2740614378U;
         static const AkUniqueID PLAY_MENU_HOVER = 3835684012U;
         static const AkUniqueID PLAY_MENU_SELECT = 2167056030U;
-        static const AkUniqueID PLAY_PLYR_ATTACK = 3156901378U;
+        static const AkUniqueID PLAY_PLYR_ATTACK_01 = 2871506208U;
+        static const AkUniqueID PLAY_PLYR_ATTACK_02 = 2871506211U;
+        static const AkUniqueID PLAY_PLYR_ATTACK_03 = 2871506210U;
         static const AkUniqueID PLAY_PLYR_DAMAGETAKEN = 4153750570U;
         static const AkUniqueID PLAY_PLYR_DEATH = 3433621352U;
         static const AkUniqueID PLAY_PLYR_DODGE = 2145164375U;

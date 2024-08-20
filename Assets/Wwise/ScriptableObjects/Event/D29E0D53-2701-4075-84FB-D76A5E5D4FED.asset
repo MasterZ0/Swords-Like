@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb7be0b9267a424da5acee9d79f2760, type: 3}
   m_Name: D29E0D53-2701-4075-84FB-D76A5E5D4FED
   m_EditorClassIdentifier: 
-  objectName: Play_PLYR_Attack
-  id: 3156901378
+  objectName: Play_PLYR_Attack_01
+  id: 2871506208
   guid: D29E0D53-2701-4075-84FB-D76A5E5D4FED

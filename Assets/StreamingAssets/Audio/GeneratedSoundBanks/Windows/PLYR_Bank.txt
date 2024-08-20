@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	673033979	Play_PLYR_Footsteps			\GMTK2024_Events\GMTK2024_Events_SFX\Player\Play_PLYR_Footsteps	
+	2145164375	Play_PLYR_Dodge			\GMTK2024_Events\GMTK2024_Events_SFX\Player\Play_PLYR_Dodge	
 	3156901378	Play_PLYR_Attack			\GMTK2024_Events\GMTK2024_Events_SFX\Player\Play_PLYR_Attack	
 	3433621352	Play_PLYR_Death			\GMTK2024_Events\GMTK2024_Events_SFX\Player\Play_PLYR_Death	
 	4153750570	Play_PLYR_DamageTaken			\GMTK2024_Events\GMTK2024_Events_SFX\Player\Play_PLYR_DamageTaken	
@@ -23,5 +24,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	901436060	GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-003	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-003_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Player\PLYR_Footsteps\PLYR_FSTP_Concrete\GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-003		96096
 	912366118	GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-008	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-008_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Player\PLYR_Footsteps\PLYR_FSTP_Concrete\GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-008		96096
 	921457693	GMTK2024_ProjectSword_PLYR_Damage-001	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_PLYR_Damage-001_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Player\PLYR_DamageTaken\GMTK2024_ProjectSword_PLYR_Damage-001		192096
+	1003335309	GMTK2024_ProjectSword_PLYR_Dodge	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_PLYR_Dodge_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Player\GMTK2024_ProjectSword_PLYR_Dodge		184212
 	1017491906	GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-002	Y:\Documents\WwiseProjects\GMTK Game Jam 2024\.cache\Windows\SFX\GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-002_10C4C929.wem		\Actor-Mixer Hierarchy\GMTK2024_SFX\Player\PLYR_Footsteps\PLYR_FSTP_Concrete\GMTK2024_ProjectSword_PLYR_FootStep_StepLayer-002		96096
 

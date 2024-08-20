@@ -790,7 +790,7 @@ MonoBehaviour:
     ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss
     guid: 3d9bd92515e98c4f87e5dfa6778072ca
     GuidInternal: 
-    m_lastTime: -8584775268432386129
+    m_lastTime: -8584775061121864893
     List:
     - name: Attacks
       guid: 8aadd1f5d4c95849b1191724a7b8304c
@@ -838,12 +838,12 @@ MonoBehaviour:
         ObjectType: 3
         guid: 160e60fbf1e4c947ae5743cbeb1dc5d8
       Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Attacks/Play_BOS_ATK_FireBall
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 0.6674199
       minDuration: 0.5
-    - name: Play_BOS_ATK_Meteor
+    - name: Play_BOS_ATK_Meteor_Impact
       guid: e843a8dc21f1ca4cb8f4183cc00f443c
-      id: 516026728
+      id: 1710112781
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -860,13 +860,39 @@ MonoBehaviour:
       - ElementName: Attacks
         ObjectType: 4
         guid: 8aadd1f5d4c95849b1191724a7b8304c
-      - ElementName: Play_BOS_ATK_Meteor
+      - ElementName: Play_BOS_ATK_Meteor_Impact
         ObjectType: 3
         guid: e843a8dc21f1ca4cb8f4183cc00f443c
-      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Attacks/Play_BOS_ATK_Meteor
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Attacks/Play_BOS_ATK_Meteor_Impact
+      maxAttenuation: 50
+      maxDuration: 0.47374275
+      minDuration: 0.26587912
+    - name: Play_BOS_ATK_Meteor_Rumble
+      guid: 3edc0cff177c5b47b4376a320b7e2800
+      id: 1875915164
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Boss
+        ObjectType: 12
+        guid: 3d9bd92515e98c4f87e5dfa6778072ca
+      - ElementName: Attacks
+        ObjectType: 4
+        guid: 8aadd1f5d4c95849b1191724a7b8304c
+      - ElementName: Play_BOS_ATK_Meteor_Rumble
+        ObjectType: 3
+        guid: 3edc0cff177c5b47b4376a320b7e2800
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Attacks/Play_BOS_ATK_Meteor_Rumble
+      maxAttenuation: 50
+      maxDuration: -1
+      minDuration: -1
     - name: Play_BOS_ATK_Shockwave
       guid: 1e72a8efc993ff4189878d6cb3b1a87e
       id: 4255133681
@@ -890,7 +916,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1e72a8efc993ff4189878d6cb3b1a87e
       Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Attacks/Play_BOS_ATK_Shockwave
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 1.73375
       minDuration: 0.6290625
     - name: Play_BOS_DamageTaken
@@ -959,9 +985,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: a4c4a447d85393498aea8f370cab54e6
       Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Boss/Play_BOS_Footsteps
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxAttenuation: 75
+      maxDuration: 1.3348398
+      minDuration: 1
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -986,8 +1012,25 @@ MonoBehaviour:
     ParentPath: Events/GMTK2024_Events
     guid: 75a00eb933d73a42a6501229ef4b9050
     GuidInternal: 
-    m_lastTime: -8584776597167342166
-    List: []
+    m_lastTime: -8584775061419085328
+    List:
+    - name: STOP_ALL
+      guid: be94c478d3b3f844babb24b5e88e255c
+      id: 452547817
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: STOP_ALL
+        ObjectType: 3
+        guid: be94c478d3b3f844babb24b5e88e255c
+      Path: Events/GMTK2024_Events/STOP_ALL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events/GMTK2024_Events_Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -1037,11 +1080,11 @@ MonoBehaviour:
     ParentPath: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player
     guid: a5be13cc76d8b847988a04e9b75dd8d3
     GuidInternal: 
-    m_lastTime: -8584775268174823893
+    m_lastTime: -8584775028504673460
     List:
-    - name: Play_PLYR_Attack
+    - name: Play_PLYR_Attack_01
       guid: 530d9ed20127754084fbd76a5e5d4fed
-      id: 3156901378
+      id: 2871506208
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1055,13 +1098,59 @@ MonoBehaviour:
       - ElementName: Player
         ObjectType: 12
         guid: a5be13cc76d8b847988a04e9b75dd8d3
-      - ElementName: Play_PLYR_Attack
+      - ElementName: Play_PLYR_Attack_01
         ObjectType: 3
         guid: 530d9ed20127754084fbd76a5e5d4fed
-      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player/Play_PLYR_Attack
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player/Play_PLYR_Attack_01
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_PLYR_Attack_02
+      guid: 6097ca2707dd274a81f1e5333beec7ae
+      id: 2871506211
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Player
+        ObjectType: 12
+        guid: a5be13cc76d8b847988a04e9b75dd8d3
+      - ElementName: Play_PLYR_Attack_02
+        ObjectType: 3
+        guid: 6097ca2707dd274a81f1e5333beec7ae
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player/Play_PLYR_Attack_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_PLYR_Attack_03
+      guid: 1a48ba90f98947488932286cf5cc99e8
+      id: 2871506210
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Player
+        ObjectType: 12
+        guid: a5be13cc76d8b847988a04e9b75dd8d3
+      - ElementName: Play_PLYR_Attack_03
+        ObjectType: 3
+        guid: 1a48ba90f98947488932286cf5cc99e8
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player/Play_PLYR_Attack_03
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_PLYR_DamageTaken
       guid: 6148f590f670624991d9ff5de8c764f8
       id: 4153750570
@@ -1108,6 +1197,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2
       minDuration: 2
+    - name: Play_PLYR_Dodge
+      guid: 2fb56f5e61b61d4987ed0b585bd9c282
+      id: 2145164375
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_SFX
+        ObjectType: 12
+        guid: 4921a8c4dc2604419a084d4b7a90f4c5
+      - ElementName: Player
+        ObjectType: 12
+        guid: a5be13cc76d8b847988a04e9b75dd8d3
+      - ElementName: Play_PLYR_Dodge
+        ObjectType: 3
+        guid: 2fb56f5e61b61d4987ed0b585bd9c282
+      Path: Events/GMTK2024_Events/GMTK2024_Events_SFX/Player/Play_PLYR_Dodge
+      maxAttenuation: 0
+      maxDuration: 1.0457288
+      minDuration: 0.8543162
     - name: Play_PLYR_Footsteps
       guid: 007008af3ab32e40b9137b7bab462fb6
       id: 673033979
@@ -1543,7 +1655,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584778322803718050
     List: []
-  ExpandedFileSystemItemIds: 02000000030000000400000005000000060000000700000008000000090000000a0000000b0000001f000000
+  ExpandedFileSystemItemIds: 02000000030000000400000005000000060000000700000008000000090000000a0000000b00000014000000160000001c0000001f000000
   ExpandedWaapiItemIds: 1f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

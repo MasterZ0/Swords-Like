@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 154a18c0033fcb34989e4facc8fa67eb, type: 3}
-  m_Name: Boss_ShockwaveSD
+  m_Script: {fileID: 11500000, guid: bfb7be0b9267a424da5acee9d79f2760, type: 3}
+  m_Name: 3E75F3A2-D7D1-42A1-A19C-569950EE188F
   m_EditorClassIdentifier: 
-  eventReference:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 454617754a7efb247bb997a7de6d7933, type: 2}
+  objectName: Play_BOS_DamageTaken
+  id: 724278647
+  guid: 3E75F3A2-D7D1-42A1-A19C-569950EE188F
