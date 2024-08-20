@@ -436,7 +436,7 @@ MonoBehaviour:
     guid: c72e36d8d15de06478a46266a524b361
     type: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     serializedObject: {fileID: 0}
-    serializedValue: 0
+    serializedValue: -1
   startNode: {fileID: 604196195996264218}
   subAssets:
   - {fileID: 604196195996264218}

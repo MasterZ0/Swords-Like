@@ -103,6 +103,11 @@ MonoBehaviour:
       PublicKeyToken=null
     serializedObject: {fileID: 0}
     serializedValue: null
+  - name: RadiusAttackDelayAfter
+    guid: b3648f83daef3f2439818091b9dcbcf7
+    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    serializedObject: {fileID: 0}
+    serializedValue: 0.0
   - name: RadiusAttackStompPoint
     guid: 8cc1b02268d33984492a9c48c0feb202
     type: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
@@ -157,11 +162,6 @@ MonoBehaviour:
       mscorlib]], mscorlib","$values":[]}'
   - name: RadiusAttackDistanceToAttack
     guid: 30b4382dd383c654ead327eb8f864b29
-    type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    serializedObject: {fileID: 0}
-    serializedValue: 0.0
-  - name: RadiusAttackDelayAfter
-    guid: b3648f83daef3f2439818091b9dcbcf7
     type: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     serializedObject: {fileID: 0}
     serializedValue: 0.0
