@@ -9,6 +9,7 @@ namespace Z3.GMTK2024.BattleSystem
 
         // OnAttack(melee/range) // Where: on enabled hitbox -> Used to: Enemy dodge
         event Action<DamageInfo> OnTakeDamage;
+        event Action OnDeath;
 
         void TakeDamage(Damage damage);
         void DamageDealt(DamageInfo info);

@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace Z3.GMTK2024
@@ -9,6 +8,13 @@ namespace Z3.GMTK2024
         [SerializeField] private Button btnPlay;
         [SerializeField] private Button btnQuit;
 
+        private GameController controller;
+
+        internal void Init(GameController gameController)
+        {
+            controller = gameController;
+        }
+
         private void Awake()
         {
             btnPlay.onClick.AddListener(Play);
@@ -17,13 +23,17 @@ namespace Z3.GMTK2024
 
         private void Play()
         {
-            GameController.Instance.OnIntro();
-            transform.root.gameObject.SetActive(false);
+            controller.StartGame();
+            gameObject.SetActive(false);
         }
 
         private void Quit()
         {
             Application.Quit();
+
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#endif
         }
     }
 }

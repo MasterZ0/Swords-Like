@@ -3,6 +3,7 @@ using System;
 using Z3.GMTK2024.Data;
 using Z3.NodeGraph.Core;
 using Z3.GMTK2024.BattleSystem;
+using System.Collections;
 
 namespace Z3.GMTK2024
 {
@@ -74,5 +75,12 @@ namespace Z3.GMTK2024
         }
 
         internal void SendEvent(CharacterEvent eventType) => OnCharacterEvent?.Invoke(eventType);
+
+        internal void SetPlayerPosition(Vector3 position, Quaternion rotation)
+        {
+            Physics.CharacterController.enabled = false;
+            Physics.Transform.SetPositionAndRotation(position, rotation);
+            Physics.CharacterController.enabled = true;
+        }
     }
 }
