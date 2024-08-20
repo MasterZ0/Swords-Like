@@ -90,8 +90,11 @@ MonoBehaviour:
   center: {fileID: 2986860837934171528}
   playerTransform: {fileID: 0}
   healthBar: {fileID: 5056188188611956250}
+  hitFX: {fileID: 8735851619648228364, guid: 7ad6291ef7698e145b43d99c2fdb5c3f, type: 3}
   damageSoundReference: {fileID: 11400000, guid: ba53c26a24d3b1346a4c99527d039408, type: 2}
   deathSoundReference: {fileID: 11400000, guid: 5ffeff0a9051a6645bae4356cbaccf65, type: 2}
+  hitMaterial: {fileID: 2100000, guid: 7a0b5218d4e1bea408f2fa07734b95b2, type: 2}
+  hitMaterialSecond: 0.05
   bodyRenderers:
   - {fileID: 1450425947494286073}
   - {fileID: 4254608704462721052}
