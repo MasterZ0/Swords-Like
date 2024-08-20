@@ -12,6 +12,7 @@ namespace Z3.GMTK2024
     {
         [SerializeField] private Parameter<float> sizeRatio;
         [SerializeField] private Parameter<float> speedMultiplier;
+        [SerializeField] private Parameter<TriggerCounter> triggerCounter;
 
         private bool isInitialized;
         private float initialSizeRatio;
@@ -34,8 +35,10 @@ namespace Z3.GMTK2024
         protected override void UpdateAction()
         {
             base.UpdateAction();
+
             float multiplier = 0;
-            if (Controller.IsSizeIncreasedPressed)
+            bool canGoBig = triggerCounter.Value.Colliders.Count == 0;
+            if (Controller.IsSizeIncreasedPressed && canGoBig)
             {
                 multiplier = 1;
             }

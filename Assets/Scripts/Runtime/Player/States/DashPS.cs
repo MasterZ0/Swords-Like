@@ -16,7 +16,7 @@ namespace Z3.GMTK2024
         protected override void StartAction()
         {
             time = 0f;
-            Physics.SetIgnoreUpdate(true);
+            // Physics.SetIgnoreUpdate(true);
 
             Transform transform = Physics.Transform;
             Vector2 directional = Controller.Move;
@@ -45,7 +45,8 @@ namespace Z3.GMTK2024
 
             Vector3 targetVelocity = dodgeDirection * Data.DashSpeed * speedMultiplier;
 
-            Physics.CharacterController.Move(targetVelocity * DeltaTime);
+            // Physics.CharacterController.Move(targetVelocity * DeltaTime);
+            Physics.ForceMove(targetVelocity);
 
             if (percentage >= 1f)
             {
@@ -55,7 +56,7 @@ namespace Z3.GMTK2024
 
         protected override void StopAction()
         {
-            Physics.SetIgnoreUpdate(false);
+            // Physics.SetIgnoreUpdate(false);
         }
     }
 }

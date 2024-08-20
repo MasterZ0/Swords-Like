@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Z3 Studio
-  productName: GMTK GameJam 2024
+  productName: Swords Like
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -160,7 +160,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Standalone: com.Z3-Studio.GMTK-GameJam-2024
+    Standalone: com.Z3-Studio.Swords-Like
   buildNumber:
     Bratwurst: 0
     Standalone: 0

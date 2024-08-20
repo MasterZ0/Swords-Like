@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using static UnityEditor.FilePathAttribute;
 
 namespace Z3.GMTK2024
 {
@@ -25,6 +26,7 @@ namespace Z3.GMTK2024
         private float EulerYCamera => Controller.Camera.CameraTarget.eulerAngles.y;
 
         private Vector3 velocity;
+        private Vector3 externalVelocity;
         private float gravityScale;
         private float moveSpeed;
         private float verticalVelocity;
@@ -67,6 +69,11 @@ namespace Z3.GMTK2024
             float rotation = Mathf.SmoothDampAngle(Transform.eulerAngles.y, targetYRotation, ref rotationVelocity,
                 Data.RotationSmoothTime);
             Transform.rotation = Quaternion.Euler(0f, rotation, 0f);
+        }
+
+        public void ForceMove(Vector3 externalVelocity)
+        {
+            this.externalVelocity += externalVelocity;
         }
 
         internal void Update()
@@ -125,6 +132,9 @@ namespace Z3.GMTK2024
             // Update forward velocity
             Vector3 targetDirection = Quaternion.Euler(0f, targetYRotation, 0f) * Vector3.forward;
             velocity = targetDirection.normalized * speed;
+
+            velocity += externalVelocity;
+            externalVelocity = Vector3.zero;
         }
 
         #endregion

@@ -4,6 +4,7 @@ namespace Z3.GMTK2024.BattleSystem
 {
     public abstract class BasicStatusController<TAttributes> : IStatusController where TAttributes : BasicAttributesController
     {
+        public event Action OnDeath;
         public event Action<DamageInfo> OnTakeDamage;
 
         public TAttributes Attributes { get; set; }
@@ -51,6 +52,7 @@ namespace Z3.GMTK2024.BattleSystem
             else
             {
                 Death(damageInfo);
+                OnDeath?.Invoke();
             }
         }
 

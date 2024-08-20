@@ -6,6 +6,7 @@ namespace Z3.GMTK2024.BattleSystem
     public class Damage
     {
         // Damage
+        public bool StrongAttack { get; }
         public int Value => damageRange.RandomRange();
         public IStatusOwner Sender { get; }
 
@@ -20,12 +21,14 @@ namespace Z3.GMTK2024.BattleSystem
         {
             damageRange = damageData.value;
             Sender = sender;
+            StrongAttack = damageData.strongAttack;
         }
 
-        public Damage(Vector2Int value, IStatusOwner sender = null)
+        public Damage(Vector2Int value, IStatusOwner sender = null, bool strongAttack = false)
         {
             damageRange = value;
             Sender = sender;
+            StrongAttack = strongAttack;
         }
         
         public Damage(int value, IStatusOwner sender = null)

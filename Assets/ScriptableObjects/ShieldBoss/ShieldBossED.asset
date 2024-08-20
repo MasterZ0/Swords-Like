@@ -15,9 +15,8 @@ MonoBehaviour:
   maxHealth: 1000
   bodyDamage:
     value: {x: 10, y: 10}
-  IdleTime: 2
-  RadiusAttackChance: 30
-  RadiusAttackFrequency: 0
+  IdleTime: 3
+  RadiusAttackChance: 2
   RadiusAttackMoveParameters:
     maxSpeed: 10
     rotationSpeed: 360
@@ -29,20 +28,22 @@ MonoBehaviour:
     value: {x: 10, y: 10}
   radiusAttackDamageLarge:
     value: {x: 10, y: 10}
-  FireballAttackChance: 30
+  FireballAttackChance: 2
   FireballAttackPreparation: 2
   FireballAttackProjectileMoveSpeed: 10
-  FireballAttackProjectileRotationSpeed: 0
+  FireballAttackProjectileRotationSpeed: 120
   FireballAttackDuration: 6
   FireballAttackFrequency: 0.1
   FireballAttackBossRotationSpeed: 120
   FireBallDamage:
     value: {x: 10, y: 10}
-  ThirdAttackChance: 30
-  MeteorAttackCenterRadius: 50
+  ThirdAttackChance: 100
+  MeteorAttackAttackRadius: 10
+  MeteorAttackArenaRadius: 50
   MeteorAttackFrequency: 0.1
   MeteorAttackDuration: 10
   MeteorAttackDelayForBlockRegion: 5
   MeteorAttackRadiusForBlockRegion: 4
+  RadiusAttackDelayAfter: 3.5
   MeteorAttackDamage:
     value: {x: 10, y: 10}

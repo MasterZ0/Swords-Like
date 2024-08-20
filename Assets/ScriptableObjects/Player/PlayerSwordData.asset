@@ -18,6 +18,7 @@ MonoBehaviour:
   runMoveSpeed: 6
   acceleration: 20
   deceleration: 15
+  dashCooldown: 0.7
   dashDuration: 0.8
   dashSpeed: 10
   dashSpeedVariation:
@@ -101,17 +102,20 @@ MonoBehaviour:
   fallingGravity: 3
   maxFallingVelocity: 11
   attackTimeFrames:
-  - 2
-  - 2
-  - 2
+  - 1
+  - 1
+  - 1
   sizeData:
     <SizeSpeed>k__BackingField: 1
     <SizeRatio>k__BackingField: 2
     <SizeRange>k__BackingField: {x: 0.5, y: 2}
     <MovementSizeMultiplier>k__BackingField: 2
+    <DamageSizeMultiplier>k__BackingField: 1
     <CameraDistanceMultiplier>k__BackingField: 1
-  maxHealth: 100
-  invisibleDuration: 2
+    <AttackTimeFrameMultiplier>k__BackingField: 1
+    <DashCooldownMultiplier>k__BackingField: 1
+  maxHealth: 1
+  invisibleDuration: 0.2
   firstAttackDamage:
     value: {x: 5, y: 10}
   secondAttackDamage:

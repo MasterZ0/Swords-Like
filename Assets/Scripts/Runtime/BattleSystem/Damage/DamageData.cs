@@ -6,5 +6,6 @@ namespace Z3.GMTK2024.BattleSystem
     public class DamageData
     {
         public Vector2Int value;
+        public bool strongAttack;
     }
 }
