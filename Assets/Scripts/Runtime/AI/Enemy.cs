@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using Z3.UIBuilder.Core;
 using Z3.GMTK2024.BattleSystem;
 using Z3.Audio.WwiseIntegration;
+using Z3.Effects;
+using Z3.ObjectPooling;
+using System.Collections;
 
 namespace Z3.GMTK2024.AI
 {
@@ -19,19 +22,19 @@ namespace Z3.GMTK2024.AI
         [SerializeField] private Transform playerTransform;
         [SerializeField] private Image healthBar;
 
-        //[Header("Prefabs")]
-        //[SerializeField] private ParticleVFX hitFX;
-        //[SerializeField] private ParticleVFX hitKillFX;
-        //[SerializeField] private ParticleVFX deathFX;
+        [Header("Prefabs")]
+        [SerializeField] private ParticleVFX hitFX;
 
         [Header("SFX")]
         [SerializeField] private SoundData damageSoundReference;
         [SerializeField] private SoundData deathSoundReference;
 
+        [SerializeField] private Material hitMaterial;
+        [SerializeField] private float hitMaterialSecond;
+
 
         [Header("Optional")]
         [SerializeField] private Renderer[] bodyRenderers;
-        //[ListDrawerSettings(Expanded = true)]
         [SerializeField] private HitBox[] bodyHitBoxes;
 
         #region Public properties and events
@@ -49,8 +52,6 @@ namespace Z3.GMTK2024.AI
 
         private Material[] defaultSharedMaterial;
 
-        private bool dropItemEnabled;
-
         #region Initialization
         private void Awake()
         {
@@ -64,7 +65,6 @@ namespace Z3.GMTK2024.AI
             // Reset
             transform.localPosition = Vector2.zero;
             transform.localRotation = Quaternion.identity;
-            dropItemEnabled = true;
 
             // Attributes and Status
             Status.Reset();
@@ -79,18 +79,18 @@ namespace Z3.GMTK2024.AI
         }
         #endregion
 
+
         #region Status
         /// <summary> Damage VFX </summary>
         public void OnDamage(DamageInfo damageInfo)
         {
-            //HitVFX.ApplyHitFX(this, bodyRenderers, defaultSharedMaterial);
+            ApplyHitFX(bodyRenderers, defaultSharedMaterial, hitMaterial, hitMaterialSecond);
             damageSoundReference?.PlaySound(transform);
 
             GetContacts(damageInfo, out Vector3 position, out Quaternion rotation);
 
             // Paint Hit Particle
-            //ParticleVFX spawnedHitParticle = ObjectPool.SpawnPooledObject(hitFX, position, rotation);
-            //spawnedHitParticle.SetColor(EnemyData.HitParticleGradient);
+            ParticleVFX spawnedHitParticle = ObjectPool.SpawnPooledObject(hitFX, position, rotation);
         }
 
         /// <summary> Death VFX </summary>
@@ -121,15 +121,30 @@ namespace Z3.GMTK2024.AI
             gameObject.SetActive(false);
         }
 
-        public void ForceKill(bool disableDrop = false)
-        {
-            dropItemEnabled = !disableDrop;
-            this.Kill();
-        }
-
         private void OnUpdateStatus()
         {
             healthBar.fillAmount = Status.Attributes.HPPercentage();
+        }
+
+        public void ApplyHitFX( Renderer[] renderers, Material[] defaultSharedMaterial, Material hitMaterial, float hitMaterialSeconds)
+        {
+            StartCoroutine(HitCoroutine(renderers, defaultSharedMaterial));
+
+            IEnumerator HitCoroutine(Renderer[] renderers, Material[] defaultSharedMaterial)
+            {
+                for (int i = 0; i < renderers.Length; i++)
+                {
+                    defaultSharedMaterial[i] = renderers[i].sharedMaterial;
+                    renderers[i].sharedMaterial = hitMaterial;
+                }
+
+                yield return new WaitForSeconds(hitMaterialSeconds);
+
+                for (int i = 0; i < renderers.Length; i++)
+                {
+                    renderers[i].sharedMaterial = defaultSharedMaterial[i];
+                }
+            }
         }
     }
 }

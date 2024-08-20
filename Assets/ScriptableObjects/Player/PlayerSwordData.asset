@@ -102,9 +102,9 @@ MonoBehaviour:
   fallingGravity: 3
   maxFallingVelocity: 11
   attackTimeFrames:
-  - 2
-  - 2
-  - 2
+  - 1
+  - 1
+  - 1
   sizeData:
     <SizeSpeed>k__BackingField: 1
     <SizeRatio>k__BackingField: 2
