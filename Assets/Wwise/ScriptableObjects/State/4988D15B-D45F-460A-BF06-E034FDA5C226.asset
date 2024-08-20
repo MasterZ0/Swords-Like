@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ee0054347d6498dbfb88d783346efe, type: 3}
+  m_Name: 4988D15B-D45F-460A-BF06-E034FDA5C226
+  m_EditorClassIdentifier: 
+  objectName: Mus_BossFight
+  id: 3450947812
+  guid: 4988D15B-D45F-460A-BF06-E034FDA5C226
+  WwiseStateGroupReference: {fileID: 11400000, guid: 11b09faeb5a704f37a60963cb0e84018, type: 2}

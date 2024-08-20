@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="827800787" Type="User" Language="SFX" Hash="{4B1EEC25-DCF8-C25A-56BA-44B569527238}">
+		<SoundBank Id="827800787" Type="User" Language="SFX" Hash="{6F08AE47-6FDD-A349-9B16-77A95DDC2174}">
 			<ShortName>MUS_Bank</ShortName>
 			<Path>MUS_Bank.bnk</Path>
 			<Media>
@@ -25,10 +25,20 @@
 					<ShortName>GMTK_FinalScene_FullTrack_44_84BPM.wav</ShortName>
 					<CachePath>SFX/GMTK_FinalScene_FullTrack_44_84BPM_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="746682948" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GMTK_CombatMusic_FullTrack_44_132BPM.wav</ShortName>
+					<CachePath>SFX/GMTK_CombatMusic_FullTrack_44_132BPM_D79FB2B7.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
 				<Event Id="951125801" Name="Play_MusicMaster" DurationType="Infinite">
 					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3103015060" Id="3450947812"/>
+							<MediaRefs>
+								<MediaRef Id="746682948"/>
+							</MediaRefs>
+						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3103015060" Id="4242578485"/>
 							<MediaRefs>
@@ -242,7 +252,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="1838976376" Type="User" Language="SFX" Hash="{67C45350-8C3C-1A08-3207-864DCE21CCAD}">
+		<SoundBank Id="1838976376" Type="User" Language="SFX" Hash="{FC663CD4-4B4F-68FE-D053-C9610BBD6CEA}">
 			<ShortName>AMB_Bank</ShortName>
 			<Path>AMB_Bank.bnk</Path>
 			<Media>
@@ -291,7 +301,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2366286276" Type="User" Language="SFX" Hash="{668E2DA9-39B5-3B62-C8F2-2774BF952A41}">
+		<SoundBank Id="2366286276" Type="User" Language="SFX" Hash="{BA275B1F-D7B5-1BD5-12CD-2AB74EF42E76}">
 			<ShortName>BOS_Bank</ShortName>
 			<Path>BOS_Bank.bnk</Path>
 			<Media>
@@ -440,7 +450,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3450962857" Type="User" Language="SFX" Hash="{80D5B6D3-9CA5-2022-E461-5014FA0CDA9A}">
+		<SoundBank Id="3450962857" Type="User" Language="SFX" Hash="{60DBFCA1-F6A5-08A2-D756-C88CE653DE84}">
 			<ShortName>PLYR_Bank</ShortName>
 			<Path>PLYR_Bank.bnk</Path>
 			<Media>
@@ -631,5 +641,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A86823A2-0D14-0916-50CE-79302F7C7188}</FileHash>
+	<FileHash>{F0CF1D60-5F19-27AE-0505-60E146355204}</FileHash>
 </SoundBanksInfo>

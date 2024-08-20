@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 154a18c0033fcb34989e4facc8fa67eb, type: 3}
-  m_Name: UIUX_Menu_SelectSD
+  m_Name: OnPlaySound
   m_EditorClassIdentifier: 
   eventReference:
     idInternal: 0
