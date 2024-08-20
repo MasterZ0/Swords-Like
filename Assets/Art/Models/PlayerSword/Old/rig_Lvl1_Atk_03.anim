@@ -42834,6 +42834,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0
+    functionName: OnPlaySound
+    data: 
+    objectReferenceParameter: {fileID: 11400000, guid: 934f78be3d5684be493583a8856f5d9e, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.8333333
     functionName: Shake
     data: 

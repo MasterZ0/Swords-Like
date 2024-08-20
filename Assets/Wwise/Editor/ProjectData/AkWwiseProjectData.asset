@@ -1045,8 +1045,48 @@ MonoBehaviour:
     ParentPath: Events/GMTK2024_Events/GMTK2024_Events_Music
     guid: 6792828a6beb704d8e6679855526a233
     GuidInternal: 
-    m_lastTime: -8584776597170828053
-    List: []
+    m_lastTime: -8584774748533609462
+    List:
+    - name: Play_MusicMaster
+      guid: 14c031ae7efdf34b90fa7ecd444141de
+      id: 951125801
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_Music
+        ObjectType: 12
+        guid: 6792828a6beb704d8e6679855526a233
+      - ElementName: Play_MusicMaster
+        ObjectType: 3
+        guid: 14c031ae7efdf34b90fa7ecd444141de
+      Path: Events/GMTK2024_Events/GMTK2024_Events_Music/Play_MusicMaster
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_MusicMaster
+      guid: 46f7ce945301814e84fefdb28217309b
+      id: 4080737523
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: GMTK2024_Events
+        ObjectType: 12
+        guid: 75a00eb933d73a42a6501229ef4b9050
+      - ElementName: GMTK2024_Events_Music
+        ObjectType: 12
+        guid: 6792828a6beb704d8e6679855526a233
+      - ElementName: Stop_MusicMaster
+        ObjectType: 3
+        guid: 46f7ce945301814e84fefdb28217309b
+      Path: Events/GMTK2024_Events/GMTK2024_Events_Music/Stop_MusicMaster
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events/GMTK2024_Events_SFX.wwu
     PathAndIcons:
     - ElementName: Events
@@ -1648,8 +1688,106 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: d6e6ebfa9d94dd4c8899959ad86dc484
     GuidInternal: 
-    m_lastTime: -8584778322804266503
-    List: []
+    m_lastTime: -8584774751467929635
+    List:
+    - name: MusicStates
+      guid: 984784e571af6641ba6dfb9312746922
+      id: 3103015060
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d6e6ebfa9d94dd4c8899959ad86dc484
+      - ElementName: MusicStates
+        ObjectType: 9
+        guid: 984784e571af6641ba6dfb9312746922
+      Path: States/Default Work Unit/MusicStates
+      values:
+      - name: Mus_BossFight
+        guid: 5bd188495fd40a46bf06e034fda5c226
+        id: 3450947812
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d6e6ebfa9d94dd4c8899959ad86dc484
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 984784e571af6641ba6dfb9312746922
+        - ElementName: Mus_BossFight
+          ObjectType: 8
+          guid: 5bd188495fd40a46bf06e034fda5c226
+      - name: Mus_Extra
+        guid: aa064bfb34877c449e7fc26bf1504d97
+        id: 4242578485
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d6e6ebfa9d94dd4c8899959ad86dc484
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 984784e571af6641ba6dfb9312746922
+        - ElementName: Mus_Extra
+          ObjectType: 8
+          guid: aa064bfb34877c449e7fc26bf1504d97
+      - name: Mus_FinalScene
+        guid: bfebd2e4264bb44d9696ede89733c739
+        id: 1769137949
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d6e6ebfa9d94dd4c8899959ad86dc484
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 984784e571af6641ba6dfb9312746922
+        - ElementName: Mus_FinalScene
+          ObjectType: 8
+          guid: bfebd2e4264bb44d9696ede89733c739
+      - name: Mus_Menu
+        guid: 9148f8dbc2756e419032fb648b46fd0a
+        id: 3149643052
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d6e6ebfa9d94dd4c8899959ad86dc484
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 984784e571af6641ba6dfb9312746922
+        - ElementName: Mus_Menu
+          ObjectType: 8
+          guid: 9148f8dbc2756e419032fb648b46fd0a
+      - name: None
+        guid: c545b44339220743a7bdec2791d7c58b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d6e6ebfa9d94dd4c8899959ad86dc484
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 984784e571af6641ba6dfb9312746922
+        - ElementName: None
+          ObjectType: 8
+          guid: c545b44339220743a7bdec2791d7c58b
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     PathAndIcons:

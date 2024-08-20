@@ -17,6 +17,10 @@ namespace Z3.Audio.WwiseIntegration
             return AudioManager.PlaySound(eventReference, transform);
         }
 
+        public void InvokeSound(Transform transform = null)
+        {
+            AudioManager.PlaySound(eventReference, transform);
+        }
         //public SoundInstance PlaySound(Vector3 position)
         //{
         //    return AudioManager.PlaySound(eventReference, position);
