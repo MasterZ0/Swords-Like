@@ -68,6 +68,8 @@ PlayableDirector:
     value: {fileID: 315115260774626425}
   - key: {fileID: -5653577639771607703, guid: ea2ac88e5b558dd4a9a30b5695ba6a30, type: 2}
     value: {fileID: 3654606453557208654}
+  - key: {fileID: 2245967503588789817, guid: ea2ac88e5b558dd4a9a30b5695ba6a30, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 032bd6ffbc3f36c4c98f847e174d3452: {fileID: 3672466985269732888}
@@ -277,6 +279,8 @@ PlayableDirector:
   - key: {fileID: -2400452570150530484, guid: a91959d53ce424949beb10ab923a8d15, type: 2}
     value: {fileID: 0}
   - key: {fileID: -5719646787341292367, guid: a91959d53ce424949beb10ab923a8d15, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3388500340735361849, guid: a91959d53ce424949beb10ab923a8d15, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References:
@@ -584,6 +588,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_MethodName: set_name
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: None
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &3457423221917400334
@@ -1061,6 +1077,7 @@ GameObject:
   - component: {fileID: 2075625771367877411}
   - component: {fileID: 8540372787961987485}
   - component: {fileID: 3392380948466446573}
+  - component: {fileID: 194263053091230941}
   m_Layer: 11
   m_Name: FightTrigger
   m_TagString: Untagged
@@ -1143,6 +1160,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 15, z: 15}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &194263053091230941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734193260619801180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3a903fb12884b6994659a4931e6804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: d1bbb3b5
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 345c6b8a44e81474b84003707ec51323, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &7147695272978036020
 GameObject:
   m_ObjectHideFlags: 0
