@@ -57,7 +57,7 @@ namespace Z3.GMTK2024
             };
 
             int multiplier = Mathf.RoundToInt(Controller.Size * Data.SizeData.DamageSizeMultiplier);
-            swordHitbox.SetDamage(new Damage(damageData.value * multiplier, Controller));
+            swordHitbox.SetDamage(new Damage(damageData.value * multiplier, Controller, comboIndex == 2));
         }
 
         public override void SetInvincible(float duration)
