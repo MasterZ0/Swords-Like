@@ -16,13 +16,5 @@ namespace Z3
 
         protected override void Damage(DamageInfo damageInfo) => destructibleObject.OnDamage(damageInfo);
         protected override void Death(DamageInfo damageInfo) => destructibleObject.OnDeath(damageInfo);
-
-        public override void TakeDamage(Damage damage)
-        {
-            if (damage.Value < destructibleObject.Resistent) return;
-
-
-            base.TakeDamage(damage);
-        }
     }
 }

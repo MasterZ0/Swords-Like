@@ -17,12 +17,14 @@ namespace Z3.GMTK2024
         private void OnTriggerEnter(Collider other)
         {
             if (!layerMask.CompareLayer(other.gameObject.layer)) return;
+            if (other.isTrigger) return;
             colliders.Add(other);
         }
 
         private void OnTriggerExit(Collider other)
         {
             if (!layerMask.CompareLayer(other.gameObject.layer)) return;
+            if (other.isTrigger) return;
             colliders.Remove(other);
         }
     }

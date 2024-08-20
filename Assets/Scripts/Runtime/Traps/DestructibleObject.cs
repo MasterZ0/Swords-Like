@@ -1,29 +1,25 @@
 ﻿using UnityEngine;
 using Z3.Audio.WwiseIntegration;
-using Z3.GMTK2024.AI;
 using Z3.GMTK2024.BattleSystem;
 
 namespace Z3
 {
     public class DestructibleObject : MonoBehaviour, IStatusOwner
     {
-        [SerializeField] private int maxHealth = 100;
-        [SerializeField] private int resistent;
+        [SerializeField] private int maxHealth = 1;
 
-        [SerializeField] private Transform center;
-
-        [Header("SFX")] [SerializeField] private SoundData damageSoundReference;
+        [Header("SFX")] 
+        [SerializeField] private SoundData damageSoundReference;
         [SerializeField] private SoundData deathSoundReference;
 
-        [Header("VFX")] [SerializeField] private ParticleSystem deathVFX;
+        [Header("VFX")] 
+        [SerializeField] private ParticleSystem deathVFX;
 
 
         private IStatusController status;
 
         public Transform Pivot => transform;
-        public Transform Center => center;
-
-        public int Resistent => resistent;
+        public Transform Center => transform;
 
         public IStatusController Status
         {
@@ -34,9 +30,7 @@ namespace Z3
                     return status;
                 }
 
-                var basicAttributesController = new BasicAttributesController();
-                basicAttributesController.SetMaxHP(maxHealth);
-                basicAttributesController.SetHP(maxHealth);
+                var basicAttributesController = new BasicAttributesController(maxHealth);
                 status = new DestructibleObjectStatus(this, basicAttributesController);
 
                 return status;
@@ -53,9 +47,11 @@ namespace Z3
         {
             if (deathSoundReference)
                 deathSoundReference.PlaySound(transform);
+
             if (deathVFX)
                 Instantiate(deathVFX, transform.position, transform.rotation);
-            Destroy(gameObject);
+
+            gameObject.SetActive(false);
         }
     }
 }
