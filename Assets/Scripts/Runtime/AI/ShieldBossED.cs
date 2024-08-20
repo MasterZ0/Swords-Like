@@ -15,7 +15,6 @@ namespace Z3.GMTK2024.AI
         [Header("- Radius Attack")]
         [Range(0, 100)]
         public int RadiusAttackChance = 30;
-        public float RadiusAttackFrequency;
         public AIPathParameters RadiusAttackMoveParameters;
         public DamageData radiusAttackDamageSmall;
         public DamageData radiusAttackDamageMedium;
@@ -42,6 +41,5 @@ namespace Z3.GMTK2024.AI
         public float MeteorAttackDelayForBlockRegion;
         public float MeteorAttackRadiusForBlockRegion;
         public DamageData MeteorAttackDamage;
-
     }
 }

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using static UnityEditor.FilePathAttribute;
 
 namespace Z3.GMTK2024
 {
@@ -126,7 +127,6 @@ namespace Z3.GMTK2024
             Vector3 targetDirection = Quaternion.Euler(0f, targetYRotation, 0f) * Vector3.forward;
             velocity = targetDirection.normalized * speed;
         }
-
         #endregion
     }
 }

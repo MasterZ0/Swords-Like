@@ -2,63 +2,105 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using Z3.GMTK2024.AI;
+using Z3.NodeGraph.Core;
 using Z3.UIBuilder.Core;
 
 namespace Z3.GMTK2024
 {
     public class GameController : MonoBehaviour
     {
-        public static GameController Instance { get; private set; }
-
+        [Header("Cutscenes")]
         [SerializeField] private PlayableDirector introTimeline;
         [SerializeField] private PlayableDirector bossTimeline;
         [SerializeField] private PlayableDirector bossDefeatedTimeline;
+        [Space]
+        [SerializeField] private MonoEventDispatcher fightTrigger;
+
+        [Header("UI")]
+        [SerializeField] private MenuUI menuUI;
+        [SerializeField] private GameObject deathScreen;
+        [Space]
+        [SerializeField] private GameObject victoryScreen;
+
+        [Header("Dependencies")]
+        [SerializeField] private Enemy boss;
+        [SerializeField] private CharacterPawn player;
+        [SerializeField] private Transform checkpoint;
+        [SerializeField] private Transform playerFightPoint;
+
+        private static bool PlayerArrivedToBoss;
 
         private void Awake()
         {
-            Instance = this;
-        }
 
-        [Button]
-        public void OnIntro()
-        {
-            introTimeline.gameObject.SetActive(true);
-            introTimeline.Play();
-            StartCoroutine(StopTimeline());
+            player.Status.OnDeath += OnPlayerDeath;
+            boss.Status.OnDeath += OnBossDefeated;
+            fightTrigger.OnTriggerEnterEvent += OnBossTriggered;
 
-            IEnumerator StopTimeline()
+            if (!PlayerArrivedToBoss)
             {
-                yield return new WaitForSeconds((float) introTimeline.duration);
+                menuUI.Init(this);
+            }
+            else
+            {
                 introTimeline.gameObject.SetActive(false);
+                menuUI.gameObject.SetActive(false);
+
+                player.transform.parent.gameObject.SetActive(true);
+                player.SetPlayerPosition(checkpoint.position, checkpoint.rotation);
             }
         }
 
         [Button]
-        public void OnBossTriggered()
+        public void StartGame() // Called after press "Play" Button
         {
-            bossTimeline.gameObject.SetActive(true);
+            introTimeline.Play();
+        }
+
+        [Button]
+        private void OnBossTriggered(Collider _)
+        {
+            fightTrigger.OnTriggerEnterEvent -= OnBossTriggered;
+            PlayerArrivedToBoss = true;
+
             bossTimeline.Play();
-            StartCoroutine(StopTimeline());
 
-            IEnumerator StopTimeline()
-            {
-                yield return new WaitForSeconds((float) bossTimeline.duration);
-                bossTimeline.gameObject.SetActive(false);
-            }
+            player.SetPlayerPosition(playerFightPoint.position, playerFightPoint.rotation);
         }
 
         [Button]
-        public void OnBossDefeated()
+        private void OnBossDefeated()
         {
-            bossDefeatedTimeline.gameObject.SetActive(true);
             bossDefeatedTimeline.Play();
-            // StartCoroutine(StopTimeline());
+            bossDefeatedTimeline.stopped += StopTimeline;
 
-            IEnumerator StopTimeline()
+            void StopTimeline(PlayableDirector _)
             {
-                yield return new WaitForSeconds((float) bossDefeatedTimeline.duration);
-                bossDefeatedTimeline.gameObject.SetActive(false);
+                bossDefeatedTimeline.stopped -= StopTimeline;
+                victoryScreen.SetActive(true);
             }
+        }
+
+        private void OnPlayerDeath() => deathScreen.SetActive(true);
+
+        public void OnGameOverEnd()
+        {
+            ReloadGame();
+        }
+
+        public void OnReplay()
+        {
+            PlayerArrivedToBoss = false;
+            ReloadGame();
+        }
+
+        private void ReloadGame()
+        {
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
         }
     }
 }

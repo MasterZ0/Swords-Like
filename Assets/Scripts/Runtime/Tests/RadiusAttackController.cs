@@ -12,8 +12,8 @@ namespace Z3.GMTK2024
         public void SetDamage(Damage smallDamage, Damage mediumDamage, Damage largeDamage)
         {
             smallHitbox.SetDamage(smallDamage);
-            smallHitbox.SetDamage(mediumDamage);
-            smallHitbox.SetDamage(largeDamage);
+            mediumHitbox.SetDamage(mediumDamage);
+            largeHitbox.SetDamage(largeDamage);
         }
     }
 }

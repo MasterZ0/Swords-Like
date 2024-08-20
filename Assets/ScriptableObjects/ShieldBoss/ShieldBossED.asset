@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ad47d9aece940419b0f98912c87567, type: 3}
   m_Name: ShieldBossED
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 100
   bodyDamage:
     value: {x: 10, y: 10}
   IdleTime: 2
   RadiusAttackChance: 30
-  RadiusAttackFrequency: 0
   RadiusAttackMoveParameters:
     maxSpeed: 10
     rotationSpeed: 360

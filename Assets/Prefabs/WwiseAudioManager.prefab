@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8303244779509048803}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio_AMB3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4387452126299814247}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WwiseAudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 8037373918140429889}
   - component: {fileID: 1720007393152598260}
   - component: {fileID: 6033113189031220659}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio_Banks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7557290277156023413}
   - component: {fileID: 7974072681066615256}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AudioTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 3861738302842626822}
   - component: {fileID: 1102914972082512117}
   - component: {fileID: 5826266949167360933}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio_AMB2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,8 +371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6576846817666893723}
-  - component: {fileID: 6081340958740497746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WwiseGlobal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,31 +393,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4387452126299814247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6081340958740497746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7516280479786685555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2abc9f2b04b424540afc61e3662e4f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationSettings: {fileID: 11400000, guid: 17ec8fff6738740419b11ea59aa10d33, type: 2}
-  basePath: 
-  language: 
-  defaultPoolSize: 0
-  lowerPoolSize: 0
-  streamingPoolSize: 0
-  memoryCutoffThreshold: 0
-  monitorPoolSize: 0
-  monitorQueuePoolSize: 0
-  callbackManagerBufferSize: 0
-  spatialAudioPoolSize: 0
-  maxSoundPropagationDepth: 0
-  engineLogging: 0
 --- !u!1 &7772675584561141100
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +404,7 @@ GameObject:
   - component: {fileID: 6366035575771915925}
   - component: {fileID: 4223560567960280831}
   - component: {fileID: 1244956671468532492}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio_CloseReverb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +479,7 @@ GameObject:
   - component: {fileID: 3393489640031925285}
   - component: {fileID: 8823889294356532685}
   - component: {fileID: 22340064326643995}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Audio_LongReverb
   m_TagString: Untagged
   m_Icon: {fileID: 0}

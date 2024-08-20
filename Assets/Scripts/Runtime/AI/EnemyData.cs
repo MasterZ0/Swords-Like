@@ -11,8 +11,6 @@ namespace Z3.GMTK2024.AI
     {
         [Title("Enemy")]
         [SerializeField, Range(1f, 10000f)] private int maxHealth = 1;
-
-        [Header("Body")]
         [SerializeField] private DamageData bodyDamage;
 
         public int MaxHealth => maxHealth;

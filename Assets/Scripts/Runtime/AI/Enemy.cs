@@ -43,7 +43,8 @@ namespace Z3.GMTK2024.AI
         IStatusController IStatusOwner.Status => Status;
         #endregion
 
-        public EnemyStatus Status { get; private set; }
+        private EnemyStatus status { get; set; }
+        public EnemyStatus Status => status ??= new EnemyStatus(this);
         public Transform PlayerTransform => playerTransform;
 
         private Material[] defaultSharedMaterial;
@@ -55,7 +56,6 @@ namespace Z3.GMTK2024.AI
         {
             defaultSharedMaterial = bodyRenderers.Select(r => r.sharedMaterial).ToArray();
 
-            Status = new EnemyStatus(this);
             Status.Attributes.OnUpdateStatus += OnUpdateStatus;
         }
 
