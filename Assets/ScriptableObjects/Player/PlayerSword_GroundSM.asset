@@ -276,7 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 1687a2194bb3ca84e9bd8ced3db938f3
-  position: {x: -133.59999, y: 104.8}
+  position: {x: -135.20906, y: 104.79999}
   priority: 0
   executionPolicy: 0
   taskList:
@@ -433,6 +433,9 @@ MonoBehaviour:
   speedMultiplier:
     guid: d1356846dee7c1348b6e6527497f4914
     value: 0
+  triggerCounter:
+    guid: d112b72547eb017459dfc89601d412d1
+    value: {fileID: 0}
 --- !u!114 &4818164095595234619
 MonoBehaviour:
   m_ObjectHideFlags: 0
