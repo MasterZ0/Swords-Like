@@ -42837,7 +42837,7 @@ AnimationClip:
   - time: 0
     functionName: OnPlaySound
     data: 
-    objectReferenceParameter: {fileID: 11400000, guid: 934f78be3d5684be493583a8856f5d9e, type: 2}
+    objectReferenceParameter: {fileID: 11400000, guid: b040ead6a3c0f46adb14165a32c943cd, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
