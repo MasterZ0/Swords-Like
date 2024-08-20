@@ -19,49 +19,47 @@ ScriptedImporter:
   renderPipelineDetection: 0
   detectedRenderPipeline: Universal Render Pipeline
   strippedLinesCount: 45
-  shaderSourceCode: "//--------------------------------------------------------------------------------------------------------------------------------\r\n//
-    Cartoon FX\r\n// (c) 2012-2020 Jean Moreno\r\n//--------------------------------------------------------------------------------------------------------------------------------\r\n\r\nShader
-    \"Cartoon FX/Remaster/Particle Screen Distortion\"\r\n{\r\n\tProperties\r\n\t{
-    \r\n\t\t[Toggle(_ALPHATEST_ON)] _UseAlphaClip (\"Alpha Clipping (Cutout)\", Float)
-    = 0\r\n\t//# IF_KEYWORD _ALPHATEST_ON\r\n\t\t_Cutoff (\"Cutoff Threshold\", Range(0.001,1))
-    = 0.1\r\n\t//# END_IF\r\n\t\r\n\t//# --------------------------------------------------------\r\n\t\r\n\t\t[Toggle(_FADING_ON)]
-    _UseSP (\"Soft Particles\", Float) = 0\r\n\t//# IF_KEYWORD _FADING_ON\r\n\t\t_SoftParticlesFadeDistanceNear
-    (\"Near Fade\", Float) = 0\r\n\t\t_SoftParticlesFadeDistanceFar (\"Far Fade\",
-    Float) = 1\r\n\t//# END_IF\r\n\r\n\t//# \r\n\r\n\t\t[Toggle(_CFXR_EDGE_FADING)]
-    _UseEF (\"Edge Fade\", Float) = 0\r\n\t//# IF_KEYWORD _CFXR_EDGE_FADING\r\n\t\t_EdgeFadePow
-    (\"Edge Fade Power\", Float) = 1\r\n\t//# END_IF\r\n\r\n\t//# ========================================================\r\n\t//#
-    Texture\r\n\t//#\r\n\t\t[NoScaleOffset] _ScreenDistortionTex (\"Distortion Texture\",
-    2D) = \"bump\" {}\r\n\t\t_ScreenDistortionScale (\"Distortion Scale\", Range(-0.5,
-    0.5)) = 0.1\r\n\t\t\r\n\t//# ========================================================\r\n\t//#
-    Debug\r\n\t//# \r\n\t\t\r\n\t\t[Toggle(_DEBUG_VISUALIZE_DISTORTION)] _DebugVisualize
-    (\"Visualize Distortion Particles\", Float) = 0 \r\n\t}\r\n\t\r\n\tCategory\r\n\t{\r\n\t\tTags\r\n\t\t{\r\n\t\t\t\"Queue\"=\"Transparent\"\r\n\t\t\t\"IgnoreProjector\"=\"True\"\r\n\t\t\t\"RenderType\"=\"Transparent\"\r\n\t\t\t\"PreviewType\"=\"Plane\"\r\n\t\t}\r\n\r\n\t\tBlend
-    SrcAlpha OneMinusSrcAlpha, One One\r\n\t\tZWrite Off\r\n\t\tCull  Off\r\n\r\n\t\t//====================================================================================================================================\r\n\t\t//
-    Universal Rendering Pipeline\r\n\r\n\t\tSubshader\r\n\t\t{\r\n\t\t\tPass\r\n\t\t\t{\r\n\t\t\t\tName
-    \"BASE_URP\"\r\n\t\t\t\tTags { \"LightMode\"=\"UniversalForward\" }\r\n\r\n\t\t\t\tCGPROGRAM\r\n\r\n\t\t\t\t#pragma
-    vertex vertex_program\r\n\t\t\t\t#pragma fragment fragment_program\r\n\t\t\t\t\r\n\t\t\t\t#pragma
-    target 2.0\r\n\t\t\t\t\r\n\t\t\t\t// #pragma multi_compile_instancing\r\n\t\t\t\t//
-    #pragma instancing_options procedural:ParticleInstancingSetup\r\n\r\n\t\t\t\t#pragma
-    multi_compile_fog\r\n\t\t\t\t//#pragma multi_compile_fwdbase\r\n\t\t\t\t//#pragma
-    multi_compile SHADOWS_SCREEN\r\n\r\n\t\t\t\t// Using the same keywords as Unity's
-    Standard Particle shader to minimize project-wide keyword usage\r\n\t\t\t\t#pragma
-    shader_feature_local _ _FADING_ON\r\n\t\t\t\t#pragma shader_feature_local_fragment
-    _ _ALPHATEST_ON\r\n\t\t\t\t#pragma shader_feature_local _ _DEBUG_VISUALIZE_DISTORTION\r\n\r\n\t\t\t\t#define
-    CFXR_URP\r\n\t\t\t\t#define CFXR_SCREEN_DISTORTION_SHADER\r\n\t\t\t\t#include
-    \"CFXR_PASSES.cginc\"\r\n\r\n\t\t\t\tENDCG\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t// Same
-    as above with 'Universal2D' instead and DISABLE_SOFT_PARTICLES keyword\r\n\t\t\tPass\r\n\t\t\t{\r\n\t\t\t\tName
-    \"BASE_URP\"\r\n\t\t\t\tTags { \"LightMode\"=\"Universal2D\" }\r\n\r\n\t\t\t\tCGPROGRAM\r\n\r\n\t\t\t\t#pragma
-    vertex vertex_program\r\n\t\t\t\t#pragma fragment fragment_program\r\n\t\t\t\t\r\n\t\t\t\t#pragma
-    target 2.0\r\n\t\t\t\t\r\n\t\t\t\t// #pragma multi_compile_instancing\r\n\t\t\t\t//
-    #pragma instancing_options procedural:ParticleInstancingSetup\r\n\r\n\t\t\t\t#pragma
-    multi_compile_fog\r\n\t\t\t\t//#pragma multi_compile_fwdbase\r\n\t\t\t\t//#pragma
-    multi_compile SHADOWS_SCREEN\r\n\r\n\t\t\t\t// Using the same keywords as Unity's
-    Standard Particle shader to minimize project-wide keyword usage\r\n\t\t\t\t#pragma
-    shader_feature_local _ _FADING_ON\r\n\t\t\t\t#pragma shader_feature_local_fragment
-    _ _ALPHATEST_ON\r\n\t\t\t\t#pragma shader_feature_local _ _DEBUG_VISUALIZE_DISTORTION\r\n\r\n\t\t\t\t#define
-    _CameraOpaqueTexture _CameraSortingLayerTexture\r\n\t\t\t\t#define CFXR_URP\r\n\t\t\t\t#define
-    DISABLE_SOFT_PARTICLES\r\n\t\t\t\t#define CFXR_SCREEN_DISTORTION_SHADER\r\n\t\t\t\t#include
-    \"CFXR_PASSES.cginc\"\r\n\r\n\t\t\t\tENDCG\r\n\t\t\t}\r\n\t\t}\r\n\r\n\t}\r\n\t\r\n\tCustomEditor
-    \"CartoonFX.MaterialInspector\"\r\n}\r\n\r\n"
+  shaderSourceCode: "//--------------------------------------------------------------------------------------------------------------------------------\n//
+    Cartoon FX\n// (c) 2012-2020 Jean Moreno\n//--------------------------------------------------------------------------------------------------------------------------------\n\nShader
+    \"Cartoon FX/Remaster/Particle Screen Distortion\"\n{\n\tProperties\n\t{ \n\t\t[Toggle(_ALPHATEST_ON)]
+    _UseAlphaClip (\"Alpha Clipping (Cutout)\", Float) = 0\n\t//# IF_KEYWORD _ALPHATEST_ON\n\t\t_Cutoff
+    (\"Cutoff Threshold\", Range(0.001,1)) = 0.1\n\t//# END_IF\n\t\n\t//# --------------------------------------------------------\n\t\n\t\t[Toggle(_FADING_ON)]
+    _UseSP (\"Soft Particles\", Float) = 0\n\t//# IF_KEYWORD _FADING_ON\n\t\t_SoftParticlesFadeDistanceNear
+    (\"Near Fade\", Float) = 0\n\t\t_SoftParticlesFadeDistanceFar (\"Far Fade\",
+    Float) = 1\n\t//# END_IF\n\n\t//# \n\n\t\t[Toggle(_CFXR_EDGE_FADING)] _UseEF
+    (\"Edge Fade\", Float) = 0\n\t//# IF_KEYWORD _CFXR_EDGE_FADING\n\t\t_EdgeFadePow
+    (\"Edge Fade Power\", Float) = 1\n\t//# END_IF\n\n\t//# ========================================================\n\t//#
+    Texture\n\t//#\n\t\t[NoScaleOffset] _ScreenDistortionTex (\"Distortion Texture\",
+    2D) = \"bump\" {}\n\t\t_ScreenDistortionScale (\"Distortion Scale\", Range(-0.5,
+    0.5)) = 0.1\n\t\t\n\t//# ========================================================\n\t//#
+    Debug\n\t//# \n\t\t\n\t\t[Toggle(_DEBUG_VISUALIZE_DISTORTION)] _DebugVisualize
+    (\"Visualize Distortion Particles\", Float) = 0 \n\t}\n\t\n\tCategory\n\t{\n\t\tTags\n\t\t{\n\t\t\t\"Queue\"=\"Transparent\"\n\t\t\t\"IgnoreProjector\"=\"True\"\n\t\t\t\"RenderType\"=\"Transparent\"\n\t\t\t\"PreviewType\"=\"Plane\"\n\t\t}\n\n\t\tBlend
+    SrcAlpha OneMinusSrcAlpha, One One\n\t\tZWrite Off\n\t\tCull  Off\n\n\t\t//====================================================================================================================================\n\t\t//
+    Universal Rendering Pipeline\n\n\t\tSubshader\n\t\t{\n\t\t\tPass\n\t\t\t{\n\t\t\t\tName
+    \"BASE_URP\"\n\t\t\t\tTags { \"LightMode\"=\"UniversalForward\" }\n\n\t\t\t\tCGPROGRAM\n\n\t\t\t\t#pragma
+    vertex vertex_program\n\t\t\t\t#pragma fragment fragment_program\n\t\t\t\t\n\t\t\t\t#pragma
+    target 2.0\n\t\t\t\t\n\t\t\t\t// #pragma multi_compile_instancing\n\t\t\t\t//
+    #pragma instancing_options procedural:ParticleInstancingSetup\n\n\t\t\t\t#pragma
+    multi_compile_fog\n\t\t\t\t//#pragma multi_compile_fwdbase\n\t\t\t\t//#pragma
+    multi_compile SHADOWS_SCREEN\n\n\t\t\t\t// Using the same keywords as Unity's
+    Standard Particle shader to minimize project-wide keyword usage\n\t\t\t\t#pragma
+    shader_feature_local _ _FADING_ON\n\t\t\t\t#pragma shader_feature_local_fragment
+    _ _ALPHATEST_ON\n\t\t\t\t#pragma shader_feature_local _ _DEBUG_VISUALIZE_DISTORTION\n\n\t\t\t\t#define
+    CFXR_URP\n\t\t\t\t#define CFXR_SCREEN_DISTORTION_SHADER\n\t\t\t\t#include \"CFXR_PASSES.cginc\"\n\n\t\t\t\tENDCG\n\t\t\t}\n\t\t\t\n\t\t\t//
+    Same as above with 'Universal2D' instead and DISABLE_SOFT_PARTICLES keyword\n\t\t\tPass\n\t\t\t{\n\t\t\t\tName
+    \"BASE_URP\"\n\t\t\t\tTags { \"LightMode\"=\"Universal2D\" }\n\n\t\t\t\tCGPROGRAM\n\n\t\t\t\t#pragma
+    vertex vertex_program\n\t\t\t\t#pragma fragment fragment_program\n\t\t\t\t\n\t\t\t\t#pragma
+    target 2.0\n\t\t\t\t\n\t\t\t\t// #pragma multi_compile_instancing\n\t\t\t\t//
+    #pragma instancing_options procedural:ParticleInstancingSetup\n\n\t\t\t\t#pragma
+    multi_compile_fog\n\t\t\t\t//#pragma multi_compile_fwdbase\n\t\t\t\t//#pragma
+    multi_compile SHADOWS_SCREEN\n\n\t\t\t\t// Using the same keywords as Unity's
+    Standard Particle shader to minimize project-wide keyword usage\n\t\t\t\t#pragma
+    shader_feature_local _ _FADING_ON\n\t\t\t\t#pragma shader_feature_local_fragment
+    _ _ALPHATEST_ON\n\t\t\t\t#pragma shader_feature_local _ _DEBUG_VISUALIZE_DISTORTION\n\n\t\t\t\t#define
+    _CameraOpaqueTexture _CameraSortingLayerTexture\n\t\t\t\t#define CFXR_URP\n\t\t\t\t#define
+    DISABLE_SOFT_PARTICLES\n\t\t\t\t#define CFXR_SCREEN_DISTORTION_SHADER\n\t\t\t\t#include
+    \"CFXR_PASSES.cginc\"\n\n\t\t\t\tENDCG\n\t\t\t}\n\t\t}\n\n\t}\n\t\n\tCustomEditor
+    \"CartoonFX.MaterialInspector\"\n}\n\n"
   shaderName: Cartoon FX/Remaster/Particle Screen Distortion
   shaderErrors: []
   variantCount: 32

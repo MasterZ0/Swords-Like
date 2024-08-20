@@ -32142,10 +32142,10 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.041666668
+  - time: 0.083333336
     functionName: OnPlaySound
     data: 
-    objectReferenceParameter: {fileID: 11400000, guid: b79689b26037f9242b99bef2bc8f7670, type: 2}
+    objectReferenceParameter: {fileID: 11400000, guid: 9d9198672a9614e7cb42052ebbfd2c99, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

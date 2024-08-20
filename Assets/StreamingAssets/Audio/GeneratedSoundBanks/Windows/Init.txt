@@ -1,3 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3103015060	MusicStates			\Default Work Unit\MusicStates	
+
+State	ID	Name	State Group			Notes
+	748895195	None	MusicStates			
+	1769137949	Mus_FinalScene	MusicStates			
+	3149643052	Mus_Menu	MusicStates			
+	3450947812	Mus_BossFight	MusicStates			
+	4242578485	Mus_Extra	MusicStates			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
