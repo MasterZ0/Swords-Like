@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5921214136712802557
+--- !u!114 &-8779591719757100602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,18 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 867e3d04a7360834893faf7312a089f3, type: 3}
-  m_Name: 'ActionLeaf [8518a6f518faf09488fbcf52f366827e]/DebugLog [339339ddca6430d4695c0bcee996d695]'
+  m_Script: {fileID: 11500000, guid: cce2e92693575b943a71ca9daa2c10e8, type: 3}
+  m_Name: 'Repeat [2d7171733d7b1ab4e96344e4e4b10553]'
   m_EditorClassIdentifier: 
   title: 
-  guid: 339339ddca6430d4695c0bcee996d695
-  message:
+  guid: 2d7171733d7b1ab4e96344e4e4b10553
+  position: {x: 707.25, y: 905.05005}
+  child: {fileID: 7848543251029912373}
+  repeaterMode: 0
+  times:
     guid: 
-    value: Metheor Skill
-  logType:
-    guid: 
-    value: 3
---- !u!114 &-3817449966835385244
+    value: 0
+  untilResult: 0
+--- !u!114 &-7823911140672373760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29,14 +30,74 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31e48502d95ee5e4e89a1299cd31aa9a, type: 3}
-  m_Name: 'ActionLeaf [8518a6f518faf09488fbcf52f366827e]/WaitDelay [30867676655e35b4b9d647f8f656b530]'
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [cc3677d9ead02f849a953ba601f392b7]'
   m_EditorClassIdentifier: 
   title: 
-  guid: 30867676655e35b4b9d647f8f656b530
-  waitTime:
+  guid: cc3677d9ead02f849a953ba601f392b7
+  position: {x: 579, y: 1326.9761}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: 4666480347524456174}
+--- !u!114 &-4124660769929832447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb3cee5a1b134b44b653350524b9868, type: 3}
+  m_Name: 'ActionLeaf [50b44276b8811584e8b590a04b6309e9]/PlayAnimation [285404a11a889ba4bae7fec65c026934]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 285404a11a889ba4bae7fec65c026934
+  animator:
+    guid: 99825d63c74893c41ba86e9b1e25b833
+    value: {fileID: 0}
+  stateName:
+    guid: 
+    value: TakeDamage
+  transition:
+    guid: 
+    value: 0.1
+  waitUntilFinish:
     guid: 
     value: 1
+  layer:
+    guid: 
+    value: 0
+--- !u!114 &-4095231535940407137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb3cee5a1b134b44b653350524b9868, type: 3}
+  m_Name: 'ActionLeaf [50b44276b8811584e8b590a04b6309e9]/PlayAnimation [9e3581f5878e38f4cbc34c55fc266a7a]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 9e3581f5878e38f4cbc34c55fc266a7a
+  animator:
+    guid: 99825d63c74893c41ba86e9b1e25b833
+    value: {fileID: 0}
+  stateName:
+    guid: 
+    value: Meteor_Loop
+  transition:
+    guid: 
+    value: 0.25
+  waitUntilFinish:
+    guid: 
+    value: 0
+  layer:
+    guid: 
+    value: 0
 --- !u!114 &-1368188743658101736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,7 +115,27 @@ MonoBehaviour:
   position: {x: 756.0001, y: 429.2}
   children:
   - {fileID: 5154461481621615716}
-  - {fileID: 603604606172498595}
+  - {fileID: 2981363830166848765}
+--- !u!114 &-599267024615570764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed29539a6a1bb4943b1b3622d3b01636, type: 3}
+  m_Name: 'ActionLeaf [50b44276b8811584e8b590a04b6309e9]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 50b44276b8811584e8b590a04b6309e9
+  position: {x: 804, y: 1326.9761}
+  executionPolicy: 0
+  taskList:
+    taskList:
+    - {fileID: -4124660769929832447}
+    - {fileID: -4095231535940407137}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,11 +153,18 @@ MonoBehaviour:
   startNode: {fileID: -1368188743658101736}
   subAssets:
   - {fileID: 5154461481621615716}
-  - {fileID: -5921214136712802557}
-  - {fileID: -3817449966835385244}
   - {fileID: -1368188743658101736}
   - {fileID: 603604606172498595}
   - {fileID: 2914577394231864169}
+  - {fileID: 4046696393628111072}
+  - {fileID: 2981363830166848765}
+  - {fileID: -8779591719757100602}
+  - {fileID: 7848543251029912373}
+  - {fileID: -7823911140672373760}
+  - {fileID: 4666480347524456174}
+  - {fileID: -599267024615570764}
+  - {fileID: -4124660769929832447}
+  - {fileID: -4095231535940407137}
 --- !u!114 &603604606172498595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,7 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: d155a1a7a07ab2b488933468be706b84
-  position: {x: 869.2, y: 677.00006}
+  position: {x: 981.0001, y: 922.87415}
   executionPolicy: 0
   taskList:
     taskList:
@@ -119,6 +207,76 @@ MonoBehaviour:
   arenaCenter:
     guid: b2462a8dd5b2a20438d117a48ec20a5f
     value: {fileID: 0}
+--- !u!114 &2981363830166848765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b1d1de08dacc249bbfd04703554e41, type: 3}
+  m_Name: 'Parallel [cfd1983ced4892546908d4e8a03a6471]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: cfd1983ced4892546908d4e8a03a6471
+  position: {x: 831.00006, y: 677}
+  children:
+  - {fileID: -8779591719757100602}
+  - {fileID: 603604606172498595}
+  policy: 0
+--- !u!114 &4046696393628111072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb3cee5a1b134b44b653350524b9868, type: 3}
+  m_Name: 'ActionLeaf [8518a6f518faf09488fbcf52f366827e]/PlayAnimation [402d6145f6aad1e42bec28f302fbfd88]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 402d6145f6aad1e42bec28f302fbfd88
+  animator:
+    guid: 99825d63c74893c41ba86e9b1e25b833
+    value: {fileID: 0}
+  stateName:
+    guid: 
+    value: Meteor_Start
+  transition:
+    guid: 
+    value: 0.25
+  waitUntilFinish:
+    guid: 
+    value: 1
+  layer:
+    guid: 
+    value: 0
+--- !u!114 &4666480347524456174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2ab5a0541a428042a9b2db0a759caa8, type: 3}
+  m_Name: 'ActionLeaf [cc3677d9ead02f849a953ba601f392b7]/WaitDamage [1f2a35f7a6e066848aac9844c1c840eb]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 1f2a35f7a6e066848aac9844c1c840eb
+  statusOwner:
+    guid: 3f01fc78ca416b04a9cd20c6fad3b97f
+  senderPivot:
+    guid: 
+    value: {fileID: 0}
+  senderCenter:
+    guid: 
+    value: {fileID: 0}
 --- !u!114 &5154461481621615716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,9 +291,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   guid: 8518a6f518faf09488fbcf52f366827e
-  position: {x: 585.5501, y: 662.0001}
+  position: {x: 602.2801, y: 676.8}
   executionPolicy: 1
   taskList:
     taskList:
-    - {fileID: -5921214136712802557}
-    - {fileID: -3817449966835385244}
+    - {fileID: 4046696393628111072}
+--- !u!114 &7848543251029912373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68acbc6c29c6ce468ebbfe8afd84409, type: 3}
+  m_Name: 'Sequencer [356e0ef3e996bb54ea318900c39a5d22]'
+  m_EditorClassIdentifier: 
+  title: 
+  guid: 356e0ef3e996bb54ea318900c39a5d22
+  position: {x: 705, y: 1117.9761}
+  children:
+  - {fileID: -7823911140672373760}
+  - {fileID: -599267024615570764}

@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
-using Z3.GMTK2024.AI;
 using Z3.NodeGraph.Core;
+using Z3.GMTK2024.AI;
+using Z3.GMTK2024.Shared;
 
 namespace Z3.GMTK2024.NgTasks
 {
+    [NodeCategory(Constants.Category)]
     public class InitShieldBoss : MapParameters<ShieldBossED>
     {
         [SerializeField] private Parameter<Enemy> enemy;
