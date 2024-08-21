@@ -194,8 +194,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1956188209605282115}
-  - component: {fileID: 8466265709898445908}
-  m_Layer: 0
+  - component: {fileID: 6010819809989609474}
+  m_Layer: 12
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,8 +217,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8319519420936551391}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8466265709898445908
-BoxCollider:
+--- !u!135 &6010819809989609474
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -236,7 +236,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10, y: 2, z: 10}
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8793625378295383158
 GameObject:
@@ -312,8 +312,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280953573
+  m_fontColor: {r: 0.8962264, g: 0.16487186, b: 0.16487186, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

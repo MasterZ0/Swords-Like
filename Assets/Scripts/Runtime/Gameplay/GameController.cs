@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Z3.GMTK2024.AI;
 using Z3.NodeGraph.Core;
+using Z3.ObjectPooling;
 using Z3.UIBuilder.Core;
 
 namespace Z3.GMTK2024
@@ -76,6 +77,8 @@ namespace Z3.GMTK2024
         {
             bossDefeatedTimeline.Play();
             bossDefeatedTimeline.stopped += StopTimeline;
+
+            ObjectPool.ReturnAllToPool();
 
             void StopTimeline(PlayableDirector _)
             {
