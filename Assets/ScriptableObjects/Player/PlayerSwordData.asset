@@ -114,11 +114,14 @@ MonoBehaviour:
     <CameraDistanceMultiplier>k__BackingField: 1
     <AttackTimeFrameMultiplier>k__BackingField: 1
     <DashCooldownMultiplier>k__BackingField: 1
-  maxHealth: 1
+  maxHealth: 100
   invisibleDuration: 0.2
   firstAttackDamage:
     value: {x: 5, y: 10}
+    strongAttack: 0
   secondAttackDamage:
     value: {x: 10, y: 15}
+    strongAttack: 0
   thirdAttackDamage:
     value: {x: 30, y: 35}
+    strongAttack: 0

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ad47d9aece940419b0f98912c87567, type: 3}
   m_Name: ShieldBossED
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 100
   bodyDamage:
     value: {x: 10, y: 10}
+    strongAttack: 0
   IdleTime: 3
   RadiusAttackChance: 2
   RadiusAttackMoveParameters:
@@ -24,10 +25,13 @@ MonoBehaviour:
     endReachedDistance: 2
   radiusAttackDamageSmall:
     value: {x: 10, y: 10}
+    strongAttack: 0
   radiusAttackDamageMedium:
     value: {x: 10, y: 10}
+    strongAttack: 0
   radiusAttackDamageLarge:
     value: {x: 10, y: 10}
+    strongAttack: 0
   FireballAttackChance: 2
   FireballAttackPreparation: 2
   FireballAttackProjectileMoveSpeed: 10
@@ -37,13 +41,15 @@ MonoBehaviour:
   FireballAttackBossRotationSpeed: 120
   FireBallDamage:
     value: {x: 10, y: 10}
+    strongAttack: 0
   ThirdAttackChance: 100
   MeteorAttackAttackRadius: 10
   MeteorAttackArenaRadius: 50
-  MeteorAttackFrequency: 0.1
+  MeteorAttackFrequency: 0.05
   MeteorAttackDuration: 10
   MeteorAttackDelayForBlockRegion: 5
   MeteorAttackRadiusForBlockRegion: 4
   RadiusAttackDelayAfter: 3.5
   MeteorAttackDamage:
     value: {x: 10, y: 10}
+    strongAttack: 0
