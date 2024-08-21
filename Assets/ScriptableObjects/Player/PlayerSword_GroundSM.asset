@@ -433,9 +433,14 @@ MonoBehaviour:
   speedMultiplier:
     guid: d1356846dee7c1348b6e6527497f4914
     value: 0
-  triggerCounter:
+  headPoint:
     guid: d112b72547eb017459dfc89601d412d1
-    value: {fileID: 0}
+    value: {x: 0, y: 0, z: 0}
+  scenaryLayer:
+    guid: 
+    value:
+      serializedVersion: 2
+      m_Bits: 1
 --- !u!114 &4818164095595234619
 MonoBehaviour:
   m_ObjectHideFlags: 0

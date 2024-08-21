@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Z3.GMTK2024.States;
 using Z3.NodeGraph.Core;
+using Z3.Utils;
 
 namespace Z3.GMTK2024
 {
@@ -12,7 +12,8 @@ namespace Z3.GMTK2024
     {
         [SerializeField] private Parameter<float> sizeRatio;
         [SerializeField] private Parameter<float> speedMultiplier;
-        [SerializeField] private Parameter<TriggerCounter> triggerCounter;
+        [SerializeField] private Parameter<Vector3> headPoint;
+        [SerializeField] private Parameter<LayerMask> scenaryLayer;
 
         private bool isInitialized;
         private float initialSizeRatio;
@@ -37,7 +38,12 @@ namespace Z3.GMTK2024
             base.UpdateAction();
 
             float multiplier = 0;
-            bool canGoBig = triggerCounter.Value.Colliders.Count == 0;
+            Vector3 point = headPoint.Value;
+            bool canGoBig = !UnityEngine.Physics.CheckSphere(headPoint.Value, 0.1f, scenaryLayer.Value);
+
+            Color color = canGoBig ? Color.green : Color.red;
+
+            DebugDrawer.DrawSphere(point, 0.1f, color);
             if (Controller.IsSizeIncreasedPressed && canGoBig)
             {
                 multiplier = 1;
@@ -47,7 +53,7 @@ namespace Z3.GMTK2024
                 multiplier = -1;
             }
 
-            sizeRatio.Value += Data.SizeData.SizeSpeed * Time.deltaTime * multiplier;
+            sizeRatio.Value += Data.SizeData.SizeSpeed * DeltaTime * multiplier;
             sizeRatio.Value = Mathf.Clamp01(sizeRatio.Value);
             UI.SizeChangeUI.value = sizeRatio.Value;
 
