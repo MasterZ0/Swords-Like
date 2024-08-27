@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ad47d9aece940419b0f98912c87567, type: 3}
   m_Name: ShieldBossED
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  maxHealth: 400
   bodyDamage:
     value: {x: 10, y: 10}
     strongAttack: 0
