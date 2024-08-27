@@ -32,16 +32,15 @@ namespace Z3.GMTK2024
         [SerializeField] private Transform checkpoint;
         [SerializeField] private Transform playerFightPoint;
 
-        private static bool PlayerArrivedToBoss;
+        private static bool playerArrivedToBoss;
 
         private void Awake()
         {
-
             player.Status.OnDeath += OnPlayerDeath;
             boss.Status.OnDeath += OnBossDefeated;
             fightTrigger.OnTriggerEnterEvent += OnBossTriggered;
 
-            if (!PlayerArrivedToBoss)
+            if (!playerArrivedToBoss)
             {
                 menuUI.Init(this);
             }
@@ -65,7 +64,7 @@ namespace Z3.GMTK2024
         private void OnBossTriggered(Collider _)
         {
             fightTrigger.OnTriggerEnterEvent -= OnBossTriggered;
-            PlayerArrivedToBoss = true;
+            playerArrivedToBoss = true;
 
             bossTimeline.Play();
 
@@ -75,6 +74,8 @@ namespace Z3.GMTK2024
         [Button]
         private void OnBossDefeated()
         {
+            boss.Status.OnDeath -= OnBossDefeated;
+
             bossDefeatedTimeline.Play();
             bossDefeatedTimeline.stopped += StopTimeline;
 
@@ -87,7 +88,11 @@ namespace Z3.GMTK2024
             }
         }
 
-        private void OnPlayerDeath() => deathScreen.SetActive(true);
+        private void OnPlayerDeath()
+        {
+            player.Status.OnDeath -= OnPlayerDeath;
+            deathScreen.SetActive(true);
+        }
 
         public void OnGameOverEnd()
         {
@@ -96,7 +101,7 @@ namespace Z3.GMTK2024
 
         public void OnReplay()
         {
-            PlayerArrivedToBoss = false;
+            playerArrivedToBoss = false;
             ReloadGame();
         }
 
