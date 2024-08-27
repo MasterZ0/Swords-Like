@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{83ae8167-d772-4fb0-84cb-1c2c6760141d}">
+		<property name="assetPath">
+			<value>Player/Death/GMTK2024_ProjectSword_PLYR_Death.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d29274f6-181e-4adf-871b-21f0ed9a46a2}</destination>
+		</relationship>
+	</object>
+</objects>

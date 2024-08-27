@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{074213b0-46cc-4262-a445-293d224a81b6}">
+		<property name="assetPath">
+			<value>Boss/Damage/GMTK2024_ProjectSword_BOS_DMG_.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.49943749999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d29274f6-181e-4adf-871b-21f0ed9a46a2}</destination>
+		</relationship>
+	</object>
+</objects>
