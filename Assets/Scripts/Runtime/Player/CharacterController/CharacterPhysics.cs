@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System;
-using static UnityEditor.FilePathAttribute;
 
 namespace Z3.GMTK2024
 {

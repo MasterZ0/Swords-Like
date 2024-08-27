@@ -68,8 +68,8 @@
       "source": "registry",
       "dependencies": {
         "com.unity.burst": "1.6.6",
-        "com.unity.nuget.mono-cecil": "1.11.4",
-        "com.unity.test-framework": "1.1.31"
+        "com.unity.test-framework": "1.1.31",
+        "com.unity.nuget.mono-cecil": "1.11.4"
       },
       "url": "https://packages.unity.com"
     },
@@ -178,9 +178,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.settings-manager": "1.0.3",
+        "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.physics": "1.0.0",
-        "com.unity.modules.imgui": "1.0.0"
+        "com.unity.settings-manager": "1.0.3"
       },
       "url": "https://packages.unity.com"
     },
@@ -246,9 +246,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.settings-manager": "1.0.3",
+        "com.unity.ugui": "1.0.0",
         "com.unity.mathematics": "1.2.1",
-        "com.unity.ugui": "1.0.0"
+        "com.unity.settings-manager": "1.0.3"
       },
       "url": "https://packages.unity.com"
     },
@@ -278,9 +278,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.director": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -304,17 +304,17 @@
         "com.z3.node-graph": "0.4.1-beta",
         "com.unity.cinemachine": "2.10.0"
       },
-      "hash": "0cf62ad8a8d38569be92113b0984f09c563f64c1"
+      "hash": "d2684f45f41caed503335f9d81355de107423f07"
     },
     "com.z3.node-graph": {
       "version": "https://github.com/Z3-Studio/UTK-Node-Graph.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.z3.ui-builder": "0.1.4-beta",
+        "com.z3.ui-builder": "0.1.5-beta",
         "com.z3.utils": "1.0.4"
       },
-      "hash": "76b5db94fbc31505d862b5ece51f90688a31f627"
+      "hash": "f1578e70fe4b92dc7d6df24e43ea1c4064c67824"
     },
     "com.z3.node-graph.astar-pathfinding": {
       "version": "https://github.com/Z3-Studio/UTK-NGTP-Astar-Pathfinding.git",
@@ -349,7 +349,7 @@
       "dependencies": {
         "com.z3.utils": "1.0.4"
       },
-      "hash": "bf5d7f9be57859cb3023f2e6868410dd91e5a694"
+      "hash": "4554ba35d2e890049dd8fe194584cbce9a19f3be"
     },
     "com.z3.utils": {
       "version": "https://github.com/Z3-Studio/UTK-Utils.git",
