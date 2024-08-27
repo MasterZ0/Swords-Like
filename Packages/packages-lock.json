@@ -294,6 +294,13 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.z3.audio.fmod-integration": {
+      "version": "https://github.com/Z3-Studio/UTK-Audio-FMOD-Integration.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2c5b3ced551c18d55289daa4ac6d87ba2bcd6702"
+    },
     "com.z3.camera-shake": {
       "version": "https://github.com/Z3-Studio/UTK-Camera-Shake.git",
       "depth": 0,

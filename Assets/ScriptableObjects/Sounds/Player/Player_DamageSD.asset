@@ -9,10 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 154a18c0033fcb34989e4facc8fa67eb, type: 3}
+  m_Script: {fileID: 11500000, guid: e4210192a2389194dab162ed5a5009bd, type: 3}
   m_Name: Player_DamageSD
   m_EditorClassIdentifier: 
   eventReference:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 260dd5b5a1a8f4b43b661aea1fb9714e, type: 2}
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

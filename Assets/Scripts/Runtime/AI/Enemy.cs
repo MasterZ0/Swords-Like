@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Z3.UIBuilder.Core;
 using Z3.GMTK2024.BattleSystem;
-using Z3.Audio.WwiseIntegration;
+using Z3.Audio.FMODIntegration;
 using Z3.Effects;
 using Z3.ObjectPooling;
 using System.Collections;

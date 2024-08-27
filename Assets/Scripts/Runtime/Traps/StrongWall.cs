@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using Z3.Audio.WwiseIntegration;
+using Z3.Audio.FMODIntegration;
 using Z3.GMTK2024.BattleSystem;
 
 namespace Z3
