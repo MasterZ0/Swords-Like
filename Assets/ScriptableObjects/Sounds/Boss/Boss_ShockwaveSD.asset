@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1118292176
+      Data2: 1185609936
+      Data3: -2012093042
+      Data4: 1152044938
+    Path: event:/Boss/Shockwave

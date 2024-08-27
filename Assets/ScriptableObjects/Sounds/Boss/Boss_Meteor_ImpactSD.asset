@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -775876821
+      Data2: 1081934353
+      Data3: 1365296265
+      Data4: 2083454617
+    Path: event:/Boss/Meteor_Impact

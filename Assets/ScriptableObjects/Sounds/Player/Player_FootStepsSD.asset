@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1746102261
+      Data2: 1077743863
+      Data3: -1981746297
+      Data4: 683440229
+    Path: event:/Player/Footstep

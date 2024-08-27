@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 628214293
+      Data2: 1229550913
+      Data3: -1474460995
+      Data4: -1802854890
+    Path: event:/Player/Attack03

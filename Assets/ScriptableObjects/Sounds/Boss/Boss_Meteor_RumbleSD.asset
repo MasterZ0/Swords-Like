@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1828735968
+      Data2: 1317278517
+      Data3: 1082014090
+      Data4: 1601685354
+    Path: event:/Boss/Meteor_Rumble

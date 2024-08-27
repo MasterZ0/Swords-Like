@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 64020720
+      Data2: 1136273243
+      Data3: 205849230
+      Data4: 110669694
+    Path: event:/Player/Dodge

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1910912024
+      Data2: 1276437587
+      Data3: 1818648205
+      Data4: 1720632559
+    Path: event:/Player/AttackSEQ

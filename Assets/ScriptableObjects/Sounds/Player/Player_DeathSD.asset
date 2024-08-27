@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 44191032
+      Data2: 1074746355
+      Data3: -29470302
+      Data4: 1159593739
+    Path: event:/Player/Death
