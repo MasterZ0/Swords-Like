@@ -40,25 +40,25 @@ namespace Z3.GMTK2024
         [SerializeField] private Transform checkpoint;
         [SerializeField] private Transform playerFightPoint;
 
-
         private static bool playerArrivedToBoss;
+        private bool cursorLocked;
 
         private void Awake()
         {
-            Cursor.lockState = CursorLockMode.Confined;
-
             player.Status.OnDeath += OnPlayerDeath;
             boss.Status.OnDeath += OnBossDefeated;
             fightTrigger.OnTriggerEnterEvent += OnBossTriggered;
 
             if (!playerArrivedToBoss)
             {
+                LockCursor(false);
                 AudioManager.SetCurrentMusic(mainMenu);
 
                 menuUI.Init(this);
             }
             else
             {
+                LockCursor(true);
                 AudioManager.SetCurrentMusic(gameplay);
 
                 introTimeline.gameObject.SetActive(false);
@@ -73,6 +73,8 @@ namespace Z3.GMTK2024
         public void StartGame() // Called after press "Play" Button
         {
             introTimeline.Play();
+
+            LockCursor(true);
             AudioManager.SetCurrentMusic(gameplay);
         }
 
@@ -111,6 +113,8 @@ namespace Z3.GMTK2024
             {
                 bossDefeatedTimeline.stopped -= StopTimeline;
                 victoryScreen.SetActive(true);
+
+                LockCursor(false);
             }
         }
 
@@ -135,6 +139,30 @@ namespace Z3.GMTK2024
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(currentSceneName);
+        }
+
+        private void LockCursor(bool locked)
+        {
+            cursorLocked = locked;
+
+            if (locked)
+            {
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = false;
+            }
+            else
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
+        }
+
+        private void OnApplicationFocus(bool focus)
+        {
+            if (focus)
+            {
+                LockCursor(cursorLocked);
+            }
         }
     }
 }

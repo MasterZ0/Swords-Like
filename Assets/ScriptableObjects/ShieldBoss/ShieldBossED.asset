@@ -17,7 +17,7 @@ MonoBehaviour:
     value: {x: 10, y: 10}
     strongAttack: 0
   IdleTime: 3
-  RadiusAttackChance: 2
+  RadiusAttackChance: 30
   RadiusAttackMoveParameters:
     maxSpeed: 10
     rotationSpeed: 360
@@ -32,7 +32,7 @@ MonoBehaviour:
   radiusAttackDamageLarge:
     value: {x: 10, y: 10}
     strongAttack: 0
-  FireballAttackChance: 2
+  FireballAttackChance: 30
   FireballAttackPreparation: 2
   FireballAttackProjectileMoveSpeed: 10
   FireballAttackProjectileRotationSpeed: 120
@@ -42,13 +42,13 @@ MonoBehaviour:
   FireBallDamage:
     value: {x: 10, y: 10}
     strongAttack: 0
-  ThirdAttackChance: 100
+  ThirdAttackChance: 30
   MeteorAttackAttackRadius: 10
   MeteorAttackArenaRadius: 50
   MeteorAttackFrequency: 0.05
   MeteorAttackDuration: 6
-  MeteorAttackDelayForBlockRegion: 2
-  MeteorAttackRadiusForBlockRegion: 4
+  MeteorAttackDelayForBlockRegion: 3
+  MeteorAttackRadiusForBlockRegion: 3
   RadiusAttackDelayAfter: 3.5
   MeteorAttackDamage:
     value: {x: 10, y: 10}

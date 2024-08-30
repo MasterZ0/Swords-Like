@@ -126,15 +126,14 @@ namespace Z3.GMTK2024.AI
             healthBar.fillAmount = Status.Attributes.HPPercentage();
         }
 
-        public void ApplyHitFX( Renderer[] renderers, Material[] defaultSharedMaterial, Material hitMaterial, float hitMaterialSeconds)
+        public void ApplyHitFX(Renderer[] renderers, Material[] defaultSharedMaterial, Material hitMaterial, float hitMaterialSeconds)
         {
-            StartCoroutine(HitCoroutine(renderers, defaultSharedMaterial));
+            StartCoroutine(HitCoroutine());
 
-            IEnumerator HitCoroutine(Renderer[] renderers, Material[] defaultSharedMaterial)
+            IEnumerator HitCoroutine()
             {
                 for (int i = 0; i < renderers.Length; i++)
                 {
-                    defaultSharedMaterial[i] = renderers[i].sharedMaterial;
                     renderers[i].sharedMaterial = hitMaterial;
                 }
 

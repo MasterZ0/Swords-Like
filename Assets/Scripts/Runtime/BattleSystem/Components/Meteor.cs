@@ -19,8 +19,6 @@ namespace Z3.GMTK2024.BattleSystem
             if (numCollisionEvents > 0)
             {
                 HitBox instance = ObjectPool.SpawnPooledObject(impactFx, collisionEvents[0].intersection, Quaternion.identity);
-
-                instance.transform.LookAt(transform.position);
                 instance.SetDamage(Damage);
             }
 
