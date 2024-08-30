@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{193303ea-3caf-466e-98be-e9fa6d085290}">
 		<property name="name">
-			<value>Ending</value>
+			<value>DefeatBoss</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{87a4f5f6-33c3-4cf8-8c95-b6c0f2ee32ff}</destination>
@@ -59,11 +59,18 @@
 	<object class="EventAutomatableProperties" id="{cbe622c4-2620-4821-b377-f364538f6b3f}" />
 	<object class="MarkerTrack" id="{f1e53217-677b-4010-bcf8-99aee0cc2395}" />
 	<object class="GroupTrack" id="{780d3c9d-1e84-44b3-b774-490e30cbb594}">
+		<relationship name="modules">
+			<destination>{d4e95379-a3e6-4993-988a-5f50d2129d69}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{301e9503-b6a1-49f6-8b40-fbd53a27e040}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{012b32c7-99e8-4213-98b6-37c3f6e8cc29}" />
+	<object class="Timeline" id="{012b32c7-99e8-4213-98b6-37c3f6e8cc29}">
+		<relationship name="modules">
+			<destination>{d4e95379-a3e6-4993-988a-5f50d2129d69}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{472818fb-1924-449c-8953-6198d7e85f2f}">
 		<relationship name="effectChain">
 			<destination>{f6541bd4-2161-4ceb-b63e-99de83aedbe3}</destination>
@@ -81,6 +88,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{45bdfa16-c1a6-46f3-917f-fac9f1cd87f5}" />
+	<object class="SingleSound" id="{d4e95379-a3e6-4993-988a-5f50d2129d69}">
+		<property name="length">
+			<value>46.571428571428569</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>2</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{ff7a05a2-080f-4c8f-80e2-9fa5d1622226}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{301e9503-b6a1-49f6-8b40-fbd53a27e040}">
 		<property name="name">
 			<value>Audio 1</value>
