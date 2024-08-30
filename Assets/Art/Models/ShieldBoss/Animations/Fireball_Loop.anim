@@ -131728,9 +131728,9 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.033333335
-    functionName: 
+    functionName: OnPlaySound
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 11400000, guid: aae3a50fb2db340bb9ee3df0cac68c0a, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

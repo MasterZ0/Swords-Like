@@ -5345,6 +5345,7 @@ GameObject:
   - component: {fileID: 421199780768998151}
   - component: {fileID: 5770175549130080176}
   - component: {fileID: 6206523776544955600}
+  - component: {fileID: 3568718583630386438}
   m_Layer: 0
   m_Name: ShieldBoss_RadiusAttack
   m_TagString: Untagged
@@ -5418,6 +5419,18 @@ MonoBehaviour:
   smallHitbox: {fileID: 3136428815763042099}
   mediumHitbox: {fileID: 2098757199517446790}
   largeHitbox: {fileID: 6155131639013522604}
+--- !u!114 &3568718583630386438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739749242005435833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a9f5cd4df8fcb42867519a4d91cca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8431215326363888359
 GameObject:
   m_ObjectHideFlags: 0

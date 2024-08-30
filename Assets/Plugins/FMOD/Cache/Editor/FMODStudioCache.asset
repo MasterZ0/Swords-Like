@@ -76,7 +76,7 @@ MonoBehaviour:
   - {fileID: -3692644214564332545}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -162,33 +162,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 958
---- !u!114 &-6798684198679789801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Boss/Shockwave
-  m_EditorClassIdentifier: 
-  Path: event:/Boss/Shockwave
-  Guid:
-    Data1: -1118292176
-    Data2: 1185609936
-    Data3: -2012093042
-    Data4: 1152044938
-  Banks:
-  - {fileID: -3692644214564332545}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3585
 --- !u!114 &-5832059099455332997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,10 +231,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638606313286579287
+  lastModified: 638606435838951542
   FileSizes:
   - Name: Desktop
-    Value: 6608576
+    Value: 6627200
   Exists: 1
 --- !u!114 &-2310704349365542237
 MonoBehaviour:
@@ -366,7 +339,6 @@ MonoBehaviour:
   - {fileID: 8523636456569943246}
   - {fileID: -791081743685656915}
   - {fileID: 6713750214468267284}
-  - {fileID: -6798684198679789801}
   - {fileID: 190628624694579328}
   - {fileID: 341085511785536808}
   - {fileID: 7301910582167382067}
@@ -391,12 +363,16 @@ MonoBehaviour:
   - {fileID: -9016518915262707560}
   - {fileID: -7613153260999484160}
   - {fileID: 3558101502675530945}
+  - {fileID: 433005828775908186}
+  - {fileID: 4569001408805673467}
+  - {fileID: 5882527608911195681}
+  - {fileID: 2416721105878240910}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3692644214564332545}
   StringsBanks:
   - {fileID: 7929290268222177910}
-  cacheTime: 638606313286639281
+  cacheTime: 638606435839001539
   cacheVersion: 131618
 --- !u!114 &190628624694579328
 MonoBehaviour:
@@ -452,6 +428,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &433005828775908186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boss/Shockwave_Preparation
+  m_EditorClassIdentifier: 
+  Path: event:/Boss/Shockwave_Preparation
+  Guid:
+    Data1: -1118292176
+    Data2: 1185609936
+    Data3: -2012093042
+    Data4: 1152044938
+  Banks:
+  - {fileID: -3692644214564332545}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 1733
 --- !u!114 &553993750401901665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,6 +509,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1100
+--- !u!114 &2416721105878240910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boss/Shockwave_Attack_02
+  m_EditorClassIdentifier: 
+  Path: event:/Boss/Shockwave_Attack_02
+  Guid:
+    Data1: 1010133251
+    Data2: 1310115108
+    Data3: -1374606703
+    Data4: 655212780
+  Banks:
+  - {fileID: -3692644214564332545}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 629
 --- !u!114 &3055717391978048485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,6 +617,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 83684
+--- !u!114 &4569001408805673467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boss/Shockwave_Attack_01
+  m_EditorClassIdentifier: 
+  Path: event:/Boss/Shockwave_Attack_01
+  Guid:
+    Data1: -1611415032
+    Data2: 1225613844
+    Data3: -1780391005
+    Data4: 1929030681
+  Banks:
+  - {fileID: -3692644214564332545}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 1269
 --- !u!114 &5745259790996043861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,6 +671,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5882527608911195681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boss/Shockwave_Attack_03
+  m_EditorClassIdentifier: 
+  Path: event:/Boss/Shockwave_Attack_03
+  Guid:
+    Data1: 1521787364
+    Data2: 1263729950
+    Data3: 498218639
+    Data4: 1786710775
+  Banks:
+  - {fileID: -3692644214564332545}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 1189
 --- !u!114 &5921088538640432026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,10 +848,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638606313286639281
+  lastModified: 638606435839001539
   FileSizes:
   - Name: Desktop
-    Value: 2104
+    Value: 2244
   Exists: 1
 --- !u!114 &8004354805859299095
 MonoBehaviour:
@@ -821,7 +905,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 85
   Length: 500
 --- !u!114 &8523636456569943246
 MonoBehaviour:

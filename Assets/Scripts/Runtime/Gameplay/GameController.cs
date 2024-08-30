@@ -43,7 +43,7 @@ namespace Z3.GMTK2024
         private static bool playerArrivedToBoss;
         private bool cursorLocked;
 
-        private void Awake()
+        private void Start()
         {
             player.Status.OnDeath += OnPlayerDeath;
             boss.Status.OnDeath += OnBossDefeated;
@@ -147,7 +147,7 @@ namespace Z3.GMTK2024
 
             if (locked)
             {
-                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
             }
             else
@@ -162,6 +162,11 @@ namespace Z3.GMTK2024
             if (focus)
             {
                 LockCursor(cursorLocked);
+            }
+            else if (cursorLocked)
+            {
+                LockCursor(false); 
+                cursorLocked = true;
             }
         }
     }

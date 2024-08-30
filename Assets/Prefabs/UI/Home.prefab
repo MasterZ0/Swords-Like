@@ -1817,7 +1817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4342278637105676592, guid: c3ee6331fb5f57942a96037c9bcf0b25, type: 3}
       propertyPath: m_text
-      value: Vishwaas (V)
+      value: Vishwaas Khare
       objectReference: {fileID: 0}
     - target: {fileID: 5254777010948408803, guid: c3ee6331fb5f57942a96037c9bcf0b25, type: 3}
       propertyPath: m_Pivot.x
@@ -1901,7 +1901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6861980391139048466, guid: c3ee6331fb5f57942a96037c9bcf0b25, type: 3}
       propertyPath: m_text
-      value: 3D Designer
+      value: Environment Artist
       objectReference: {fileID: 0}
     - target: {fileID: 7808490246255863187, guid: c3ee6331fb5f57942a96037c9bcf0b25, type: 3}
       propertyPath: m_Name

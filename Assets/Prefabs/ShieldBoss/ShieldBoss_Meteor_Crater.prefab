@@ -49180,6 +49180,7 @@ GameObject:
   - component: {fileID: 4464005960692420}
   - component: {fileID: 7725013893269616931}
   - component: {fileID: 6782568256799439536}
+  - component: {fileID: 3473234323006386686}
   - component: {fileID: 199217752770658302}
   - component: {fileID: 7513134546787721534}
   - component: {fileID: 198090912862583912}
@@ -49243,6 +49244,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 198090912862583912}
+--- !u!114 &3473234323006386686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834864717962692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f0a09c7ab6895f45941b78b36a0869e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundReference:
+    eventReference:
+      Guid:
+        Data1: -775876821
+        Data2: 1081934353
+        Data3: 1365296265
+        Data4: 2083454617
+      Path: event:/Boss/Meteor_Impact
 --- !u!199 &199217752770658302
 ParticleSystemRenderer:
   serializedVersion: 6
