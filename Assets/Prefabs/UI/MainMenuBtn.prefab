@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8349640119939128954}
   - component: {fileID: 3883472102880414197}
   - component: {fileID: 7465060163863833287}
+  - component: {fileID: 1278721099587665570}
   m_Layer: 5
   m_Name: MainMenuBtn
   m_TagString: Untagged
@@ -193,6 +194,21 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1278721099587665570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5394692698078143607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5296cb0dca6e841a0e496c84cb2cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreSubmit: 0
+  ignoreCancel: 0
+  ignoreSelect: 0
 --- !u!1 &6705302219506816536
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +245,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 60, y: -30}
-  m_SizeDelta: {x: 0, y: 80}
+  m_SizeDelta: {x: 224.98, y: 80}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &7440517668831829081
 CanvasRenderer:

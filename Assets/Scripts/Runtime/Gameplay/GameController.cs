@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Z3.Audio.FMODIntegration;
 using Z3.GMTK2024.AI;
 using Z3.NodeGraph.Core;
 using Z3.ObjectPooling;
@@ -26,26 +27,40 @@ namespace Z3.GMTK2024
         [Space]
         [SerializeField] private GameObject victoryScreen;
 
+        [Header("Music")]
+        [SerializeField] private SoundReference mainMenu;
+        [SerializeField] private SoundReference gameplay;
+        [SerializeField] private SoundReference introBoss;
+        [SerializeField] private SoundReference bossFight;
+        [SerializeField] private SoundReference defeatBoss;
+
         [Header("Dependencies")]
         [SerializeField] private Enemy boss;
         [SerializeField] private CharacterPawn player;
         [SerializeField] private Transform checkpoint;
         [SerializeField] private Transform playerFightPoint;
 
+
         private static bool playerArrivedToBoss;
 
         private void Awake()
         {
+            Cursor.lockState = CursorLockMode.Confined;
+
             player.Status.OnDeath += OnPlayerDeath;
             boss.Status.OnDeath += OnBossDefeated;
             fightTrigger.OnTriggerEnterEvent += OnBossTriggered;
 
             if (!playerArrivedToBoss)
             {
+                AudioManager.SetCurrentMusic(mainMenu);
+
                 menuUI.Init(this);
             }
             else
             {
+                AudioManager.SetCurrentMusic(gameplay);
+
                 introTimeline.gameObject.SetActive(false);
                 menuUI.gameObject.SetActive(false);
 
@@ -58,6 +73,7 @@ namespace Z3.GMTK2024
         public void StartGame() // Called after press "Play" Button
         {
             introTimeline.Play();
+            AudioManager.SetCurrentMusic(gameplay);
         }
 
         [Button]
@@ -67,13 +83,23 @@ namespace Z3.GMTK2024
             playerArrivedToBoss = true;
 
             bossTimeline.Play();
+            bossTimeline.stopped += StopTimeline;
 
             player.SetPlayerPosition(playerFightPoint.position, playerFightPoint.rotation);
+            AudioManager.SetCurrentMusic(introBoss);
+
+            void StopTimeline(PlayableDirector _)
+            {
+                bossTimeline.stopped -= StopTimeline;
+                AudioManager.SetCurrentMusic(bossFight);
+            }
         }
 
         [Button]
         private void OnBossDefeated()
         {
+            AudioManager.SetCurrentMusic(defeatBoss);
+
             boss.Status.OnDeath -= OnBossDefeated;
 
             bossDefeatedTimeline.Play();

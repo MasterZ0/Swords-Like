@@ -2786,6 +2786,46 @@ MonoBehaviour:
   menuUI: {fileID: 3091103812270233069}
   deathScreen: {fileID: 2994108213114047917}
   victoryScreen: {fileID: 1560701636458332178}
+  mainMenu:
+    eventReference:
+      Guid:
+        Data1: -56971800
+        Data2: 1143454219
+        Data3: -859063391
+        Data4: -1457278949
+      Path: event:/Music/MainMenu
+  gameplay:
+    eventReference:
+      Guid:
+        Data1: -1927320977
+        Data2: 1293845613
+        Data3: 2120095403
+        Data4: 373952216
+      Path: event:/Music/Gameplay
+  introBoss:
+    eventReference:
+      Guid:
+        Data1: 793900101
+        Data2: 1289014261
+        Data3: 1408730556
+        Data4: -1514007201
+      Path: event:/Music/IntroBoss
+  bossFight:
+    eventReference:
+      Guid:
+        Data1: 805518536
+        Data2: 1319650300
+        Data3: 1957141177
+        Data4: -225006323
+      Path: event:/Music/BossFight
+  defeatBoss:
+    eventReference:
+      Guid:
+        Data1: 422773738
+        Data2: 1181629615
+        Data3: -85344616
+        Data4: -1873672083
+      Path: event:/Music/DefeatBoss
   boss: {fileID: 0}
   player: {fileID: 0}
   checkpoint: {fileID: 3151428297614629904}

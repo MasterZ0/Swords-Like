@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 4302073988988507522}
   - component: {fileID: 8444681892043208037}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: AudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,11 +160,11 @@ MonoBehaviour:
   submit:
     eventReference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -2139248150
+        Data2: 1127552804
+        Data3: -410797932
+        Data4: 1616457273
+      Path: event:/UI/Select
   cancel:
     eventReference:
       Guid:
@@ -176,11 +176,11 @@ MonoBehaviour:
   select:
     eventReference:
       Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
+        Data1: -1651052078
+        Data2: 1249630407
+        Data3: 78610570
+        Data4: -655854068
+      Path: event:/UI/Hover
 --- !u!1 &7778979487975560270
 GameObject:
   m_ObjectHideFlags: 0
