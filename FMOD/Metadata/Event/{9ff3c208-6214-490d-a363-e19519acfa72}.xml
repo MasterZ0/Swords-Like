@@ -64,7 +64,7 @@
 	<object class="MarkerTrack" id="{a0beaf84-a1c1-42a0-9931-7a19c617e055}" />
 	<object class="GroupTrack" id="{04edc021-53ae-4009-a505-b7a4d4df222c}">
 		<relationship name="modules">
-			<destination>{b0c22736-570d-4f11-89f3-742604e691ae}</destination>
+			<destination>{53553edd-6d98-4df1-a8ab-0a904a4fc19c}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{2c27e12c-32bf-42ba-aafb-fb9006629e15}</destination>
@@ -72,7 +72,7 @@
 	</object>
 	<object class="Timeline" id="{3ec23a46-b599-4a9f-af0f-b31974f27250}">
 		<relationship name="modules">
-			<destination>{b0c22736-570d-4f11-89f3-742604e691ae}</destination>
+			<destination>{53553edd-6d98-4df1-a8ab-0a904a4fc19c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{c68fd55d-1f8c-440c-93a8-c5f37f771249}">
@@ -92,9 +92,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3a84509f-260e-401c-aa7f-0028f46ed2b6}" />
-	<object class="SingleSound" id="{b0c22736-570d-4f11-89f3-742604e691ae}">
+	<object class="SingleSound" id="{53553edd-6d98-4df1-a8ab-0a904a4fc19c}">
 		<property name="length">
-			<value>1.269625</value>
+			<value>1.069625</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.20000000000000001</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{d0b12ac2-389e-4e07-8d9f-008fee47e2aa}</destination>
@@ -130,7 +133,15 @@
 	</object>
 	<object class="MixerBusPanner" id="{e3bf16ee-2171-44ce-8661-37fb30a06bd8}" />
 	<object class="MixerBusFader" id="{4b8e74f6-564d-458a-a892-383e7d07c768}" />
-	<object class="SpatialiserEffect" id="{f88fa378-0c84-4311-b7ce-397234ae2cee}" />
+	<object class="SpatialiserEffect" id="{f88fa378-0c84-4311-b7ce-397234ae2cee}">
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{f5986f60-613a-469c-a92e-635aa2723a7f}" />
-	<object class="SpatialiserEffect" id="{01494a9e-4e84-4d9d-b41f-2f6c0877b759}" />
+	<object class="SpatialiserEffect" id="{01494a9e-4e84-4d9d-b41f-2f6c0877b759}">
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+	</object>
 </objects>
